@@ -1,6 +1,6 @@
 // https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/find
 
-import heroes, { owner } from './bases/data/Heroes'
+import heroes, { owner } from './data/Heroes'
 
 const getHeroeById = (id) => heroes.find((elem) => elem.id === id)
 
