@@ -1,3 +1,6 @@
+// https://developer.mozilla.org/es/docs/Web/API/Fetch_API
+// https://developers.giphy.com/dashboard/
+
 const apiKey = 'GIY6EJ9YL5trOrLi1fg3XFVLh1KYn0oG'
 
 const peticion = fetch(`https://api.giphy.com/v1/gifs/random?api_key=${apiKey}`)
