@@ -2,10 +2,11 @@
 
 import heroes, { owner } from './data/Heroes'
 
-const getHeroeById = (id) => heroes.find((elem) => elem.id === id)
+export const getHeroeById = (id) => heroes.find((elem) => elem.id === id)
 
 console.log(getHeroeById(2))
 
-const getHeroeByOwner = (owner) => heroes.filter((elem) => elem.owner === owner)
+export const getHeroeByOwner = (owner) =>
+  heroes.filter((elem) => elem.owner === owner)
 
 console.table(getHeroeByOwner('DC'))
