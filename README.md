@@ -14,6 +14,8 @@
 - [Desestructuración](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 - [.find()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
 - [Promise()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+- [Giphy API](https://developers.giphy.com/)
+- [Fetch API](https://developer.mozilla.org/es/docs/Web/API/Fetch_API)
 
 ## Recursos
 
