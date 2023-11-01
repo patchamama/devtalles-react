@@ -1,4 +1,6 @@
 ```javascript
+// Objetos literales
+
 const persona = {
   nombre: 'Tony',
   apellido: 'Stark',
