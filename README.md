@@ -18,7 +18,7 @@ _https://cursos.devtalles.com/courses/take/react-cero-experto_
 
 - [Constantes y variables Let](02-intro-javascript/src/bases/01-const-let.md)
 - [Template String](02-intro-javascript/src/bases/02-template-string.md)
-- [Objetos literales](02-intro-javascript/src/bases/03-objetos-literale.md)
+- [Objetos literales](02-intro-javascript/src/bases/03-objetos-literales.md)
 - [Arreglos](02-intro-javascript/src/bases/04-arreglos.md)
 - [Funciones](02-intro-javascript/src/bases/05-funciones.md)
 - [Desestructruación de objetos](02-intro-javascript/src/bases/06-desestructuracion-de-objetos.md)
