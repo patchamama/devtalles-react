@@ -1,20 +1,20 @@
-# dev/Talles - Cruso de React: De cero a experto (Hooks y MERN)
+## devTalles - Cruso de React: De cero a experto (Hooks y MERN)
 
 _https://cursos.devtalles.com/courses/take/react-cero-experto_
 
-# Descripción
+## Descripción
 
-# Secciones
+## Secciones
 
-## Sección 1: Introducción
+### Sección 1: Introducción
 
 - [Instalaciones necesarias](https://gist.github.com/Klerith/4a4abfd88a88b2d1f16efd95fea41362)
 
-## Sección 2: Introducción a React y conceptos generales
+### Sección 2: Introducción a React y conceptos generales
 
 - [Instalación de react con `create-react-app`](01-intro-react/README.md)
 
-## Sección 3: Introducción a JavaScript moderno
+### Sección 3: Introducción a JavaScript moderno
 
 - [Constantes y variables Let](02-intro-javascript/src/bases/01-const-let.md)
 - [Template String](02-intro-javascript/src/bases/02-template-string.md)
@@ -30,7 +30,7 @@ _https://cursos.devtalles.com/courses/take/react-cero-experto_
 - [Operador condicional ternario](02-intro-javascript/src/bases/12-operador-condicional-ternario.md)
 - [Código fuente en GitHub](https://github.com/Klerith/react-intro-javascript)
 
-### Recursos
+#### Recursos
 
 - [.map()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 - [.find()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
@@ -43,4 +43,4 @@ _https://cursos.devtalles.com/courses/take/react-cero-experto_
 - [Fetch API](https://developer.mozilla.org/es/docs/Web/API/Fetch_API)
 - [Console.functions](https://developer.mozilla.org/es/docs/Web/API/console)
 - [Babel](https://babeljs.io/)
-- https://create-react-app.dev/
+- [Create-react-app](https://create-react-app.dev/)
