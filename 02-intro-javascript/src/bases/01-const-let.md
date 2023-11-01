@@ -1,3 +1,4 @@
+```javascript
 // Variables y constantes
 
 const nombre = 'Fernando'
@@ -14,3 +15,4 @@ if (true) {
 }
 
 console.log(valorDado)
+```

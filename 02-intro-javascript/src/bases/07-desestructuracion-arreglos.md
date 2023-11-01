@@ -1,4 +1,6 @@
 ```javascript
+// Desestructuración de arreglos
+
 const personajes = ['Goku', 'Vegeta', 'Trunks']
 
 const [, , var3] = personajes

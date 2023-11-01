@@ -1,4 +1,6 @@
 ```javascript
+// Operador condicional ternario
+
 const activo = true
 
 let mensaje = ''

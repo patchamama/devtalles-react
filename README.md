@@ -26,7 +26,7 @@ _https://cursos.devtalles.com/courses/take/react-cero-experto_
 - [Import, export y funciones comunes de arreglos](02-intro-javascript/src/bases/08-import-export-funciones-arreglos.md)
 - [Promesas](02-intro-javascript/src/bases/09-promesas.md)
 - [Fetch API](02-intro-javascript/src/bases/10-fech-api.md)
-- [Async Await](02-intro-javascript/src/bases/11-asyn-await.md)
+- [Async - await](02-intro-javascript/src/bases/11-asyn-await.md)
 - [Operador condicional ternario](02-intro-javascript/src/bases/12-operador-condicional-ternario.md)
 - [Código fuente en GitHub](https://github.com/Klerith/react-intro-javascript)
 
@@ -34,12 +34,14 @@ _https://cursos.devtalles.com/courses/take/react-cero-experto_
 
 - [.map()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 - [.find()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
+- [.filter()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 - [.forEach()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 - [.reduce()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
 - [Desestructuración](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 - [Promise()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 - [Giphy API](https://developers.giphy.com/)
 - [Fetch API](https://developer.mozilla.org/es/docs/Web/API/Fetch_API)
+- [Console.functions](https://developer.mozilla.org/es/docs/Web/API/console)
 
 ## Recursos
 

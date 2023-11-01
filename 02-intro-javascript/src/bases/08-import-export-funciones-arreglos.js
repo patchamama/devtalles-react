@@ -1,3 +1,4 @@
+// Import, export y funciones comunes de arreglos
 // https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/find
 
 import heroes, { owner } from './data/Heroes'
