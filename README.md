@@ -93,29 +93,24 @@ _El archivo `package-lock.json` solo se crea con cra, es decir, con una aplicaci
 - [Comunicación entre componentes Props](https://github.com/patchamama/devtalles-react/commit/1bcf4ea8a4617604e430ff834f5f8c352cff93d5)
 - [PropTypes](https://github.com/patchamama/devtalles-react/commit/b69ed37589e467451ad28280f58e6be3a9054553) _En `CRA` aparece instalado por defecto pero en `vite` hay que instalarlo: `import PropTypes from 'prop-types'` para importar en los componentes y desde terminal `yarn add prop-types`_
 - [Tarea - Componente CounterApp](https://github.com/patchamama/devtalles-react/commit/0cda31f9cdd65050f1bb67f668a165723c9b1599)
+
 <details>
 
 <summary>Tarea</summary>
 
 1. Crear un nuevo componente dentro de la carpeta SRC llamado
    `CounterApp`
-
 2. El CounterApp debe de ser un **Functional Component**
-
 3. El contenido del **CounterApp** debe de ser:
-
    ```jsx
        <h1>CounterApp</h1>
        <h2> { value } </h2>
    ```
-
 4. Donde `"value"` es una propiedad enviada desde el padre hacia
    el componente **CounterApp** **(Debe ser númerica validada con PropTypes)**
-
 5. Reemplazar en el index.js ó main.jsx el componente de `<PrimeraApp />`
    por el componente `<CounterApp />`
    (no se olviden del value que debe de ser un número)
-
 6. Asegúrense de no tener errores ni warnings
 (Cualquier warning no usado, comentar el código)
 </details>
