@@ -30,7 +30,9 @@ _https://cursos.devtalles.com/courses/take/react-cero-experto_
 - [Operador condicional ternario](02-intro-javascript/src/bases/12-operador-condicional-ternario.md)
 - [Código fuente en GitHub](https://github.com/Klerith/react-intro-javascript)
 
-#### Recursos
+<details>
+
+<summary>Recursos</summary>
 
 - [.map()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 - [.find()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
@@ -44,3 +46,5 @@ _https://cursos.devtalles.com/courses/take/react-cero-experto_
 - [Console.functions](https://developer.mozilla.org/es/docs/Web/API/console)
 - [Babel](https://babeljs.io/)
 - [Create-react-app](https://create-react-app.dev/)
+
+</details>
