@@ -80,6 +80,30 @@ _El archivo `package-lock.json` solo se crea con cra, es decir, con una aplicaci
 
 **Vite** fue creado por [Evan You](https://evanyou.me/), el mismo creador de vueJS.
 
+#### Capítulos
+
+- [Primera aplicación de React](https://github.com/patchamama/devtalles-react/commit/ac0555be4050332a572acd83f3114afcc96cdf04)
+- [Estructura de directorios, CRA vs Vite](https://github.com/patchamama/devtalles-react/commit/3000dc754c71adafff1f3f4c1caf17692171606d)
+- [Hola Mundo en React](https://github.com/patchamama/devtalles-react/commit/fca38fefe68dfa066c0a14fd480236ba6a26e79b)
+- [Nuestro primer Componente](https://github.com/patchamama/devtalles-react/commit/859c2de3a8421705f393333a87c2031fbde7e207)
+- [Tarea - Crear un nuevo componente](https://github.com/patchamama/devtalles-react/commit/ef33860eaf95616b0cee2151e27735c8b7bb3bfb)
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+
 <details>
 
 <summary>Recursos</summary>
