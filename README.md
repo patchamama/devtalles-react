@@ -58,7 +58,7 @@ Mis notas personales del _Curso de React: De cero a experto (Hooks y MERN)_ brin
 ```
 brew install yarn
 yarn create vite
-cd <directory of installatio>
+cd <app-name>
 yarn install
 yarn dev
 ```
@@ -80,7 +80,7 @@ _El archivo `package-lock.json` solo se crea con cra, es decir, con una aplicaci
 
 **Vite** fue creado por [Evan You](https://evanyou.me/), el mismo creador de vueJS.
 
-#### Capítulos
+#### Subsecciones
 
 - [Primera aplicación de React](https://github.com/patchamama/devtalles-react/commit/ac0555be4050332a572acd83f3114afcc96cdf04)
 - [Estructura de directorios, CRA vs Vite](https://github.com/patchamama/devtalles-react/commit/3000dc754c71adafff1f3f4c1caf17692171606d)
@@ -136,11 +136,15 @@ _El archivo `package-lock.json` solo se crea con cra, es decir, con una aplicaci
 
 </details>
 
+---
+
 ### VSCode plugins
 
 - [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
 
 ### Atajos del teclado (MacOSx) con vscode
 
+- Cambiar el nombre de una variable en todo el documento: Seleccionar la variable + fn + F2
+- Poner comentario en línea: Cmd + , (después de seleccionar el texto o sobre la línea a comentar)
 - Ordenar líneas ascendentemente (css styles): Cmd + Shift + P > Sort Lines Ascending
 - Crear un functional-component. Snippet: `rafc`

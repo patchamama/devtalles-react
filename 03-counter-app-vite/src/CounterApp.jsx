@@ -2,6 +2,7 @@
 //https://cursos.devtalles.com/courses/take/react-cero-experto/lessons/36057309-evento-click-eventos-en-general
 //https://es.legacy.reactjs.org/docs/events.html
 //https://cursos.devtalles.com/courses/take/react-cero-experto/lessons/36057314-usestate-hook
+//https://cursos.devtalles.com/courses/take/react-cero-experto/lessons/36057319-handlesubtract-y-handlereset
 
 import { useState } from 'react'
 import PropTypes from 'prop-types'
