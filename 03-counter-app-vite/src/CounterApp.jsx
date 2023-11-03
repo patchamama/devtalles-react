@@ -9,18 +9,18 @@ import PropTypes from 'prop-types'
 const CounterApp = ({ value }) => {
   const [counter, setCounter] = useState(value)
 
-  const handleEvent = (event) => {
-    //   setCounter(counter + 1)
-    setCounter((c) => c + 1)
-  }
+  const handleEventInc = () => setCounter(counter + 1)
+  const handleEventDec = () => setCounter(counter - 1)
+  const handleEventReset = () => setCounter(value)
+
   return (
     <>
       <h1>Counter App</h1>
       <h2>{counter}</h2>
 
-      <button onClick={handleEvent}>+1</button>
-      <button onClick={(event) => handleEvent(event)}>+1</button>
-      <button onClick={() => setCounter(counter + 1)}>+1</button>
+      <button onClick={handleEventInc}>+1</button>
+      <button onClick={handleEventDec}>-1</button>
+      <button onClick={handleEventReset}>Reset</button>
     </>
   )
 }
