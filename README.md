@@ -85,7 +85,7 @@ _El archivo `package-lock.json` solo se crea con cra, es decir, con una aplicaci
 - [Primera aplicación de React](https://github.com/patchamama/devtalles-react/commit/ac0555be4050332a572acd83f3114afcc96cdf04)
 - [Estructura de directorios, CRA vs Vite](https://github.com/patchamama/devtalles-react/commit/3000dc754c71adafff1f3f4c1caf17692171606d)
 - [Hola Mundo en React](https://github.com/patchamama/devtalles-react/commit/fca38fefe68dfa066c0a14fd480236ba6a26e79b)
-- [Nuestro primer Componente](https://github.com/patchamama/devtalles-react/commit/859c2de3a8421705f393333a87c2031fbde7e207)
+- [Nuestro primer Componente](https://github.com/patchamama/devtalles-react/commit/859c2de3a8421705f393333a87c2031fbde7e207). _Nota: sí aparece un error de "function export don't declare", agregar en el contenido del componente creado al final `export default HelloWorldApp`_
 - [Tarea - Crear un nuevo componente](https://github.com/patchamama/devtalles-react/commit/ef33860eaf95616b0cee2151e27735c8b7bb3bfb)
 - []()
 - []()
@@ -113,7 +113,7 @@ _El archivo `package-lock.json` solo se crea con cra, es decir, con una aplicaci
 - [CRA - Available Scripts](https://create-react-app.dev/docs/available-scripts/)
 - [Learn Progresive Web App (PWA)](https://web.dev/learn/pwa/)
 - [Robots.txt](https://developers.google.com/search/docs/crawling-indexing/robots/intro?hl=es&visit_id=637909934831052162-4097033822&rd=1)
-- [No se muestran los warning en DevTools](https://stackoverflow.com/questions/18760213/chrome-console-log-console-debug-are-not-working)
+- [Error: _no se muestran los warning en DevTools_](https://stackoverflow.com/questions/18760213/chrome-console-log-console-debug-are-not-working)
 - []()
 - []()
 - []()
