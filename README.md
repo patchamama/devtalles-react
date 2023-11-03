@@ -50,3 +50,39 @@ Mis notas personales del _Curso de React: De cero a experto (Hooks y MERN)_ brin
 - [Create-react-app](https://create-react-app.dev/)
 
 </details>
+
+### Sección 4: Primeros pasos en React
+
+#### Instalar `React` usando [yarn + vite](03-counter-app-vite):
+
+```
+brew install yarn
+yarn create vite
+cd <directory of installatio>
+yarn install
+yarn dev
+```
+
+#### Instalar `React` usando [create-react-app](03-counter-app-cra):
+
+```
+npx create-react-app <app-name>
+cd <app-name>
+npm install
+npm start
+```
+
+<details>
+
+<summary>Recursos</summary>
+
+- [Vite](https://vitejs.dev/)
+- [Create React App](https://create-react-app.dev/)
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+
+</details>
