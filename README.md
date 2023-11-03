@@ -1,8 +1,10 @@
-## devTalles - Cruso de React: De cero a experto (Hooks y MERN)
+## devTalles - Curso de React: De cero a experto (Hooks y MERN)
 
 _https://cursos.devtalles.com/courses/take/react-cero-experto_
 
 ## Descripción
+
+Mis notas personales del _Curso de React: De cero a experto (Hooks y MERN)_ brindado por _Fernando Herrera_.
 
 ## Secciones
 
