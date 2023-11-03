@@ -91,8 +91,35 @@ _El archivo `package-lock.json` solo se crea con cra, es decir, con una aplicaci
 - [Impresión de variables en el HTML](https://github.com/patchamama/devtalles-react/commit/426e5104ffb548715cc10f42f87d3e0fd9af4376)
 - [Colocar estilos de CSS](https://github.com/patchamama/devtalles-react/commit/91da1b152bddad488e312cb8fc4aada8407fd79c)
 - [Comunicación entre componentes Props](https://github.com/patchamama/devtalles-react/commit/1bcf4ea8a4617604e430ff834f5f8c352cff93d5)
-- [PropTypes]() _En `CRA` aparece instalado por defecto pero en `vite` hay que instalarlo: `import PropTypes from 'prop-types'` para importar en los componentes y desde terminal `yarn add prop-types`_
+- [PropTypes](https://github.com/patchamama/devtalles-react/commit/b69ed37589e467451ad28280f58e6be3a9054553) _En `CRA` aparece instalado por defecto pero en `vite` hay que instalarlo: `import PropTypes from 'prop-types'` para importar en los componentes y desde terminal `yarn add prop-types`_
 - []()
+<details>
+
+<summary>Tarea</summary>
+
+1. Crear un nuevo componente dentro de la carpeta SRC llamado
+   `CounterApp`
+
+2. El CounterApp debe de ser un **Functional Component**
+
+3. El contenido del **CounterApp** debe de ser:
+
+   ```jsx
+       <h1>CounterApp</h1>
+       <h2> { value } </h2>
+   ```
+
+4. Donde `"value"` es una propiedad enviada desde el padre hacia
+   el componente **CounterApp** **(Debe ser númerica validada con PropTypes)**
+
+5. Reemplazar en el index.js ó main.jsx el componente de `<PrimeraApp />`
+   por el componente `<CounterApp />`
+   (no se olviden del value que debe de ser un número)
+
+6. Asegúrense de no tener errores ni warnings
+(Cualquier warning no usado, comentar el código)
+</details>
+
 - []()
 - []()
 - []()
@@ -124,6 +151,11 @@ _El archivo `package-lock.json` solo se crea con cra, es decir, con una aplicaci
 
 </details>
 
+### VSCode plugins
+
+- [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+
 ### Atajos del teclado (MacOSx) con vscode
 
 - Ordenar líneas ascendentemente (css styles): Cmd + Shift + P > Sort Lines Ascending
+- Crear un functional-component. Snippet: `rafc`
