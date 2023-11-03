@@ -69,7 +69,7 @@ yarn dev
 npx create-react-app <app-name>
 cd <app-name>
 npm install
-npm start
+npm run dev
 ```
 
 Para cambiar de `npm` a `yarn` o viceversa, es suficiente con borrar la carpeta `jarn.lock` o `package-lock.json` y ejecutar nuevamente `npm install` o `yarn install`, pero esto no se recomienda.
@@ -89,7 +89,7 @@ _El archivo `package-lock.json` solo se crea con cra, es decir, con una aplicaci
 - [CRA - Available Scripts](https://create-react-app.dev/docs/available-scripts/)
 - [Learn Progresive Web App (PWA)](https://web.dev/learn/pwa/)
 - [Robots.txt](https://developers.google.com/search/docs/crawling-indexing/robots/intro?hl=es&visit_id=637909934831052162-4097033822&rd=1)
-- []()
+- [No se muestran los warning en DevTools](https://stackoverflow.com/questions/18760213/chrome-console-log-console-debug-are-not-working)
 - []()
 - []()
 - []()
