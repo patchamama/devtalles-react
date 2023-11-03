@@ -115,16 +115,10 @@ _El archivo `package-lock.json` solo se crea con cra, es decir, con una aplicaci
 (Cualquier warning no usado, comentar el código)
 </details>
 
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+- [Evento click (Eventos en general](https://github.com/patchamama/devtalles-react/commit/a0f83defb4023e29bea097d6b0671797696ca3d3)
+- [useState - Hook](https://github.com/patchamama/devtalles-react/commit/7a6368db9edce975d2c3c0d677c066c8a83c630f)
+- [handleSubtract y jandleReset](https://github.com/patchamama/devtalles-react/commit/de7113ac27208fc9a4498efd7f7c32d549c13e76)
+- [Código fuente de la clase](https://github.com/Klerith/react-vite-counter-app/tree/fin-seccion-4)
 
 <details>
 
@@ -139,10 +133,6 @@ _El archivo `package-lock.json` solo se crea con cra, es decir, con una aplicaci
 - [Presentando Hooks](https://es.legacy.reactjs.org/docs/hooks-intro.html)
 - [SyntheticEvent](https://es.legacy.reactjs.org/docs/events.html)
 - [Ejemplo - Tarea de desestructuración de arreglos](https://github.com/Klerith/react-intro-javascript/blob/master/src/bases/07-deses-arr.js)
-- []()
-- []()
-- []()
-- []()
 
 </details>
 
