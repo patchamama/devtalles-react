@@ -72,12 +72,25 @@ npm install
 npm start
 ```
 
+Para cambiar de `npm` a `yarn` o viceversa, es suficiente con borrar la carpeta `jarn.lock` o `package-lock.json` y ejecutar nuevamente `npm install` o `yarn install`, pero esto no se recomienda.
+
+_El archivo `package-lock.json` solo se crea con cra, es decir, con una aplicación creada con vite no aparece este archivo_.
+
+**Single Page Application (SPA)**: _Tipo de aplicación que se crea por defecto con create-react-app en React_. [Más información](https://en.wikipedia.org/wiki/Single-page_application).
+
+**Vite** fue creado por [Evan You](https://evanyou.me/), el mismo creador de vueJS.
+
 <details>
 
 <summary>Recursos</summary>
 
 - [Vite](https://vitejs.dev/)
-- [Create React App](https://create-react-app.dev/)
+- [Create React App (CRA)](https://create-react-app.dev/)
+- [CRA - Available Scripts](https://create-react-app.dev/docs/available-scripts/)
+- [Learn Progresive Web App (PWA)](https://web.dev/learn/pwa/)
+- [Robots.txt](https://developers.google.com/search/docs/crawling-indexing/robots/intro?hl=es&visit_id=637909934831052162-4097033822&rd=1)
+- []()
+- []()
 - []()
 - []()
 - []()
