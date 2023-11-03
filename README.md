@@ -147,4 +147,4 @@ _El archivo `package-lock.json` solo se crea con cra, es decir, con una aplicaci
 - Cambiar el nombre de una variable en todo el documento: Seleccionar la variable + fn + F2
 - Poner comentario en línea: Cmd + , (después de seleccionar el texto o sobre la línea a comentar)
 - Ordenar líneas ascendentemente (css styles): Cmd + Shift + P > Sort Lines Ascending
-- Crear un functional-component. Snippet: `rafc` _hay que tener instalado [ES7](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)_
+- Crear un functional-component. Snippet: `rafc` _hay que tener instalado [ES7 en vscode](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)._
