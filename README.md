@@ -123,3 +123,7 @@ _El archivo `package-lock.json` solo se crea con cra, es decir, con una aplicaci
 - []()
 
 </details>
+
+### Atajos del teclado (MacOSx) con vscode
+
+- Ordenar líneas ascendentemente (css styles): Cmd + Shift + P > Sort Lines Ascending
