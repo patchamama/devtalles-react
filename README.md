@@ -63,7 +63,7 @@ yarn install
 yarn dev
 ```
 
-#### Instalar `React` usando [create-react-app](03-counter-app-cra):
+#### Instalar `React` usando [create-react-app (CRA)](03-counter-app-cra):
 
 ```
 npx create-react-app <app-name>
@@ -147,4 +147,4 @@ _El archivo `package-lock.json` solo se crea con cra, es decir, con una aplicaci
 - Cambiar el nombre de una variable en todo el documento: Seleccionar la variable + fn + F2
 - Poner comentario en línea: Cmd + , (después de seleccionar el texto o sobre la línea a comentar)
 - Ordenar líneas ascendentemente (css styles): Cmd + Shift + P > Sort Lines Ascending
-- Crear un functional-component. Snippet: `rafc`
+- Crear un functional-component. Snippet: `rafc` _hay que tener instalado [ES7](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)_
