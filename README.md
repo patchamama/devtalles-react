@@ -175,7 +175,7 @@ npm install --save-dev babel-jest @babel/core @babel/preset-env
 <summary>Recursos</summary>
 
 - [Jest - Documentación oficial](https://jestjs.io/)
-- []()
+- [heroes.js - Gist](https://gist.github.com/Klerith/4aeb99d31aedbc29ff4d54bbb77d2d7f)
 - []()
 - []()
 - []()
