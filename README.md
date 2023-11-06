@@ -140,15 +140,24 @@ _El archivo `package-lock.json` solo se crea con cra, es decir, con una aplicaci
 
     _AAA_: Arrange - arreglar, Act - Actuar , Assert - Afirmar
     _Partes de las pruebas_: 1. Inicialización, 2. Estímulo (lo que se aplica al sujeto de las pruebas), 3. Las aserciones (observar el comportamiento esperado)
+    _en caso de ver el error "You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel asynchronously.": Cambiar extensión de los archivos jest.config.js y babel.config.js a .cjs_
 
-- [Mi primera prueba y configuraciones iniciales]()
+- Mi primera prueba y configuraciones iniciales
 
 ```
 yarn add --dev jest
 yarn add -D @types/jest
+yarn add --dev babel-jest @babel/core @babel/preset-env
 ```
 
-_Con npm sería: `npm install -save-dev jest` y `npm install -D @types/jest`_
+_Con npm sería:_
+
+```
+npm install -save-dev jest
+npm install -D @types/jest
+npm install --save-dev babel-jest @babel/core @babel/preset-env
+```
+
 \_Agregar al archivo package.json: "test": "jest --watch All" en la sección de scripts.
 
 - []()
