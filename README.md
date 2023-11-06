@@ -139,14 +139,16 @@ _El archivo `package-lock.json` solo se crea con cra, es decir, con una aplicaci
 ### Sección 5: Pruebas unitarias y de integración - Probando las secciones anteriores
 
     _AAA_: Arrange - arreglar, Act - Actuar , Assert - Afirmar
+    _Partes de las pruebas_: 1. Inicialización, 2. Estímulo (lo que se aplica al sujeto de las pruebas), 3. Las aserciones (observar el comportamiento esperado)
 
 - [Mi primera prueba y configuraciones iniciales]()
 
 ```
 yarn add --dev jest
+yarn add -D @types/jest
 ```
 
-_Con npm sería: `npm install -save-dev jest`_
+_Con npm sería: `npm install -save-dev jest` y `npm install -D @types/jest`_
 \_Agregar al archivo package.json: "test": "jest --watch All" en la sección de scripts.
 
 - []()
@@ -163,7 +165,7 @@ _Con npm sería: `npm install -save-dev jest`_
 
 <summary>Recursos</summary>
 
-- [Jest](https://jestjs.io/)
+- [Jest - Documentación oficial](https://jestjs.io/)
 - []()
 - []()
 - []()
