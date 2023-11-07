@@ -2,7 +2,7 @@
 
 import PropTypes from 'prop-types'
 
-export const FirstApp = ({ title = 'Hola, Soy Fernando', subTitle }) => {
+export const FirstApp = ({ title, subTitle, name }) => {
   //   if (!title) {
   //     throw new Error('El title no existe')
   //   }
@@ -10,14 +10,21 @@ export const FirstApp = ({ title = 'Hola, Soy Fernando', subTitle }) => {
   return (
     <>
       <h1>{title}</h1>
-      <p>{subTitle + 1}</p>
+      <p>{subTitle}</p>
+      <p>{name}</p>
     </>
   )
 }
 
 FirstApp.propTypes = {
   title: PropTypes.string.isRequired,
-  subTitle: PropTypes.number,
+  subTitle: PropTypes.string,
+}
+
+FirstApp.defaultProps = {
+  name: 'Goku',
+  subTitle: 'Soy un subtitulo',
+  // title: 'Hola, Soy Goku',
 }
 
 export default FirstApp

@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@testing-library/react": "^14.0.0",
     "whatwg-fetch": "^3.6.19"
   }
 }

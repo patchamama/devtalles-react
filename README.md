@@ -148,7 +148,8 @@ _El archivo `package-lock.json` solo se crea con cra, es decir, con una aplicaci
 yarn add --dev jest
 yarn add -D @types/jest
 yarn add --dev babel-jest @babel/core @babel/preset-env
-yarn add -D wahtwg-fetch
+yarn add -D whatwg-fetch
+yarn add --dev @testing-library/react
 ```
 
 _Con npm sería:_
@@ -157,10 +158,13 @@ _Con npm sería:_
 npm install -save-dev jest
 npm install -D @types/jest
 npm install --save-dev babel-jest @babel/core @babel/preset-env
-npm install -D wahtwg-fetch
+npm install -D whatwg-fetch
+npm install --dev @testing-library/react
 ```
 
 \_Agregar al archivo package.json: "test": "jest --watch All" en la sección de scripts.
+
+_React Testing Library_ es muy bueno para trabajar con el Dom, simular clics... y es mejor para ello que _Jest_ (que está más orientada a las aserciones, mocks... ). Ambas pueden funcionar juntas para los tests.
 
 - []()
 - []()
@@ -179,8 +183,8 @@ npm install -D wahtwg-fetch
 - [Jest - Documentación oficial](https://jestjs.io/)
 - [heroes.js - Gist](https://gist.github.com/Klerith/4aeb99d31aedbc29ff4d54bbb77d2d7f)
 - [Giphy API - Developers](https://developers.giphy.com/)
-- []()
-- []()
+- [https://jestjs.io/docs/getting-started](https://jestjs.io/docs/getting-started)
+- [https://testing-library.com/](https://testing-library.com/)
 - []()
 - []()
 - []()
