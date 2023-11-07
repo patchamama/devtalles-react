@@ -22,8 +22,8 @@ FirstApp.propTypes = {
 }
 
 FirstApp.defaultProps = {
-  name: 'Goku',
-  subTitle: 'Soy un subtitulo',
+  name: 'Fernando Herrera',
+  subTitle: 'No hay subtitulo',
   // title: 'Hola, Soy Goku',
 }
 

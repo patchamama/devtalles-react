@@ -150,6 +150,8 @@ yarn add -D @types/jest
 yarn add --dev babel-jest @babel/core @babel/preset-env
 yarn add -D whatwg-fetch
 yarn add --dev @testing-library/react
+yarn add -D jest-environment-jsdom
+yarn add -D @babel/preset-react
 ```
 
 _Con npm sería:_
@@ -160,11 +162,33 @@ npm install -D @types/jest
 npm install --save-dev babel-jest @babel/core @babel/preset-env
 npm install -D whatwg-fetch
 npm install --dev @testing-library/react
+npm install -D jest-environment-jsdom
+npm install -D @babel/preset-react
 ```
 
 \_Agregar al archivo package.json: "test": "jest --watch All" en la sección de scripts.
 
 _React Testing Library_ es muy bueno para trabajar con el Dom, simular clics... y es mejor para ello que _Jest_ (que está más orientada a las aserciones, mocks... ). Ambas pueden funcionar juntas para los tests.
+
+      Sí Error: ReferenceError: module is not defined in ES module scope
+      This file is being treated as an ES module because it has a '.js' file extension and '...' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+      Cambiar contenido de `jest.config.js`
+
+      ```
+      module.exports = {
+      testEnvironment: 'jest-environment-jsdom',
+      setupFiles: ['./jest.setup.js']
+      }
+      ```
+
+      por
+
+      ```
+      export default {
+      testEnvironment: 'jest-environment-jsdom',
+      setupFiles: ['./jest.setup.js']
+      }
+      ```
 
 - []()
 - []()
