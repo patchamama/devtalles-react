@@ -9,7 +9,9 @@ export const FirstApp = ({ title, subTitle, name }) => {
 
   return (
     <>
-      <h1> {title} </h1>
+      <div data-testid='tet-title'> {title} </div>
+      <p>{subTitle}</p>
+      <p>{subTitle}</p>
       <p>{subTitle}</p>
       <p>{name}</p>
     </>
