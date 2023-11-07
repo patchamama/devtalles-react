@@ -231,10 +231,16 @@ _React Testing Library_ es muy bueno para trabajar con el Dom, simular clics... 
 
 ### Sección 6: GifExpertApp - Aplicación
 
-- [Inicio de proyecto - GifExpertApp]()
-- []()
-- []()
-- []()
+- [Inicio de proyecto - GifExpertApp](https://github.com/patchamama/devtalles-react/commit/b26d62eb5fea12252621afe44ba3c739d72107fb)
+- [Creando una lista de categorias](https://github.com/patchamama/devtalles-react/blob/2952031f04813e20467e88837c3d431e93491182/04-gif-expert-app/src/GifExpertApp.jsx)
+- [Agregar una nueva categoría](https://github.com/patchamama/devtalles-react/blob/b8723c67851b535f7eeb9e3a4c84479f67d5ac4e/04-gif-expert-app/src/GifExpertApp.jsx)
+- [Componente AddCategory](https://github.com/patchamama/devtalles-react/commit/46514aad6adc81a6cd9f4578cea28dc0f8bf37a6)
+- [Comunicación entre componentes](https://github.com/patchamama/devtalles-react/commit/8ebcd69bbafbdc178a5d442d03630626c9d86f5a)
+- [Emitir un evento al padre](https://github.com/patchamama/devtalles-react/commit/b74e1ac4bf49a09dd6f9f0de4185e5271c9aa3b7)
+- [Validar que sean únicos los nombres](https://github.com/patchamama/devtalles-react/blob/15dcb362aa468656cf727591ccd74335807ab1dd/04-gif-expert-app/src/GifExpertApp.jsx)
+- [GifGrid - Nuevo componente](https://github.com/patchamama/devtalles-react/commit/e37200a51a8626118db9363fdc6e319e01a25d2a)
+- [Fetch API - Obtener las imágenes deseadas](https://github.com/patchamama/devtalles-react/commit/4ac16241be0d1ae34def072f458d6b4403a04fea)
+- [useEffect](https://github.com/patchamama/devtalles-react/blob/e7f8986ee3029a29fb1d1859fe94b67b92f91a7d/04-gif-expert-app/src/components/GifGrid.jsx)
 - Demostración de producción (usando http-server):
 
 ```
@@ -242,6 +248,12 @@ brew install http-server
 cd dist
 http-server -o
 ```
+
+- [Mostrar los títulos de las imágenes](https://github.com/patchamama/devtalles-react/commit/51fc8e28e2c3299aeead957c0a543f8387f560eb)
+- [className - Clases de css](https://github.com/patchamama/devtalles-react/commit/4906a07ca6ad197c285f3fb8b7ecb16b4c57923e)
+- [Custom Hook - useFetchGifs](https://github.com/patchamama/devtalles-react/commit/ce4b371eeff668a17186543294f06b3674d9136d)
+- [Mostrar mensaje de carga](https://github.com/patchamama/devtalles-react/blob/420bc49ee61b57c42e037a96d3d5d3df044a3bf0/04-gif-expert-app/src/components/GifGrid.jsx)
+- [Archivos de barril - index.js](https://github.com/patchamama/devtalles-react/commit/0463e01d57bfa040ef371747d5fda301887d3c1c) -[Código fuente de la sección](https://github.com/Klerith/react-vite-gif-expert/tree/fin-seccion-6)
 
 <details>
 
