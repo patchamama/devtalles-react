@@ -247,6 +247,7 @@ Deploy de [GifExpertApp](https://patchamama.github.io/devtalles-react/04-gif-exp
 
 ```
 brew install http-server
+yarn build
 cd dist
 http-server -o
 ```
