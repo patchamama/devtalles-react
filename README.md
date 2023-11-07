@@ -170,7 +170,7 @@ npm install -D @babel/preset-react
 
 _React Testing Library_ es muy bueno para trabajar con el Dom, simular clics... y es mejor para ello que _Jest_ (que está más orientada a las aserciones, mocks... ). Ambas pueden funcionar juntas para los tests.
 
-      Sí Error: ReferenceError: module is not defined in ES module scope
+      - Sí Error: ReferenceError: module is not defined in ES module scope
       This file is being treated as an ES module because it has a '.js' file extension and '...' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
       Cambiar contenido de `jest.config.js`
 
@@ -189,6 +189,10 @@ _React Testing Library_ es muy bueno para trabajar con el Dom, simular clics... 
       setupFiles: ['./jest.setup.js']
       }
       ```
+      - Aparecen `describe` y `test` como no definidos en vscode, agregar las siguiente línea en el archivo .`eslintrc` :
+      "env": {
+         "jest": true
+      }
 
 - []()
 - []()
