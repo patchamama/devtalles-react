@@ -235,6 +235,13 @@ _React Testing Library_ es muy bueno para trabajar con el Dom, simular clics... 
 - []()
 - []()
 - []()
+- Demostración de producción (usando http-server):
+
+```
+brew install http-server
+cd dist
+http-server -o
+```
 
 <details>
 
@@ -246,6 +253,7 @@ _React Testing Library_ es muy bueno para trabajar con el Dom, simular clics... 
 - [Estilos GifExpertApp](https://gist.github.com/Klerith/e4fca6ac127ccb9abd1e8ad77fcd52f1)
 - [Giphy Developers - Search Endpoint](https://developers.giphy.com/branch/master/docs/api/endpoint/#search)
 - [https://reactjs.org/docs/strict-mode.html](https://reactjs.org/docs/strict-mode.html)
+- [http-server](https://www.npmjs.com/package/http-server)
 
 </details>
 
