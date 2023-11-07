@@ -148,6 +148,7 @@ _El archivo `package-lock.json` solo se crea con cra, es decir, con una aplicaci
 yarn add --dev jest
 yarn add -D @types/jest
 yarn add --dev babel-jest @babel/core @babel/preset-env
+yarn add -D wahtwg-fetch
 ```
 
 _Con npm sería:_
@@ -156,6 +157,7 @@ _Con npm sería:_
 npm install -save-dev jest
 npm install -D @types/jest
 npm install --save-dev babel-jest @babel/core @babel/preset-env
+npm install -D wahtwg-fetch
 ```
 
 \_Agregar al archivo package.json: "test": "jest --watch All" en la sección de scripts.
@@ -176,7 +178,7 @@ npm install --save-dev babel-jest @babel/core @babel/preset-env
 
 - [Jest - Documentación oficial](https://jestjs.io/)
 - [heroes.js - Gist](https://gist.github.com/Klerith/4aeb99d31aedbc29ff4d54bbb77d2d7f)
-- []()
+- [Giphy API - Developers](https://developers.giphy.com/)
 - []()
 - []()
 - []()
