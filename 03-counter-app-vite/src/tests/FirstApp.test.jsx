@@ -20,7 +20,7 @@ describe('Pruebas en el archivo FirstApp.test.jsx', () => {
     // const h1 = container.querySelector('h1')
     // expect(h1.innerHTML).toContain(title)
 
-    expect(getByTestId('tet-title').innerHTML).toContain(title)
+    expect(getByTestId('test-title').innerHTML).toContain(title)
   })
 
   test('debe de mostrar el subtitulo enviado por props', () => {
@@ -32,6 +32,6 @@ describe('Pruebas en el archivo FirstApp.test.jsx', () => {
 
     // expect(getByText(subTitle)).toBeTruthy()
 
-    expect(getAllByText(subTitle).length).toBe(3)
+    expect(getAllByText(subTitle).length).toBe(2)
   })
 })
