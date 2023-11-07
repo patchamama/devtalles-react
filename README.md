@@ -115,9 +115,9 @@ _El archivo `package-lock.json` solo se crea con cra, es decir, con una aplicaci
 (Cualquier warning no usado, comentar el código)
 </details>
 
-- [Evento click (Eventos en general)](https://github.com/patchamama/devtalles-react/commit/a0f83defb4023e29bea097d6b0671797696ca3d3)
-- [useState - Hook](https://github.com/patchamama/devtalles-react/commit/7a6368db9edce975d2c3c0d677c066c8a83c630f)
-- [handleSubtract y jandleReset](https://github.com/patchamama/devtalles-react/commit/de7113ac27208fc9a4498efd7f7c32d549c13e76)
+- [Evento click (Eventos en general)](https://github.com/patchamama/devtalles-react/blob/a0f83defb4023e29bea097d6b0671797696ca3d3/03-counter-app-vite/src/CounterApp.jsx)
+- [useState - Hook](https://github.com/patchamama/devtalles-react/blob/7a6368db9edce975d2c3c0d677c066c8a83c630f/03-counter-app-vite/src/CounterApp.jsx)
+- [handleSubtract y jandleReset](https://github.com/patchamama/devtalles-react/blob/de7113ac27208fc9a4498efd7f7c32d549c13e76/03-counter-app-vite/src/CounterApp.jsx)
 - [Código fuente de la clase](https://github.com/Klerith/react-vite-counter-app/tree/fin-seccion-4)
 
 <details>
@@ -142,7 +142,7 @@ _El archivo `package-lock.json` solo se crea con cra, es decir, con una aplicaci
     _Partes de las pruebas_: 1. Inicialización, 2. Estímulo (lo que se aplica al sujeto de las pruebas), 3. Las aserciones (observar el comportamiento esperado)
     _en caso de ver el error "You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel asynchronously.": Cambiar extensión de los archivos jest.config.js y babel.config.js a .cjs_
 
-- Mi primera prueba y configuraciones iniciales
+- Mi primera prueba y configuraciones iniciales con `yarn`:
 
 ```
 yarn add --dev jest
@@ -154,7 +154,7 @@ yarn add -D jest-environment-jsdom
 yarn add -D @babel/preset-react
 ```
 
-_Con npm sería:_
+_Con `npm` sería:_
 
 ```
 npm install -save-dev jest
@@ -166,7 +166,13 @@ npm install -D jest-environment-jsdom
 npm install -D @babel/preset-react
 ```
 
-\_Agregar al archivo package.json: "test": "jest --watch All" en la sección de scripts.
+Agregar al archivo package.json: "test": "jest --watch All" en la sección de scripts:
+
+```
+"scripts": {
+    "test": "jest --watch All"
+  }
+```
 
 _React Testing Library_ es muy bueno para trabajar con el Dom, simular clics... y es mejor para ello que _Jest_ (que está más orientada a las aserciones, mocks... ). Ambas pueden funcionar juntas para los tests.
 
@@ -237,3 +243,4 @@ _React Testing Library_ es muy bueno para trabajar con el Dom, simular clics... 
 - Poner comentario en línea: Cmd + , (después de seleccionar el texto o sobre la línea a comentar)
 - Ordenar líneas ascendentemente (css styles): Cmd + Shift + P > Sort Lines Ascending
 - Crear un functional-component. Snippet: `rafc` _hay que tener instalado [ES7 en vscode](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)._
+- Para duplicar una línea en vscode, simplemente sin seleccionar nada sobre la línea: Cmd + c, Cmd + v
