@@ -256,7 +256,8 @@ http-server -o
 - [className - Clases de css](https://github.com/patchamama/devtalles-react/commit/4906a07ca6ad197c285f3fb8b7ecb16b4c57923e)
 - [Custom Hook - useFetchGifs](https://github.com/patchamama/devtalles-react/commit/ce4b371eeff668a17186543294f06b3674d9136d)
 - [Mostrar mensaje de carga](https://github.com/patchamama/devtalles-react/blob/420bc49ee61b57c42e037a96d3d5d3df044a3bf0/04-gif-expert-app/src/components/GifGrid.jsx)
-- [Archivos de barril - index.js](https://github.com/patchamama/devtalles-react/commit/0463e01d57bfa040ef371747d5fda301887d3c1c) -[Código fuente de la sección](https://github.com/Klerith/react-vite-gif-expert/tree/fin-seccion-6)
+- [Archivos de barril - index.js](https://github.com/patchamama/devtalles-react/commit/0463e01d57bfa040ef371747d5fda301887d3c1c)
+- [Código fuente de la sección](https://github.com/Klerith/react-vite-gif-expert/tree/fin-seccion-6)
 
 <details>
 
