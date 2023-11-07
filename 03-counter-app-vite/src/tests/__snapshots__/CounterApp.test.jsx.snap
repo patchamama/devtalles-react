@@ -14,7 +14,9 @@ exports[`Pruebas en el archivo <CounterApp /> debe de hacer match con el snapsho
   <button>
     -1
   </button>
-  <button>
+  <button
+    aria-label="btn-reset"
+  >
     Reset
   </button>
 </div>

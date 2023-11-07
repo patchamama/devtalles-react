@@ -21,7 +21,9 @@ const CounterApp = ({ value }) => {
 
       <button onClick={handleEventInc}>+1</button>
       <button onClick={handleEventDec}>-1</button>
-      <button onClick={handleEventReset}>Reset</button>
+      <button aria-label='btn-reset' onClick={handleEventReset}>
+        Reset
+      </button>
     </>
   )
 }
