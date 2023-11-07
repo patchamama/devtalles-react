@@ -231,6 +231,8 @@ _React Testing Library_ es muy bueno para trabajar con el Dom, simular clics... 
 
 ### Sección 6: GifExpertApp - Aplicación
 
+Deploy de [GifExpertApp](https://patchamama.github.io/devtalles-react/04-gif-expert-app/)
+
 - [Inicio de proyecto - GifExpertApp](https://github.com/patchamama/devtalles-react/commit/b26d62eb5fea12252621afe44ba3c739d72107fb)
 - [Creando una lista de categorias](https://github.com/patchamama/devtalles-react/blob/2952031f04813e20467e88837c3d431e93491182/04-gif-expert-app/src/GifExpertApp.jsx)
 - [Agregar una nueva categoría](https://github.com/patchamama/devtalles-react/blob/b8723c67851b535f7eeb9e3a4c84479f67d5ac4e/04-gif-expert-app/src/GifExpertApp.jsx)
