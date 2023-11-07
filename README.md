@@ -245,6 +245,7 @@ _React Testing Library_ es muy bueno para trabajar con el Dom, simular clics... 
 - [Estructura, nombres de folders y componentes en React - Hackernoon.com](https://hackernoon.com/structuring-projects-and-naming-components-in-react-1261b6e18d76)
 - [Estilos GifExpertApp](https://gist.github.com/Klerith/e4fca6ac127ccb9abd1e8ad77fcd52f1)
 - [Giphy Developers - Search Endpoint](https://developers.giphy.com/branch/master/docs/api/endpoint/#search)
+- [https://reactjs.org/docs/strict-mode.html](https://reactjs.org/docs/strict-mode.html)
 
 </details>
 
