@@ -189,20 +189,25 @@ _React Testing Library_ es muy bueno para trabajar con el Dom, simular clics... 
       setupFiles: ['./jest.setup.js']
       }
       ```
-      - Aparecen `describe` y `test` como no definidos en vscode, agregar las siguiente línea en el archivo .`eslintrc` :
+      - Sí aparece `describe` y/o `test` como no definidos en vscode, agregar las siguiente línea en el archivo .`eslintrc` :
       "env": {
          "jest": true
       }
 
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+- [Jest - Expect - toBe](https://github.com/patchamama/devtalles-react/blob/495604d5400d274e854e9ad0404d0720ed878e80/03-counter-app-vite/src/tests/demo.test.js)
+- [Pruebas en el archivo 02-template-strings.js](https://github.com/patchamama/devtalles-react/blob/56ce6ba88284b38f71c942b198099275f92f25ea/03-counter-app-vite/src/tests/base-pruebas/02-template-string.test.js)
+- [toEqual](https://github.com/patchamama/devtalles-react/blob/c0581064d019834fa557c0d7b9b339f9f56462c3/03-counter-app-vite/src/tests/base-pruebas/05-funciones.test.js)
+- [Pruebas en 08-imp-exp.js - Arreglos](https://github.com/patchamama/devtalles-react/blob/033ccc8c03e5a3e0acf242146dfbabea3304a578/03-counter-app-vite/src/tests/base-pruebas/08-imp-exp.test.js)
+- [Pruebas en el archivo 07-deses.arr.js](https://github.com/patchamama/devtalles-react/blob/e49496da89e66a5428748b78e37c638b8edb3571/03-counter-app-vite/src/tests/base-pruebas/07-deses-arr.test.js)
+- [Pruebas con tareas asíncronas](https://github.com/patchamama/devtalles-react/blob/1ffc055de4404344dcebeecadc157d844910544d/03-counter-app-vite/src/tests/base-pruebas/09-promesas.test.js)
+- [Pruebas con async-await](https://github.com/patchamama/devtalles-react/blob/37629d0103c6372ff67d78953c15a00e29e548d2/03-counter-app-vite/src/tests/base-pruebas/11-async-await.test.js)
+- [Pruebas en FirstApp - Componentes de React](https://github.com/patchamama/devtalles-react/blob/64298b36f1410470d993eb0488711485500edc9f/03-counter-app-vite/src/tests/FirstApp.test.jsx)
+- [Probar FirstApp (toMatchSnapshot)](https://github.com/patchamama/devtalles-react/blob/4f51e4126b42a5579a65140ddb104b491580827b/03-counter-app-vite/src/tests/FirstApp.test.jsx)
+- [getByTestId y otras props](https://github.com/patchamama/devtalles-react/blob/a89a6643406616fd087e938f72a475d7261275fe/03-counter-app-vite/src/tests/FirstApp.test.jsx)
+- [Screen - Testing Library](https://github.com/patchamama/devtalles-react/blob/faaa5fb0192806fa4e2348d0ca9e5acb9c5a20b2/03-counter-app-vite/src/tests/FirstApp.test.jsx)
+- [Pruebas básicas del CounterApp](https://github.com/patchamama/devtalles-react/blob/9d13920c0f796dd8f630ed96681e1ef3e3259d79/03-counter-app-vite/src/tests/CounterApp.test.jsx)
+- [Simular eventos - Click](https://github.com/patchamama/devtalles-react/blob/72d4c9acb6fad4323d944190b0b9f420c2e260e6/03-counter-app-vite/src/tests/CounterApp.test.jsx)
+- [Código fuente de la sección](https://github.com/Klerith/react-vite-counter-app/tree/fin-seccion-5)
 
 <details>
 
