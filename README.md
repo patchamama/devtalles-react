@@ -224,6 +224,20 @@ _React Testing Library_ es muy bueno para trabajar con el Dom, simular clics... 
 - [Giphy API - Developers](https://developers.giphy.com/)
 - [https://jestjs.io/docs/getting-started](https://jestjs.io/docs/getting-started)
 - [https://testing-library.com/](https://testing-library.com/)
+
+</details>
+
+### Sección 6: GifExpertApp - Aplicación
+
+- []()
+- []()
+- []()
+- []()
+
+<details>
+
+<summary>Recursos</summary>
+
 - []()
 - []()
 - []()
