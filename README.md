@@ -82,17 +82,17 @@ _El archivo `package-lock.json` solo se crea con cra, es decir, con una aplicaci
 
 #### Subsecciones
 
-- [Primera aplicación de React](https://github.com/patchamama/devtalles-react/commit/ac0555be4050332a572acd83f3114afcc96cdf04)
-- [Estructura de directorios, CRA vs Vite](https://github.com/patchamama/devtalles-react/commit/3000dc754c71adafff1f3f4c1caf17692171606d)
-- [Hola Mundo en React](https://github.com/patchamama/devtalles-react/commit/fca38fefe68dfa066c0a14fd480236ba6a26e79b)
-- [Nuestro primer Componente](https://github.com/patchamama/devtalles-react/commit/859c2de3a8421705f393333a87c2031fbde7e207). _Nota: sí aparece un error de "function export don't declare", agregar en el contenido del componente creado al final `export default HelloWorldApp`_
+- [Primera aplicación de React](https://github.com/patchamama/devtalles-react/tree/ac0555be4050332a572acd83f3114afcc96cdf04/03-counter-app-vite)
+- Estructura de directorios: [CRA](https://github.com/patchamama/devtalles-react/tree/3000dc754c71adafff1f3f4c1caf17692171606d/03-counter-app-cra) vs [Vite](https://github.com/patchamama/devtalles-react/tree/3000dc754c71adafff1f3f4c1caf17692171606d/03-counter-app-vite)
+- [Hola Mundo en React](https://github.com/patchamama/devtalles-react/blob/fca38fefe68dfa066c0a14fd480236ba6a26e79b/03-counter-app-vite/src/main.jsx)
+- [Nuestro primer Componente](https://github.com/patchamama/devtalles-react/blob/859c2de3a8421705f393333a87c2031fbde7e207/03-counter-app-vite/src/HelloWorldApp.jsx). _Nota: sí aparece un error de "function export don't declare", agregar en el contenido del componente creado al final `export default HelloWorldApp`_
 - [Tarea - Crear un nuevo componente](https://github.com/patchamama/devtalles-react/commit/ef33860eaf95616b0cee2151e27735c8b7bb3bfb)
-- [Retornar elementos en el Componente - Fragment](https://github.com/patchamama/devtalles-react/commit/9e4e0db04735aec84fa4c52ec85034989719e426)
-- [Impresión de variables en el HTML](https://github.com/patchamama/devtalles-react/commit/426e5104ffb548715cc10f42f87d3e0fd9af4376)
+- [Retornar elementos en el Componente - Fragment](https://github.com/patchamama/devtalles-react/blob/9e4e0db04735aec84fa4c52ec85034989719e426/03-counter-app-vite/src/FirstApp.jsx)
+- [Impresión de variables en el HTML](https://github.com/patchamama/devtalles-react/blob/426e5104ffb548715cc10f42f87d3e0fd9af4376/03-counter-app-vite/src/FirstApp.jsx)
 - [Colocar estilos de CSS](https://github.com/patchamama/devtalles-react/commit/91da1b152bddad488e312cb8fc4aada8407fd79c)
 - [Comunicación entre componentes Props](https://github.com/patchamama/devtalles-react/commit/1bcf4ea8a4617604e430ff834f5f8c352cff93d5)
-- [PropTypes](https://github.com/patchamama/devtalles-react/commit/b69ed37589e467451ad28280f58e6be3a9054553) _En `CRA` aparece instalado por defecto pero en `vite` hay que instalarlo: `import PropTypes from 'prop-types'` para importar en los componentes y desde terminal `yarn add prop-types`_
-- [Tarea - Componente CounterApp](https://github.com/patchamama/devtalles-react/commit/0cda31f9cdd65050f1bb67f668a165723c9b1599)
+- [PropTypes](https://github.com/patchamama/devtalles-react/blob/b69ed37589e467451ad28280f58e6be3a9054553/03-counter-app-vite/src/FirstApp.jsx) _En `CRA` aparece instalado por defecto pero en `vite` hay que instalarlo: `import PropTypes from 'prop-types'` para importar en los componentes y desde terminal `yarn add prop-types`_
+- [Tarea - Componente CounterApp](https://github.com/patchamama/devtalles-react/blob/0cda31f9cdd65050f1bb67f668a165723c9b1599/03-counter-app-vite/src/CounterApp.jsx)
 
 <details>
 
