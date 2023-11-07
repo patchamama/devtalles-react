@@ -174,6 +174,8 @@ Agregar al archivo package.json: "test": "jest --watch All" en la sección de sc
   }
 ```
 
+Archivos de configuración [babel.config.cjs](https://github.com/patchamama/devtalles-react/blob/72d4c9acb6fad4323d944190b0b9f420c2e260e6/03-counter-app-vite/babel.config.cjs), [jest.config.js](https://github.com/patchamama/devtalles-react/blob/72d4c9acb6fad4323d944190b0b9f420c2e260e6/03-counter-app-vite/jest.config.js) y [jest.setup.js](https://github.com/patchamama/devtalles-react/blob/72d4c9acb6fad4323d944190b0b9f420c2e260e6/03-counter-app-vite/jest.setup.js). Con esto ya debe de estar bien configurado `vite` para hacer testing usando `jest` y `testing-library`.
+
 _React Testing Library_ es muy bueno para trabajar con el Dom, simular clics... y es mejor para ello que _Jest_ (que está más orientada a las aserciones, mocks... ). Ambas pueden funcionar juntas para los tests.
 
       - Sí Error: ReferenceError: module is not defined in ES module scope
@@ -229,7 +231,7 @@ _React Testing Library_ es muy bueno para trabajar con el Dom, simular clics... 
 
 ### Sección 6: GifExpertApp - Aplicación
 
-- []()
+- [Inicio de proyecto - GifExpertApp]()
 - []()
 - []()
 - []()
@@ -238,7 +240,7 @@ _React Testing Library_ es muy bueno para trabajar con el Dom, simular clics... 
 
 <summary>Recursos</summary>
 
-- []()
+- [Giphy API - Developers](https://developers.giphy.com/)
 - []()
 - []()
 - []()
