@@ -9,6 +9,10 @@ export const GifExpertApp = () => {
   ])
 
   const onAddCategory = (newCategory) => {
+    if (categories.includes(newCategory)) {
+      console.log('Ya existe esa categoría')
+      return
+    }
     setCategories([newCategory, ...categories])
     // setCategories(['HunterXHunter', ...categories])
     // setCategories((cats) => [...cats, 'HunterXHunter'])
