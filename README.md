@@ -305,23 +305,17 @@ git push -u origin main
 
 ```
 
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+- Actualizar código para ser usado en Github Pages
+
+(_Cambiar en src/index.html la ruta a los archivos .css y .js a relativa para que se despligue bien en github pages_)[]
 
 <details>
 
 <summary>Recursos</summary>
 
 - [netlify.com/](https://www.netlify.com/)
-- []()
-- []()
-- []()
-- []()
+- [Configurar name y el email en Git](https://docs.github.com/en/enterprise/2.13/user/articles/setting-your-username-in-git)
+- [Github - Website]https://github.com/)
 
 </details>
 
