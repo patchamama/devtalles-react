@@ -284,11 +284,24 @@ http-server -o
 // Crear respositorio
 git init
 
+// Agregar todos los archivos al repo para actualización
+git add .
+
 // Realizar commit
 git commit -m "First commit"
 
 // Restaurar repo a como estaba en el último commit
 git checkout -- .
+
+// Agregar un repositorio externo a donde actualizar en remoto
+git remote add origin <git url>
+
+// Cambiar el nombre de la rama y cambiarse a ella
+git branch -M main
+
+// Actualizar repositorio remoto
+// La primera vez que se hace el push se piden las credenciales de git para acceder
+git push -u origin main
 
 ```
 
