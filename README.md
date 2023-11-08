@@ -232,8 +232,7 @@ _React Testing Library_ es muy bueno para trabajar con el Dom, simular clics... 
 
 ### Sección 6: GifExpertApp - Aplicación
 
-Deploy de [GifExpertApp](https://patchamama.github.io/devtalles-react/04-gif-expert-app/)
-Debploy in [netlify](https://git-expert-fer1.netlify.app/)
+Deploy de GifExpertApp en [GitHub Pages](https://patchamama.github.io/devtalles-react/04-gif-expert-app/) y [netlify](https://git-expert-fer1.netlify.app/).
 
 - [Inicio de proyecto - GifExpertApp](https://github.com/patchamama/devtalles-react/commit/b26d62eb5fea12252621afe44ba3c739d72107fb)
 - [Creando una lista de categorias](https://github.com/patchamama/devtalles-react/blob/2952031f04813e20467e88837c3d431e93491182/04-gif-expert-app/src/GifExpertApp.jsx)
@@ -307,7 +306,7 @@ git push -u origin main
 
 - Actualizar código para ser usado en Github Pages
 
-(_Cambiar en `dist/index.html` o `docs/index.html` la ruta a los archivos .css y .js a relativa para que se despligue bien en github pages_)[]
+(_Cambiar en `dist/index.html` o `docs/index.html` la ruta a los archivos .css y .js a relativa para que se despligue bien en github pages, es decir, de src="/..." a src="./..."_)[https://github.com/patchamama/devtalles-react/commit/63d04bbf117de2ad3866fb17f3e89bd3a235c8e0#diff-c56d13deec71051f24aa217ae7a8bd4d36c1e9dfc3975252c5874a293ff6e481]
 
 <details>
 
