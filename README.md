@@ -271,6 +271,17 @@ http-server -o
 - [Giphy Developers - Search Endpoint](https://developers.giphy.com/branch/master/docs/api/endpoint/#search)
 - [https://reactjs.org/docs/strict-mode.html](https://reactjs.org/docs/strict-mode.html)
 - [http-server](https://www.npmjs.com/package/http-server)
+- [React-Router issue when deployed to Github Pages?](https://stackoverflow.com/questions/71290365/react-router-issue-when-deployed-to-github-pages)
+
+</details>
+
+### Sección 7: Generando el build de producción y despliegues
+
+<details>
+
+<summary>Recursos</summary>
+
+- []()
 
 </details>
 
