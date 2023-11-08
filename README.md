@@ -306,7 +306,7 @@ git push -u origin main
 
 - Actualizar código para ser usado en Github Pages
 
-(_Cambiar en `dist/index.html` o `docs/index.html` la ruta a los archivos .css y .js a relativa para que se despligue bien en github pages, es decir, de src="/..." a src="./..."_)[https://github.com/patchamama/devtalles-react/commit/63d04bbf117de2ad3866fb17f3e89bd3a235c8e0#diff-c56d13deec71051f24aa217ae7a8bd4d36c1e9dfc3975252c5874a293ff6e481]
+[_Cambiar en `dist/index.html` o `docs/index.html` la ruta a los archivos .css y .js a relativa para que se despligue bien en github pages, es decir, de `src="/..."` a `src="./..."`_](https://github.com/patchamama/devtalles-react/commit/63d04bbf117de2ad3866fb17f3e89bd3a235c8e0#diff-c56d13deec71051f24aa217ae7a8bd4d36c1e9dfc3975252c5874a293ff6e481)
 
 <details>
 
@@ -314,7 +314,7 @@ git push -u origin main
 
 - [netlify.com/](https://www.netlify.com/)
 - [Configurar name y el email en Git](https://docs.github.com/en/enterprise/2.13/user/articles/setting-your-username-in-git)
-- [Github - Website]https://github.com/)
+- [Github - Website](https://github.com/)
 
 </details>
 
