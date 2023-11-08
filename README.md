@@ -307,7 +307,7 @@ git push -u origin main
 
 - Actualizar código para ser usado en Github Pages
 
-(_Cambiar en src/index.html la ruta a los archivos .css y .js a relativa para que se despligue bien en github pages_)[]
+(_Cambiar en `dist/index.html` o `docs/index.html` la ruta a los archivos .css y .js a relativa para que se despligue bien en github pages_)[]
 
 <details>
 
