@@ -48,6 +48,7 @@ Mis notas personales del _Curso de React: De cero a experto (Hooks y MERN)_ brin
 - [Console.functions](https://developer.mozilla.org/es/docs/Web/API/console)
 - [Babel](https://babeljs.io/)
 - [Create-react-app](https://create-react-app.dev/)
+- [Chrome: console.log, console.debug are not working](https://stackoverflow.com/questions/18760213/chrome-console-log-console-debug-are-not-working)
 
 </details>
 
@@ -284,5 +285,5 @@ http-server -o
 - Cambiar el nombre de una variable en todo el documento: Seleccionar la variable + fn + F2
 - Poner comentario en línea: Cmd + , (después de seleccionar el texto o sobre la línea a comentar)
 - Ordenar líneas ascendentemente (css styles): Cmd + Shift + P > Sort Lines Ascending
-- Crear un functional-component. Snippet: `rafc` _hay que tener instalado [ES7 en vscode](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)._
+- Crear un functional-component. Snippet: `rafc` _hay que tener instalado [ES7 en vscode](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)._ Sí no funciona ver [esto](https://stackoverflow.com/questions/68653611/rafce-react-js-shortcut-not-working-in-vscode)
 - Para duplicar una línea en vscode, simplemente sin seleccionar nada sobre la línea: Cmd + c, Cmd + v
