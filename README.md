@@ -366,6 +366,29 @@ export default {
 
 </details>
 
+### Sección 9: Profundizando Hooks - Generales
+
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+
+<details>
+
+<summary>Recursos</summary>
+
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+
+</details>
+
 ---
 
 ### VSCode plugins
