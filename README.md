@@ -340,7 +340,7 @@ export default {
 <summary>Recursos</summary>
 
 - [Testing Library + Vite + Jest](https://gist.github.com/Klerith/ca7e57fae3c9ab92ad08baadc6c26177)
-- []()
+- [react-hooks-testing-library.com](https://react-hooks-testing-library.com/)
 - []()
 - []()
 - []()
