@@ -320,6 +320,8 @@ _Cambiar en `dist/index.html` o `docs/index.html` la ruta a los archivos .css y 
 
 ### Sección 8: Testing - Probando la aplicación de GifExpert
 
+_Un `Mock` es una simulación de una función_
+
 - [Instalación y configuracion de Jest + React Testing Library](https://gist.github.com/Klerith/ca7e57fae3c9ab92ad08baadc6c26177). Información local [aquí](docs/vite-testing-config). Para que no me de error, tengo que cambiar el nombre del archivo `babel.config.js` por `babel.config.cjs` y configurar `jest.config.js` como:
 
 ```

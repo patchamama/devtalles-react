@@ -17,23 +17,59 @@ describe('Pruebas en <AddCategory />', () => {
   // 2. Simular el submit
   test('debe de llamar onNewCategory si el input tiene un valor', () => {
     const inputValue = 'Saitama'
-    const onNewCategory = jest.fn()
+    const onNewCategory = jest.fn() // Mock function
     render(<AddCategory onNewCategory={onNewCategory} />)
+    // render(<AddCategory onNewCategory={() => {}} />)
     // screen.debug()
 
     const input = screen.getByRole('textbox')
     const form = screen.getByRole('form') // toma el valor en el aria-label='form' del componente AddCategory
 
     fireEvent.input(input, { target: { value: inputValue } })
+    expect(input.value).toBe(inputValue)
     // screen.debug()
     fireEvent.submit(form)
 
-    // expect(onNewCategory).toHaveBeenCalled()
-    // expect(onNewCategory).toHaveBeenCalledTimes(1)
-    // expect(onNewCategory).toHaveBeenCalledWith(expect.any(String))
     expect(input.value).toBe('')
+
+    expect(onNewCategory).toHaveBeenCalled()
+    expect(onNewCategory).toHaveBeenCalledTimes(1)
+    // expect(onNewCategory).toHaveBeenCalledWith(expect.any(String))
+    expect(onNewCategory).toHaveBeenCalledWith(inputValue)
   })
 
   // 3. setCategories se debe de haber llamado
-  // 4. El valor del input debe de estar ''
+  test('debe de llamar setCategories si el input tiene un valor', () => {
+    const inputValue = 'Saitama'
+    const onNewCategory = jest.fn() // Mock function
+    render(<AddCategory onNewCategory={onNewCategory} />)
+    // render(<AddCategory onNewCategory={() => {}} />)
+    // screen.debug()
+
+    const input = screen.getByRole('textbox')
+    const form = screen.getByRole('form') // toma el valor en el aria-label='form' del componente AddCategory
+
+    fireEvent.input(input, { target: { value: inputValue } })
+    expect(input.value).toBe(inputValue)
+    // screen.debug()
+    fireEvent.submit(form)
+
+    expect(input.value).toBe('')
+
+    expect(onNewCategory).toHaveBeenCalled()
+    expect(onNewCategory).toHaveBeenCalledTimes(1)
+    // expect(onNewCategory).toHaveBeenCalledWith(expect.any(String))
+    expect(onNewCategory).toHaveBeenCalledWith(inputValue)
+  })
+
+  //4. No debe de llamar al onNewCategory si el input está vacío
+  test('No debe de llamar onNewCategory si el input está vacío', () => {
+    const onNewCategory = jest.fn() // Mock function
+    render(<AddCategory onNewCategory={onNewCategory} />)
+    const form = screen.getByRole('form') // toma el valor en el aria-label='form' del componente AddCategory
+    fireEvent.submit(form)
+
+    expect(onNewCategory).not.toHaveBeenCalled()
+    // expect(onNewCategory).toHaveBeenCalledTimes(0) // lo mismo que el anterior
+  })
 })
