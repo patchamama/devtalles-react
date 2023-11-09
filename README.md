@@ -331,9 +331,16 @@ export default {
 }
 ```
 
-- []()
-- []()
-- []()
+- [Resolución de Tarea implementando PropTypes y Snapshot](https://github.com/patchamama/devtalles-react/blob/5274c47137441088d161f9a2a06a4fecd03ef4c6/04-gif-expert-app/tests/components/GiftItem.test.jsx)
+- [Pruebas del componente - GifGridItem](https://github.com/patchamama/devtalles-react/blob/14b009a0f7473f6ceaaf0ae7484bba73b31015a1/04-gif-expert-app/tests/components/GiftItem.test.jsx)
+- [Pruebas en el helper getGifs](https://github.com/patchamama/devtalles-react/blob/89d5173a322779319ee7bc558e4e765dcc80881f/04-gif-expert-app/tests/helpers/getGifs.test.js)
+- [Pruebas del componente - AddCategory y simular un submit del formulario](https://github.com/patchamama/devtalles-react/blob/4d4418f7e11200a44b5fafaf30b8c55ec9eb6b0f/04-gif-expert-app/tests/components/addCategory.test.jsx)
+- [Jest Functions](https://github.com/patchamama/devtalles-react/blob/4d4418f7e11200a44b5fafaf30b8c55ec9eb6b0f/04-gif-expert-app/tests/components/addCategory.test.jsx)
+- [Pruebas del componente GifGrid - Mock customHook](https://github.com/patchamama/devtalles-react/blob/b1f77c49f08954e6e94290aafbfc3d7b630f78f7/04-gif-expert-app/tests/components/GifGrid.test.jsx)
+- [Hacer un mock completo de un Custom Hook](https://github.com/patchamama/devtalles-react/blob/f7e5991997cc4a165d7fd2b6911bab2ab533bcfd/04-gif-expert-app/tests/components/GifGrid.test.jsx)
+- [Pruebas sobre customHooks](https://github.com/patchamama/devtalles-react/blob/01f16dabba96bdd02be92cdfb4bf4c9eb41f7914/04-gif-expert-app/tests/hooks/useFetchGifs.test.js)
+- [Pruebas de tarea de test con GifExpertApp componente](https://github.com/patchamama/devtalles-react/blob/9495562c019c1bbe33584e4934930ffac09196ca/04-gif-expert-app/tests/GifExpertApp.test.jsx)
+- [Código fuente de la sección](https://github.com/Klerith/react-gif-expert/tree/fin-seccion-8)
 
 <details>
 
@@ -341,10 +348,6 @@ export default {
 
 - [Testing Library + Vite + Jest](https://gist.github.com/Klerith/ca7e57fae3c9ab92ad08baadc6c26177)
 - [react-hooks-testing-library.com](https://react-hooks-testing-library.com/)
-- []()
-- []()
-- []()
-- []()
 
 </details>
 
