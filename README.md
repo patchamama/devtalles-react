@@ -6,6 +6,21 @@ _https://cursos.devtalles.com/courses/take/react-cero-experto_
 
 Mis notas personales del _Curso de React: De cero a experto (Hooks y MERN)_ brindado por _Fernando Herrera_.
 
+## Tabla de contenidos
+
+- [Sección 1: Introducción](#secci-n-1--introducci-n)
+- [Sección 2: Introducción a React y conceptos generales](#secci-n-2--introducci-n-a-react-y-conceptos-generales)
+- [Sección 3: Introducción a JavaScript moderno](#secci-n-3--introducci-n-a-javascript-moderno)
+- [Sección 4: Primeros pasos en React](#secci-n-4--primeros-pasos-en-react)
+- [Sección 5: Pruebas unitarias y de integración - Probando las secciones anteriores](#secci-n-5--pruebas-unitarias-y-de-integraci-n---probando-las-secciones-anteriores)
+- [Sección 6: GifExpertApp - Aplicación](#secci-n-6--gifexpertapp---aplicaci-n)
+- [Sección 7: Generando el build de producción y despliegues](#secci-n-7--generando-el-build-de-producci-n-y-despliegues)
+- [Sección 8: Testing - Probando la aplicación de GifExpert](#secci-n-8--testing---probando-la-aplicaci-n-de-gifexpert)
+- [VSCode plugins](#vscode-plugins)
+- [Atajos del teclado (MacOSx) con vscode](#atajos-del-teclado--macosx--con-vscode)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 ## Secciones
 
 ### Sección 1: Introducción
