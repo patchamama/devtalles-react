@@ -402,3 +402,4 @@ export default {
 - Ordenar líneas ascendentemente (css styles): Cmd + Shift + P > Sort Lines Ascending
 - Crear un functional-component. Snippet: `rafc` _hay que tener instalado [ES7 en vscode](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)._ Sí no funciona ver [esto](https://stackoverflow.com/questions/68653611/rafce-react-js-shortcut-not-working-in-vscode)
 - Para duplicar una línea en vscode, simplemente sin seleccionar nada sobre la línea: Cmd + c, Cmd + v
+- [Snippets en vscode](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_creating-your-own-snippets). VSCode tiene algunos snippets predefinidos como "clg" o "log" para `console.log()`.
