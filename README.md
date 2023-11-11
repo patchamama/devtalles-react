@@ -382,7 +382,7 @@ export default {
 
 - [getBootstrap.com - Sitio oficial](https://getbootstrap.com/)
 - [react-hook-form](react-hook-form)
-- []()
+- [breakingbadapi.com - API](https://breakingbadapi.com/)
 - []()
 - []()
 - []()
