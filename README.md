@@ -368,6 +368,18 @@ export default {
 
 ### Sección 9: Profundizando Hooks - Generales
 
+```js
+const { a, b } = false // a = undefined, b = undefined
+null // null
+!null // true
+!!null // false
+undefined // undefined
+!undefined // true
+!!undefined // false
+!!data && data // true and data (devuelve el valor de data sí data no es undefined o null)
+const { a, b, ...rest } = !!data && data // desestructuración para asignar el valor a las variables a partir de data sí tiene un valor
+```
+
 - []()
 - []()
 - []()
