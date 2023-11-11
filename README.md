@@ -395,7 +395,7 @@ const { a, b, ...rest } = !!data && data // desestructuración para asignar el v
 - [getBootstrap.com - Sitio oficial](https://getbootstrap.com/)
 - [react-hook-form](react-hook-form)
 - [rickandmortyapi.com - API](https://rickandmortyapi.com/documentation/#get-a-single-character)
-- []()
+- [useLayoutEffect - React docs](https://es.reactjs.org/docs/hooks-reference.html#uselayouteffect)
 - []()
 - []()
 
