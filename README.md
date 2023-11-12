@@ -400,12 +400,12 @@ const { a, b, ...rest } = !!data && data // desestructuración para asignar el v
 - [Conectando ambos Hooks](https://github.com/patchamama/devtalles-react/blob/dc2cd76ca8bf01dcd1a95cd11edcedd0cd534492/05-hook-app/src/03-examples/MultipleCustomHooks.jsx)
 - [Optimizaciones al código anterior](https://github.com/patchamama/devtalles-react/commit/aea05af040f591fd490451dc1235f26e4536a3c5)
 - [useRef - Primer uso](https://github.com/patchamama/devtalles-react/blob/c71a5e556aead9375d1f5aeb1a61c9817a86bc7c/05-hook-app/src/04-useRef/FocusScreen.jsx)
-- [useLayoutEffect](https://github.com/patchamama/devtalles-react/commit/663e2b24e0474861665ee0a0a9b402a14c9ea5d4)
+- [useLayoutEffect](https://github.com/patchamama/devtalles-react/commit/663e2b24e0474861665ee0a0a9b402a14c9ea5d4) [Deploy](https://patchamama.github.io/devtalles-react/05-hook-app-05-useLayoutEffect)
 - [Memo - Método de React](https://github.com/patchamama/devtalles-react/commit/0e9fb5dd1d6c9f40b43e457f279a1c70e41fcddf)
-- [useMemo](https://github.com/patchamama/devtalles-react/blob/31414f3bbf937fc6ea46e4c8082783b28807d84d/05-hook-app/src/06-memos/MemoHook.jsx)
+- [useMemo](https://github.com/patchamama/devtalles-react/blob/31414f3bbf937fc6ea46e4c8082783b28807d84d/05-hook-app/src/06-memos/MemoHook.jsx) [Deploy](https://patchamama.github.io/devtalles-react/05-hook-app-06-usememo)
 - [useCallback](https://github.com/patchamama/devtalles-react/commit/d7b03ca042dd119f527a5f4a271a80475c0148cd)
 - [useCallback con argumentos](https://github.com/patchamama/devtalles-react/blob/369908734ea6611da131c8692c90867419e2de81/05-hook-app/src/06-memos/CallbackHook.jsx)
-- [Tarea Memorize](https://github.com/patchamama/devtalles-react/commit/13fdbfec9a59e2e4cdfa65fba48bcc918191fd07)
+- [Tarea Memorize](https://github.com/patchamama/devtalles-react/commit/13fdbfec9a59e2e4cdfa65fba48bcc918191fd07) [Deploy](https://patchamama.github.io/devtalles-react/05-hook-app.07-tarea-memo)
 - [Código fuente de la sección 9](https://github.com/Klerith/react-hooks/tree/fin-seccion-9)
 
 <details>
@@ -434,7 +434,7 @@ const { a, b, ...rest } = !!data && data // desestructuración para asignar el v
 - [Borrar un TODO](https://github.com/patchamama/devtalles-react/commit/5b9d2ae56444567d7d861d55ad44e36356ef4c61)
 - [Toggle Todo - Marcar como completado o pendiente un TODO](https://github.com/patchamama/devtalles-react/commit/a2b70478d960298fbd012a573e87cd693b9701c8)
 - [Tarea - useTodo](https://github.com/patchamama/devtalles-react/commit/e63023586bfceefcf3f02c28590600ede904148b)
-- [Resolución de la tarea - useTodos](https://github.com/patchamama/devtalles-react/commit/55765d73738b48fa9fc299f98eb25f0f9d2ec8fd)
+- [Resolución de la tarea - useTodos](https://github.com/patchamama/devtalles-react/commit/55765d73738b48fa9fc299f98eb25f0f9d2ec8fd) [Deploy](https://patchamama.github.io/devtalles-react/05-hook-app-08.TodoList)
 - [Código fuente de GitHub - Fin sección 10](https://github.com/Klerith/react-hooks/tree/fin-seccion-10)
 
 <details>
