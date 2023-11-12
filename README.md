@@ -416,22 +416,18 @@ const { a, b, ...rest } = !!data && data // desestructuración para asignar el v
 
 ### Sección 10: Profundizando Hooks - useReducer
 
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+- [Idea general de un reducer - Vía código](https://github.com/patchamama/devtalles-react/commit/5be9b89a997a58f5c0e879a97f2613cffcafd2ab)
+- [useReducer - Todo List](https://github.com/patchamama/devtalles-react/commit/bf71ecb5591863dce2f6226f6a0ded38e5e2703f)
+- [Creando el cascarón de la lista de TODOs](https://github.com/patchamama/devtalles-react/commit/f4514e9858c4bdf1ad3803a698b76036be30cc13)
+- [Tarea: Crear componentes y emitir eventos]https://github.com/patchamama/devtalles-react/commit/bc3160cc828da90fd359da51b9fb67bf88f1dd57)
+- [Resolución de la tarea - TodoApp](https://github.com/patchamama/devtalles-react/commit/c50366b380fcd132329acff3d524ff1247eea404)
+- [Agregar un nuevo TODO](https://github.com/patchamama/devtalles-react/commit/91df7cf0e43846d1bfa1c9c291f89ed874a969dd)
+- [Guardar y Leer TODOs en LocalStorage](https://github.com/patchamama/devtalles-react/commit/8cd66575ce888305eb5743658bcac404d27433d8)
+- [Borrar un TODO](https://github.com/patchamama/devtalles-react/commit/5b9d2ae56444567d7d861d55ad44e36356ef4c61)
+- [Toggle Todo - Marcar como completado o pendiente un TODO](https://github.com/patchamama/devtalles-react/commit/a2b70478d960298fbd012a573e87cd693b9701c8)
+- [Tarea - useTodo](https://github.com/patchamama/devtalles-react/commit/e63023586bfceefcf3f02c28590600ede904148b)
+- [Resolución de la tarea - useTodos](https://github.com/patchamama/devtalles-react/commit/55765d73738b48fa9fc299f98eb25f0f9d2ec8fd)
+- [Código fuente de GitHub - Fin sección 10](https://github.com/Klerith/react-hooks/tree/fin-seccion-10)
 
 <details>
 
