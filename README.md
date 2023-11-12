@@ -416,29 +416,36 @@ const { a, b, ...rest } = !!data && data // desestructuración para asignar el v
 
 ### Sección 10: Profundizando Hooks - useReducer
 
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
-- []
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
 
 <details>
 
 <summary>Recursos</summary>
 
-- []
-- []
-- []
-- []
-- []
+- [useReducer - React Docs](https://es.reactjs.org/docs/hooks-reference.html#usereducer)
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
 
 </details>
 
