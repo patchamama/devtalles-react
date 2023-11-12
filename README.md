@@ -380,13 +380,27 @@ undefined // undefined
 const { a, b, ...rest } = !!data && data // desestructuración para asignar el valor a las variables a partir de data sí tiene un valor
 ```
 
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+- [useState](https://github.com/patchamama/devtalles-react/blob/fbb02015f14b74f8bdb915b32dc350f7b4f749ab/05-hook-app/src/01-useState/CounterApp.jsx)
+- [useCounter - CustomHook](https://github.com/patchamama/devtalles-react/commit/8e97388b7eb042847bffac7260fbe621e135d52f)
+- [Exponer métodos del Hook](https://github.com/patchamama/devtalles-react/commit/56704a30e0df944845af4e8e371139dd3855bae2)
+- [useEffect - SimpleForm](https://github.com/patchamama/devtalles-react/blob/53b3233231dccec285a475cf1ac116a02096c337/05-hook-app/src/02-useEffect/SimpleForm.jsx)
+- [Dependencias del useEffect](https://github.com/patchamama/devtalles-react/blob/48c036de792e830b2b2c10598b0c0f08d33b1ab8/05-hook-app/src/02-useEffect/SimpleForm.jsx)
+- [useEffect unmount - Cleanup](https://github.com/patchamama/devtalles-react/blob/ce1f3bd69121bcab0e17d729ac57ac1ece628848/05-hook-app/src/02-useEffect/Message.jsx)
+- [useEffect - Precauciones](https://github.com/patchamama/devtalles-react/blob/a2e2f7201990629484716c5e1ee7d72b5ae446ec/05-hook-app/src/02-useEffect/Message.jsx)
+- [Formulario con custom Hook](https://github.com/patchamama/devtalles-react/blob/17e3f72e0f85b94b592194554ad3840cc165cc6b/05-hook-app/src/02-useEffect/FormWithCustomHook.jsx)
+- [Tarea - Implementar funcionalidad de Reset](https://github.com/patchamama/devtalles-react/commit/def8c069293f79271756835d0d81eb83da9079c9)
+- [useFetch - CustomHook](https://github.com/patchamama/devtalles-react/commit/784159a0bf9d2e73469912f1609bd125a98a83f4)
+- [useFetch + useCounter](https://github.com/patchamama/devtalles-react/commit/b58378ec08b9bd57ef3a0cb809dc6611e8adb369)
+- [Conectando ambos Hooks](https://github.com/patchamama/devtalles-react/blob/dc2cd76ca8bf01dcd1a95cd11edcedd0cd534492/05-hook-app/src/03-examples/MultipleCustomHooks.jsx)
+- [Optimizaciones al código anterior](https://github.com/patchamama/devtalles-react/commit/aea05af040f591fd490451dc1235f26e4536a3c5)
+- [useRef - Primer uso](https://github.com/patchamama/devtalles-react/blob/c71a5e556aead9375d1f5aeb1a61c9817a86bc7c/05-hook-app/src/04-useRef/FocusScreen.jsx)
+- [useLayoutEffect](https://github.com/patchamama/devtalles-react/commit/663e2b24e0474861665ee0a0a9b402a14c9ea5d4)
+- [Memo - Método de React](https://github.com/patchamama/devtalles-react/commit/0e9fb5dd1d6c9f40b43e457f279a1c70e41fcddf)
+- [useMemo](https://github.com/patchamama/devtalles-react/blob/31414f3bbf937fc6ea46e4c8082783b28807d84d/05-hook-app/src/06-memos/MemoHook.jsx)
+- [useCallback](https://github.com/patchamama/devtalles-react/commit/d7b03ca042dd119f527a5f4a271a80475c0148cd)
+- [useCallback con argumentos](https://github.com/patchamama/devtalles-react/blob/369908734ea6611da131c8692c90867419e2de81/05-hook-app/src/06-memos/CallbackHook.jsx)
+- [Tarea Memorize](https://github.com/patchamama/devtalles-react/commit/13fdbfec9a59e2e4cdfa65fba48bcc918191fd07)
+- [Código fuente de la sección 9](https://github.com/Klerith/react-hooks/tree/fin-seccion-9)
 
 <details>
 
@@ -396,8 +410,7 @@ const { a, b, ...rest } = !!data && data // desestructuración para asignar el v
 - [react-hook-form](react-hook-form)
 - [rickandmortyapi.com - API](https://rickandmortyapi.com/documentation/#get-a-single-character)
 - [useLayoutEffect - React docs](https://es.reactjs.org/docs/hooks-reference.html#uselayouteffect)
-- []()
-- []()
+- [Breaking Bad Quotes API](https://breakingbadquotes.xyz/)
 
 </details>
 
