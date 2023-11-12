@@ -1,17 +1,24 @@
 import { TodoAdd } from './TodoAdd'
 import { TodoList } from './TodoList'
-import { useTodos } from './useTodos'
+import { useTodos } from './hooks/useTodos'
 
 export const TodoApp = () => {
   // useTodos() es un custom hook
   // returnm todos, handleNewTodo, handleDeleteTodo, onToggleTodo
 
-  const { todos, handleNewTodo, handleDeleteTodo, onToggleTodo } = useTodos()
+  const {
+    todos,
+    todosCount,
+    pendingTodosCount,
+    handleNewTodo,
+    handleDeleteTodo,
+    onToggleTodo,
+  } = useTodos()
 
   return (
     <>
       <h1>
-        TodoApp 10, <small>pendientes: 2</small>
+        TodoApp {todosCount}, <small>pendientes: {pendingTodosCount}</small>
       </h1>
       <hr />
 
