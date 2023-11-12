@@ -438,7 +438,7 @@ const { a, b, ...rest } = !!data && data // desestructuración para asignar el v
 <summary>Recursos</summary>
 
 - [useReducer - React Docs](https://es.reactjs.org/docs/hooks-reference.html#usereducer)
-- []()
+- [Youtube - Fernando Herrera - LocalStorage](https://www.youtube.com/watch?v=hb8O0qRqiSk&t=2s)
 - []()
 - []()
 - []()
