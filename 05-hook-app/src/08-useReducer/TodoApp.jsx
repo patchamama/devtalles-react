@@ -17,6 +17,10 @@ const initialState = [
 export const TodoApp = () => {
   const [todos, dispatch] = useReducer(todoReducer, initialState)
 
+  const handleNewTodo = (todo) => {
+    console.log({ todo })
+  }
+
   return (
     <>
       <h1>
@@ -26,8 +30,10 @@ export const TodoApp = () => {
 
       <div className='row'>
         <div className='col-7'>
+          {/* Todo list  */}
           <ul className='list-group'>
             {todos.map((todo, i) => (
+              // Todo Item
               <li
                 className='list-group-item d-flex justify-content-between'
                 key={todo.id}
@@ -39,11 +45,15 @@ export const TodoApp = () => {
               </li>
             ))}
           </ul>
+          {/* Fin Todo list */}
         </div>
 
         <div className='col-5'>
           <h4>Agregar TODO</h4>
           <hr />
+          {/* Todo Add onNewTodo(todo) */}
+          {/* {id: new Date().getTime(), description: 'Recolectar la piedra del alma', done: false,
+                //   id: new Date().getTime() + 1, description: 'Recolectar la piedra del alma', done: false,} */}
           <form>
             <input
               type='text'
@@ -57,6 +67,7 @@ export const TodoApp = () => {
               Agregar
             </button>
           </form>
+          {/* fin del Todo Add */}
         </div>
       </div>
     </>
