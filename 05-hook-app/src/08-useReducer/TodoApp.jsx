@@ -1,57 +1,12 @@
-import { useEffect, useReducer } from 'react'
-import { todoReducer } from './todoReducer'
 import { TodoAdd } from './TodoAdd'
 import { TodoList } from './TodoList'
-
-const initialState = [
-  //   {
-  //     id: new Date().getTime(),
-  //     description: 'Recolectar la piedra del alma',
-  //     done: false,
-  //   },
-]
-
-const init = () => {
-  return JSON.parse(localStorage.getItem('todos')) || []
-}
+import { useTodos } from './useTodos'
 
 export const TodoApp = () => {
-  const [todos, dispatch] = useReducer(todoReducer, initialState, init)
+  // useTodos() es un custom hook
+  // returnm todos, handleNewTodo, handleDeleteTodo, onToggleTodo
 
-  useEffect(() => {
-    localStorage.setItem('todos', JSON.stringify(todos))
-    // const todos = JSON.parse(localStorage.getItem('todos')) || []
-    // dispatch({
-    //   type: '[TODO] Load Todos',
-    //   payload: todos,
-    // })
-  }, [todos])
-
-  const handleNewTodo = (todo) => {
-    const action = {
-      type: '[TODO] Add Todo',
-      payload: todo,
-    }
-    // console.log({ todo })
-    dispatch(action)
-  }
-
-  const handleDeleteTodo = (Id) => {
-    const action = {
-      type: '[TODO] Remove Todo',
-      payload: Id,
-    }
-    dispatch(action)
-  }
-
-  const onToggleTodo = (Id) => {
-    const action = {
-      type: '[TODO] Toggle Todo',
-      payload: Id,
-    }
-    dispatch(action)
-    // console.log(Id)
-  }
+  const { todos, handleNewTodo, handleDeleteTodo, onToggleTodo } = useTodos()
 
   return (
     <>
