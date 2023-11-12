@@ -2,6 +2,8 @@
 
 _https://cursos.devtalles.com/courses/take/react-cero-experto_
 
+[Examples deploy](https://patchamama.github.io/devtalles-react/)
+
 ## Descripción
 
 Mis notas personales del _Curso de React: De cero a experto (Hooks y MERN)_ brindado por _Fernando Herrera_.
@@ -416,6 +418,8 @@ const { a, b, ...rest } = !!data && data // desestructuración para asignar el v
 
 ### Sección 10: Profundizando Hooks - useReducer
 
+[Deploy TodoList](https://patchamama.github.io/devtalles-react/05-hook-app-08.TodoList/)
+
 - [Idea general de un reducer - Vía código](https://github.com/patchamama/devtalles-react/commit/5be9b89a997a58f5c0e879a97f2613cffcafd2ab)
 - [useReducer - Todo List](https://github.com/patchamama/devtalles-react/commit/bf71ecb5591863dce2f6226f6a0ded38e5e2703f)
 - [Creando el cascarón de la lista de TODOs](https://github.com/patchamama/devtalles-react/commit/f4514e9858c4bdf1ad3803a698b76036be30cc13)
@@ -435,13 +439,6 @@ const { a, b, ...rest } = !!data && data // desestructuración para asignar el v
 
 - [useReducer - React Docs](https://es.reactjs.org/docs/hooks-reference.html#usereducer)
 - [Youtube - Fernando Herrera - LocalStorage](https://www.youtube.com/watch?v=hb8O0qRqiSk&t=2s)
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
 
 </details>
 
