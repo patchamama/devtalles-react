@@ -414,6 +414,34 @@ const { a, b, ...rest } = !!data && data // desestructuración para asignar el v
 
 </details>
 
+### Sección 10: Profundizando Hooks - useReducer
+
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+- []
+
+<details>
+
+<summary>Recursos</summary>
+
+- []
+- []
+- []
+- []
+- []
+
+</details>
+
 ---
 
 ### VSCode plugins
