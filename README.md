@@ -436,30 +436,19 @@ Install react-router-dom 6:
 yarn add react-router-dom@6
 ```
 
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+- [Preparación de nuestra aplicación con rutas (react-router-dom)](https://github.com/patchamama/devtalles-react/commit/1b8938baa7c19892b95803a9cde5a358a119f3b5)
+- [Configurar Router en React](https://github.com/patchamama/devtalles-react/blob/75ed032a50bafa69639545fbea6f71802d864173/05-hook-app/src/09-useContext/MainApp.jsx)
+- [Link](https://github.com/patchamama/devtalles-react/commit/715877423fb9bb8e5e4783df200dafd118b0c6b9)
+- [NavLink](https://github.com/patchamama/devtalles-react/blob/6ade093da91c703105bfe05dd34c0a23499e6292/05-hook-app/src/09-useContext/Navbar.jsx)
+- [CreateContext y ContextProvider](https://github.com/patchamama/devtalles-react/commit/86fe8129a03516b96357ab73b15a2cb9e89899a2)
+- [useContext](https://github.com/patchamama/devtalles-react/commit/35a734588bd7bd7e090eb82de74b75ea30357af3)
+- [Código fuente Github- Fin sección 11](https://github.com/Klerith/react-hooks/tree/fin-seccion-11)
 
 #### Recursos
 
 - [ReactRouter - Docs](https://v5.reactrouter.com/web/api/NavLink)
 - [reactrouter.com - Latest Version](https://reactrouter.com/)
 - [React Router - Docs](https://v5.reactrouter.com/web/guides/quick-start)
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
 
 ---
 
