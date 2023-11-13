@@ -4,9 +4,11 @@ import { LoginPage } from './LoginPage'
 import { AboutPage } from './AboutPage'
 import { Navbar } from './Navbar'
 
+import { UserProvider } from './context/UserProvider'
+
 export const MainApp = () => {
   return (
-    <>
+    <UserProvider>
       {/* <h1>MainApp</h1> */}
 
       {/* <Link to='/'>Home</Link>
@@ -23,6 +25,6 @@ export const MainApp = () => {
         {/* <Route path='*' element={<h1>404 Not Found</h1>} /> */}
         <Route path='*' element={<Navigate to='/about' />} />
       </Routes>
-    </>
+    </UserProvider>
   )
 }
