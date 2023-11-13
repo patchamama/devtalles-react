@@ -10,20 +10,26 @@ Mis notas personales del _[Curso de React: De cero a experto (Hooks y MERN)](htt
 
 ## Tabla de contenidos
 
+- [devTalles - Curso de React: De cero a experto (Hooks y MERN)](#devtalles---curso-de-react-de-cero-a-experto-hooks-y-mern)
+- [Descripción](#descripción)
 - [Tabla de contenidos](#tabla-de-contenidos)
 - [Secciones](#secciones)
-  - [Sección 1: Introducción](#secci-n-1--introducci-n)
-  - [Sección 2: Introducción a React y conceptos generales](#secci-n-2--introducci-n-a-react-y-conceptos-generales)
-  - [Sección 3: Introducción a JavaScript moderno](#secci-n-3--introducci-n-a-javascript-moderno)
-  - [Sección 4: Primeros pasos en React](#secci-n-4--primeros-pasos-en-react)
-  - [Sección 5: Pruebas unitarias y de integración - Probando las secciones anteriores](#secci-n-5--pruebas-unitarias-y-de-integraci-n---probando-las-secciones-anteriores)
-  - [Sección 6: GifExpertApp - Aplicación](#secci-n-6--gifexpertapp---aplicaci-n)
-  - [Sección 7: Generando el build de producción y despliegues](#secci-n-7--generando-el-build-de-producci-n-y-despliegues)
-  - [Sección 8: Testing - Probando la aplicación de GifExpert](#secci-n-8--testing---probando-la-aplicaci-n-de-gifexpert)
-  - [Sección 9: Profundizando Hooks - Generales](#secci-n-9--profundizando-hooks---generales)
-  - [Sección 10: Profundizando Hooks - useReducer](#secci-n-10--profundizando-hooks---usereducer)
+  - [Sección 1: Introducción](#sección-1-introducción)
+  - [Sección 2: Introducción a React y conceptos generales](#sección-2-introducción-a-react-y-conceptos-generales)
+  - [Sección 3: Introducción a JavaScript moderno](#sección-3-introducción-a-javascript-moderno)
+  - [Sección 4: Primeros pasos en React](#sección-4-primeros-pasos-en-react)
+    - [Instalar `React` usando yarn + vite:](#instalar-react-usando-yarn--vite)
+    - [Instalar `React` usando create-react-app (CRA):](#instalar-react-usando-create-react-app-cra)
+    - [Subsecciones](#subsecciones)
+  - [Sección 5: Pruebas unitarias y de integración - Probando las secciones anteriores](#sección-5-pruebas-unitarias-y-de-integración---probando-las-secciones-anteriores)
+  - [Sección 6: GifExpertApp - Aplicación](#sección-6-gifexpertapp---aplicación)
+  - [Sección 7: Generando el build de producción y despliegues](#sección-7-generando-el-build-de-producción-y-despliegues)
+  - [Sección 8: Testing - Probando la aplicación de GifExpert](#sección-8-testing---probando-la-aplicación-de-gifexpert)
+  - [Sección 9: Profundizando Hooks - Generales](#sección-9-profundizando-hooks---generales)
+  - [Sección 10: Profundizando Hooks - useReducer](#sección-10-profundizando-hooks---usereducer)
+  - [Sección 11: Profundizando Hooks - useContext](#sección-11-profundizando-hooks---usecontext)
   - [VSCode plugins](#vscode-plugins)
-  - [Atajos del teclado (MacOSx) con vscode](#atajos-del-teclado--macosx--con-vscode)
+  - [Atajos del teclado (MacOSx) con vscode](#atajos-del-teclado-macosx-con-vscode)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -53,8 +59,6 @@ Mis notas personales del _[Curso de React: De cero a experto (Hooks y MERN)](htt
 - [Operador condicional ternario](02-intro-javascript/src/bases/12-operador-condicional-ternario.md)
 - [Código fuente en GitHub](https://github.com/Klerith/react-intro-javascript)
 
-<details>
-
 <summary>Recursos</summary>
 
 - [.map()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
@@ -70,8 +74,6 @@ Mis notas personales del _[Curso de React: De cero a experto (Hooks y MERN)](htt
 - [Babel](https://babeljs.io/)
 - [Create-react-app](https://create-react-app.dev/)
 - [Chrome: console.log, console.debug are not working](https://stackoverflow.com/questions/18760213/chrome-console-log-console-debug-are-not-working)
-
-</details>
 
 ### Sección 4: Primeros pasos en React
 
@@ -116,8 +118,6 @@ _El archivo `package-lock.json` solo se crea con cra, es decir, con una aplicaci
 - [PropTypes](https://github.com/patchamama/devtalles-react/blob/b69ed37589e467451ad28280f58e6be3a9054553/03-counter-app-vite/src/FirstApp.jsx) _En `CRA` aparece instalado por defecto pero en `vite` hay que instalarlo: `import PropTypes from 'prop-types'` para importar en los componentes y desde terminal `yarn add prop-types`_
 - [Tarea - Componente CounterApp](https://github.com/patchamama/devtalles-react/blob/0cda31f9cdd65050f1bb67f668a165723c9b1599/03-counter-app-vite/src/CounterApp.jsx)
 
-<details>
-
 <summary>Tarea</summary>
 
 1. Crear un nuevo componente dentro de la carpeta SRC llamado
@@ -134,15 +134,12 @@ _El archivo `package-lock.json` solo se crea con cra, es decir, con una aplicaci
    por el componente `<CounterApp />`
    (no se olviden del value que debe de ser un número)
 6. Asegúrense de no tener errores ni warnings
-(Cualquier warning no usado, comentar el código)
-</details>
+   (Cualquier warning no usado, comentar el código)
 
 - [Evento click (Eventos en general)](https://github.com/patchamama/devtalles-react/blob/a0f83defb4023e29bea097d6b0671797696ca3d3/03-counter-app-vite/src/CounterApp.jsx)
 - [useState - Hook](https://github.com/patchamama/devtalles-react/blob/7a6368db9edce975d2c3c0d677c066c8a83c630f/03-counter-app-vite/src/CounterApp.jsx)
 - [handleSubtract y jandleReset](https://github.com/patchamama/devtalles-react/blob/de7113ac27208fc9a4498efd7f7c32d549c13e76/03-counter-app-vite/src/CounterApp.jsx)
 - [Código fuente de la clase](https://github.com/Klerith/react-vite-counter-app/tree/fin-seccion-4)
-
-<details>
 
 <summary>Recursos</summary>
 
@@ -155,8 +152,6 @@ _El archivo `package-lock.json` solo se crea con cra, es decir, con una aplicaci
 - [Presentando Hooks](https://es.legacy.reactjs.org/docs/hooks-intro.html)
 - [SyntheticEvent](https://es.legacy.reactjs.org/docs/events.html)
 - [Ejemplo - Tarea de desestructuración de arreglos](https://github.com/Klerith/react-intro-javascript/blob/master/src/bases/07-deses-arr.js)
-
-</details>
 
 ### Sección 5: Pruebas unitarias y de integración - Probando las secciones anteriores
 
@@ -239,8 +234,6 @@ _React Testing Library_ es muy bueno para trabajar con el Dom, simular clics... 
 - [Simular eventos - Click](https://github.com/patchamama/devtalles-react/blob/72d4c9acb6fad4323d944190b0b9f420c2e260e6/03-counter-app-vite/src/tests/CounterApp.test.jsx)
 - [Código fuente de la sección](https://github.com/Klerith/react-vite-counter-app/tree/fin-seccion-5)
 
-<details>
-
 <summary>Recursos</summary>
 
 - [Jest - Documentación oficial](https://jestjs.io/)
@@ -248,8 +241,6 @@ _React Testing Library_ es muy bueno para trabajar con el Dom, simular clics... 
 - [Giphy API - Developers](https://developers.giphy.com/)
 - [https://jestjs.io/docs/getting-started](https://jestjs.io/docs/getting-started)
 - [https://testing-library.com/](https://testing-library.com/)
-
-</details>
 
 ### Sección 6: GifExpertApp - Aplicación
 
@@ -281,8 +272,6 @@ http-server -o
 - [Archivos de barril - index.js](https://github.com/patchamama/devtalles-react/commit/0463e01d57bfa040ef371747d5fda301887d3c1c)
 - [Código fuente de la sección](https://github.com/Klerith/react-vite-gif-expert/tree/fin-seccion-6)
 
-<details>
-
 <summary>Recursos</summary>
 
 - [Giphy API - Developers](https://developers.giphy.com/)
@@ -293,8 +282,6 @@ http-server -o
 - [https://reactjs.org/docs/strict-mode.html](https://reactjs.org/docs/strict-mode.html)
 - [http-server](https://www.npmjs.com/package/http-server)
 - [React-Router issue when deployed to Github Pages?](https://stackoverflow.com/questions/71290365/react-router-issue-when-deployed-to-github-pages)
-
-</details>
 
 ### Sección 7: Generando el build de producción y despliegues
 
@@ -329,15 +316,11 @@ git push -u origin main
 
 _Cambiar en `dist/index.html` o `docs/index.html` la ruta a los archivos .css y .js a relativa para que se despligue bien en github pages, es decir, de `src="/..."` a `src="./..."`_. Ejemplo de cambios en [index.html](https://github.com/patchamama/devtalles-react/commit/63d04bbf117de2ad3866fb17f3e89bd3a235c8e0#diff-c56d13deec71051f24aa217ae7a8bd4d36c1e9dfc3975252c5874a293ff6e481)
 
-<details>
-
 <summary>Recursos</summary>
 
 - [netlify.com/](https://www.netlify.com/)
 - [Configurar name y el email en Git](https://docs.github.com/en/enterprise/2.13/user/articles/setting-your-username-in-git)
 - [Github - Website](https://github.com/)
-
-</details>
 
 ### Sección 8: Testing - Probando la aplicación de GifExpert
 
@@ -363,14 +346,10 @@ export default {
 - [Pruebas de tarea de test con GifExpertApp componente](https://github.com/patchamama/devtalles-react/blob/9495562c019c1bbe33584e4934930ffac09196ca/04-gif-expert-app/tests/GifExpertApp.test.jsx)
 - [Código fuente de la sección](https://github.com/Klerith/react-gif-expert/tree/fin-seccion-8)
 
-<details>
-
 <summary>Recursos</summary>
 
 - [Testing Library + Vite + Jest](https://gist.github.com/Klerith/ca7e57fae3c9ab92ad08baadc6c26177)
 - [react-hooks-testing-library.com](https://react-hooks-testing-library.com/)
-
-</details>
 
 ### Sección 9: Profundizando Hooks - Generales
 
@@ -408,8 +387,6 @@ const { a, b, ...rest } = !!data && data // desestructuración para asignar el v
 - [Tarea Memorize](https://github.com/patchamama/devtalles-react/commit/13fdbfec9a59e2e4cdfa65fba48bcc918191fd07) - [Deploy](https://patchamama.github.io/devtalles-react/05-hook-app.07-tarea-memo)
 - [Código fuente de la sección 9](https://github.com/Klerith/react-hooks/tree/fin-seccion-9)
 
-<details>
-
 <summary>Recursos</summary>
 
 - [getBootstrap.com - Sitio oficial](https://getbootstrap.com/)
@@ -417,8 +394,6 @@ const { a, b, ...rest } = !!data && data // desestructuración para asignar el v
 - [rickandmortyapi.com - API](https://rickandmortyapi.com/documentation/#get-a-single-character)
 - [useLayoutEffect - React docs](https://es.reactjs.org/docs/hooks-reference.html#uselayouteffect)
 - [Breaking Bad Quotes API](https://breakingbadquotes.xyz/)
-
-</details>
 
 ### Sección 10: Profundizando Hooks - useReducer
 
@@ -437,14 +412,30 @@ const { a, b, ...rest } = !!data && data // desestructuración para asignar el v
 - [Resolución de la tarea - useTodos](https://github.com/patchamama/devtalles-react/commit/55765d73738b48fa9fc299f98eb25f0f9d2ec8fd) - [Deploy](https://patchamama.github.io/devtalles-react/05-hook-app-08.TodoList)
 - [Código fuente de GitHub - Fin sección 10](https://github.com/Klerith/react-hooks/tree/fin-seccion-10)
 
-<details>
-
 <summary>Recursos</summary>
 
 - [useReducer - React Docs](https://es.reactjs.org/docs/hooks-reference.html#usereducer)
 - [Youtube - Fernando Herrera - LocalStorage](https://www.youtube.com/watch?v=hb8O0qRqiSk&t=2s)
 
-</details>
+### Sección 11: Profundizando Hooks - useContext
+
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+
+<summary>Recursos</summary>
+
+- []()
+- []()
+- []()
 
 ---
 
