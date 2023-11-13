@@ -407,7 +407,6 @@ const { a, b, ...rest } = !!data && data // desestructuración para asignar el v
 ### Sección 10: Profundizando Hooks - useReducer
 
 - [Deploy Example TodoList](https://patchamama.github.io/devtalles-react/05-hook-app-08.TodoList/)
-
 - [Idea general de un reducer - Vía código](https://github.com/patchamama/devtalles-react/commit/5be9b89a997a58f5c0e879a97f2613cffcafd2ab)
 - [useReducer - Todo List](https://github.com/patchamama/devtalles-react/commit/bf71ecb5591863dce2f6226f6a0ded38e5e2703f)
 - [Creando el cascarón de la lista de TODOs](https://github.com/patchamama/devtalles-react/commit/f4514e9858c4bdf1ad3803a698b76036be30cc13)
