@@ -37,6 +37,8 @@ Mis notas personales del _[Curso de React: De cero a experto (Hooks y MERN)](htt
     - [Recursos](#recursos-7)
   - [Sección 11: Profundizando Hooks - useContext](#sección-11-profundizando-hooks---usecontext)
     - [Recursos](#recursos-8)
+  - [Sección 12: Pruebas unitarias y de integración - Hooks](#sección-12-pruebas-unitarias-y-de-integración---hooks)
+    - [Recursos](#recursos-9)
   - [VSCode plugins](#vscode-plugins)
   - [Atajos del teclado (MacOSx) con vscode](#atajos-del-teclado-macosx-con-vscode)
 
@@ -427,7 +429,7 @@ const { a, b, ...rest } = !!data && data // desestructuración para asignar el v
 
 ### Sección 11: Profundizando Hooks - useContext
 
-- [Preparación de nuestra aplicación con rutas]()
+- Preparación de nuestra aplicación con rutas
 
 Install react-router-dom 6:
 
@@ -448,6 +450,27 @@ yarn add react-router-dom@6
 - [ReactRouter - Docs](https://v5.reactrouter.com/web/api/NavLink)
 - [reactrouter.com - Latest Version](https://reactrouter.com/)
 - [React Router - Docs](https://v5.reactrouter.com/web/guides/quick-start)
+
+### Sección 12: Pruebas unitarias y de integración - Hooks
+
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+
+#### Recursos
+
+- [Configuración Vite + Jest + Testing Library](https://gist.github.com/Klerith/ca7e57fae3c9ab92ad08baadc6c26177)
+- []()
+- []()
+- []()
+- []()
 
 ---
 
