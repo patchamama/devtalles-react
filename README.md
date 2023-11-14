@@ -453,24 +453,26 @@ yarn add react-router-dom@6
 
 ### Sección 12: Pruebas unitarias y de integración - Hooks
 
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+- [Inicio de proyecto - Pruebas sobre Hooks](https://github.com/patchamama/devtalles-react/commit/d7a40064ba2eea739db0c05c9a8d1eb54d5ca850)
+- [Pruebas sobre useCounter - CustomHook](https://github.com/patchamama/devtalles-react/blob/d55797ded5c7d622715046eaf8460fe16a19feae/05-hook-app/tests/hooks/useCounter.test.js)
+- [Ejecutar funciones del customHook dentro de las pruebas](https://github.com/patchamama/devtalles-react/commit/f6a78426af179c06545ce9a7a1ebc14326044860)
+- [Pruebas sobre useForm - CustomHook](https://github.com/patchamama/devtalles-react/commit/2aa05a795c9f58c87f30d4e85440293b388193c4)
+- [Pruebas con múltipes hooks simultáneos](https://github.com/patchamama/devtalles-react/commit/3721af374a00c8238302a8256855d42050e778ae)
+- [Evaluar respuesta del useFetch](https://github.com/patchamama/devtalles-react/blob/800e53e549bbf11e43817ea87b1d0175bddcfe7b/05-hook-app/tests/03-examples/MultipleCustomHooks.test.jsx)
+- [Pruebas sobre el Reducer](https://github.com/patchamama/devtalles-react/blob/1bef27cd7e72de49fab39114551cb3d68c34a88c/05-hook-app/tests/08-useReducer/todoReducer.test.js)
+- [Resolución de la tarea](https://github.com/patchamama/devtalles-react/blob/d4438380b88c4928b8992d08e24c18be59313f3a/05-hook-app/tests/08-useReducer/todoReducer.test.js)
+- [Pruebas en el componente TodoItem](https://github.com/patchamama/devtalles-react/commit/c06651b62b1436014b22a6eadd02691577931cae)
+- [Pruebas en los eventos del TodoItem](https://github.com/patchamama/devtalles-react/blob/960064d4199fd21d09f59ba9b1c7de78f26a54b8/05-hook-app/tests/08-useReducer/TodoItem.test.jsx)
+- [Pruebas en el TodoApp](https://github.com/patchamama/devtalles-react/blob/c30552d64f286d63ec42c57fe9ade33b32900ce0/05-hook-app/tests/08-useReducer/todoApp.test.jsx)
+- [Pruebas con useContext](https://github.com/patchamama/devtalles-react/commit/a6c77ab5548f75d1bbd913d758af43af42e57d97)
+- [Pruebas de funciones del context](https://github.com/patchamama/devtalles-react/commit/8c1cbe32952a1186502fd0dfc8eff0437a2e3c3c)
+- [Pruebas generales en nuestro AppRouter](https://github.com/patchamama/devtalles-react/blob/de44381bd2103db701e98c66b17957caf7c68ed6/05-hook-app/tests/09-useContext/MainApp.test.jsx)
 - [Código GitHub: Fin sección 12](https://github.com/Klerith/react-hooks/tree/fin-seccion-12)
 
 #### Recursos
 
 - [Configuración Vite + Jest + Testing Library](https://gist.github.com/Klerith/ca7e57fae3c9ab92ad08baadc6c26177)
 - [React Router - Testing Docs](https://v5.reactrouter.com/web/guides/testing)
-- []()
-- []()
-- []()
 
 ---
 
