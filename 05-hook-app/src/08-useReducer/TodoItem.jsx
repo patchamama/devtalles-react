@@ -6,6 +6,7 @@ export const TodoItem = ({
   onDeleteTodo,
   onToggleTodo,
 }) => {
+  console.log('done', done)
   return (
     <li className='list-group-item d-flex justify-content-between'>
       <span
