@@ -509,6 +509,10 @@ yarn add react-router-dom@6
 #### Recursos
 
 - [heroes.zip](https://import.cdn.thinkific.com/643563/courses/1901683/heroes-220621-112204.zip)
+- [Gist - Navbar](https://gist.github.com/Klerith/566b484ac6fe46c8fa949e61df671a18)
+- [React Router - Docs](https://reactrouter.com/en/6.4.4/start/tutorial#setup)
+- [https://reactrouter.com/ - Versión 6](https://reactrouter.com/)
+- [Migrar de React Router v5 a v6](https://www.youtube.com/watch?v=FR7x0tqwafc)
 - []()
 - []()
 - []()
