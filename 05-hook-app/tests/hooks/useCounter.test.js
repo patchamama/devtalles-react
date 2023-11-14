@@ -1,5 +1,5 @@
-const { renderHook, act } = require('@testing-library/react')
-const { useCounter } = require('../../src/hooks/useCounter')
+import { renderHook, act } from '@testing-library/react'
+import { useCounter } from '../../src/hooks/useCounter'
 
 describe('Pruebas en useCounter', () => {
   test('debe de retornar valores por defecto', () => {

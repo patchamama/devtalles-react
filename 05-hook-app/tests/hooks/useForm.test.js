@@ -1,5 +1,5 @@
-const { renderHook, act } = require('@testing-library/react')
-const { useForm } = require('../../src/hooks/useForm')
+import { renderHook, act } from '@testing-library/react'
+import { useForm } from '../../src/hooks/useForm'
 
 describe('Pruebas en useForm', () => {
   const initialForm = {
