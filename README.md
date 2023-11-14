@@ -39,6 +39,8 @@ Mis notas personales del _[Curso de React: De cero a experto (Hooks y MERN)](htt
     - [Recursos](#recursos-8)
   - [Sección 12: Pruebas unitarias y de integración - Hooks](#sección-12-pruebas-unitarias-y-de-integración---hooks)
     - [Recursos](#recursos-9)
+  - [Sección 13: Bonus: Repositorio de Custom Hooks](#sección-13-bonus-repositorio-de-custom-hooks)
+    - [Recursos](#recursos-10)
   - [VSCode plugins](#vscode-plugins)
   - [Atajos del teclado (MacOSx) con vscode](#atajos-del-teclado-macosx-con-vscode)
 
@@ -473,6 +475,26 @@ yarn add react-router-dom@6
 
 - [Configuración Vite + Jest + Testing Library](https://gist.github.com/Klerith/ca7e57fae3c9ab92ad08baadc6c26177)
 - [React Router - Testing Docs](https://v5.reactrouter.com/web/guides/testing)
+
+### Sección 13: Bonus: Repositorio de Custom Hooks
+
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+
+#### Recursos
+
+- []()
+- []()
+- []()
+- []()
+- []()
 
 ---
 
