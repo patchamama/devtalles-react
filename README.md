@@ -478,23 +478,12 @@ yarn add react-router-dom@6
 
 ### Sección 13: Bonus: Repositorio de Custom Hooks
 
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+- [Repositorio con customHook](https://github.com/patchamama/devtalles-react/tree/0dddc0ab5515044f73c26b045978b05054e06183/06-mis-custom-hooks)
+- [Gisthub - Repositorio de custom hooks](https://github.com/Klerith/custom-hooks)
 
 #### Recursos
 
 - [Github Repos](https://github.com/)
-- []()
-- []()
-- []()
-- []()
 
 ---
 
