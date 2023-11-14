@@ -467,7 +467,7 @@ yarn add react-router-dom@6
 #### Recursos
 
 - [Configuración Vite + Jest + Testing Library](https://gist.github.com/Klerith/ca7e57fae3c9ab92ad08baadc6c26177)
-- []()
+- [React Router - Testing Docs](https://v5.reactrouter.com/web/guides/testing)
 - []()
 - []()
 - []()
