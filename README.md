@@ -41,6 +41,8 @@ Mis notas personales del _[Curso de React: De cero a experto (Hooks y MERN)](htt
     - [Recursos](#recursos-9)
   - [Sección 13: Bonus: Repositorio de Custom Hooks](#sección-13-bonus-repositorio-de-custom-hooks)
     - [Recursos](#recursos-10)
+  - [Sección 13: Bonus: Repositorio de Custom Hooks](#sección-13-bonus-repositorio-de-custom-hooks-1)
+    - [Recursos](#recursos-11)
   - [VSCode plugins](#vscode-plugins)
   - [Atajos del teclado (MacOSx) con vscode](#atajos-del-teclado-macosx-con-vscode)
 
@@ -478,12 +480,43 @@ yarn add react-router-dom@6
 
 ### Sección 13: Bonus: Repositorio de Custom Hooks
 
-- [Repositorio con customHook](https://github.com/patchamama/devtalles-react/tree/0dddc0ab5515044f73c26b045978b05054e06183/06-mis-custom-hooks)
+- [Repositorio con customHooks](https://github.com/patchamama/devtalles-react/tree/0dddc0ab5515044f73c26b045978b05054e06183/06-mis-custom-hooks)
 - [Gisthub - Repositorio de custom hooks](https://github.com/Klerith/custom-hooks)
 
 #### Recursos
 
 - [Github Repos](https://github.com/)
+
+### Sección 13: Bonus: Repositorio de Custom Hooks
+
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+
+#### Recursos
+
+- [heroes.zip](https://import.cdn.thinkific.com/643563/courses/1901683/heroes-220621-112204.zip)
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
 
 ---
 
