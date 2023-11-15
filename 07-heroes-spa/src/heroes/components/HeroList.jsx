@@ -1,16 +1,18 @@
 // Objetivo: Mostrar la lista de heroes
-import { getHeroesByPublisher } from '../helpers'
+
 import PropTypes from 'prop-types'
+import { HeroCard } from './HeroCard'
+import { getHeroesByPublisher } from '../helpers'
 
 export const HeroList = ({ publisher }) => {
   const heroes = getHeroesByPublisher(publisher)
 
   return (
-    <ul>
+    <div className='row rows-cols-1 row-cols-md-3 g-3'>
       {heroes.map((hero) => (
-        <li key={hero.id}>{hero.superhero}</li>
+        <HeroCard key={hero.id} {...hero} />
       ))}
-    </ul>
+    </div>
   )
 }
 
