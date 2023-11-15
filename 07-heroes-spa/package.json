@@ -1,5 +1,6 @@
 {
   "name": "heroes-spa",
+  "homepage": "https://patchamama.github.io/devtalles-react/07-heroes-spa",
   "private": true,
   "version": "0.0.0",
   "type": "module",
