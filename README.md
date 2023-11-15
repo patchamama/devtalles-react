@@ -41,7 +41,7 @@ Mis notas personales del _[Curso de React: De cero a experto (Hooks y MERN)](htt
     - [Recursos](#recursos-9)
   - [Sección 13: Bonus: Repositorio de Custom Hooks](#sección-13-bonus-repositorio-de-custom-hooks)
     - [Recursos](#recursos-10)
-  - [Sección 13: Bonus: Repositorio de Custom Hooks](#sección-13-bonus-repositorio-de-custom-hooks-1)
+  - [Sección 14: HeroesApp - Single Page Application (SPA)](#sección-14-heroesapp---single-page-application-spa)
     - [Recursos](#recursos-11)
   - [VSCode plugins](#vscode-plugins)
   - [Atajos del teclado (MacOSx) con vscode](#atajos-del-teclado-macosx-con-vscode)
@@ -487,7 +487,7 @@ yarn add react-router-dom@6
 
 - [Github Repos](https://github.com/)
 
-### Sección 13: Bonus: Repositorio de Custom Hooks
+### Sección 14: HeroesApp - Single Page Application (SPA)
 
 Install react router v.6:
 
