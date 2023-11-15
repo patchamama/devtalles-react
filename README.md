@@ -489,10 +489,14 @@ yarn add react-router-dom@6
 
 ### Sección 14: HeroesApp - Single Page Application (SPA)
 
-Install react router v.6:
+Installation:
 
 ```sh
+//  react router v.6
 yarn add react-router-dom@6
+
+// query-string to handle url params
+yarn add query-string
 ```
 
 - []()
@@ -521,7 +525,7 @@ yarn add react-router-dom@6
 - [Migrar de React Router v5 a v6](https://www.youtube.com/watch?v=FR7x0tqwafc)
 - [HeroesList - Data](https://gist.github.com/Klerith/934da045caae0fec3a1067d013926c46)
 - [animate.css](https://animate.style/)
-- []()
+- [https://github.com/Klerith/custom-hooks/blob/main/useForm/useForm.js](https://github.com/Klerith/custom-hooks/blob/main/useForm/useForm.js)
 - []()
 - []()
 - []()
