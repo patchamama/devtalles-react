@@ -520,7 +520,7 @@ yarn add react-router-dom@6
 - [https://reactrouter.com/ - Versión 6](https://reactrouter.com/)
 - [Migrar de React Router v5 a v6](https://www.youtube.com/watch?v=FR7x0tqwafc)
 - [HeroesList - Data](https://gist.github.com/Klerith/934da045caae0fec3a1067d013926c46)
-- []()
+- [animate.css](https://animate.style/)
 - []()
 - []()
 - []()
