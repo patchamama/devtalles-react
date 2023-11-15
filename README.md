@@ -489,6 +489,12 @@ yarn add react-router-dom@6
 
 ### Sección 13: Bonus: Repositorio de Custom Hooks
 
+Install react router v.6:
+
+```sh
+yarn add react-router-dom@6
+```
+
 - []()
 - []()
 - []()
@@ -513,7 +519,7 @@ yarn add react-router-dom@6
 - [React Router - Docs](https://reactrouter.com/en/6.4.4/start/tutorial#setup)
 - [https://reactrouter.com/ - Versión 6](https://reactrouter.com/)
 - [Migrar de React Router v5 a v6](https://www.youtube.com/watch?v=FR7x0tqwafc)
-- []()
+- [HeroesList - Data](https://gist.github.com/Klerith/934da045caae0fec3a1067d013926c46)
 - []()
 - []()
 - []()
