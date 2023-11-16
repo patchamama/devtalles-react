@@ -584,7 +584,7 @@ Si quieren leer más sobre los assets y cómo manejarlos en Vite: https://vitejs
 
 #### Recursos
 
-- []()
+- [Gist - Configuración de pruebas](https://gist.github.com/Klerith/ca7e57fae3c9ab92ad08baadc6c26177)
 - []()
 - []()
 - []()
