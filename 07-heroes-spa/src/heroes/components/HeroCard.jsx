@@ -19,7 +19,7 @@ export const HeroCard = ({
   first_appearance,
   characters,
 }) => {
-  const heroImageURL = `https://patchamama.github.io/devtalles-react/07-heroes-spa/heroes/${id}.jpg`
+  const heroImageURL = `/heroes/${id}.jpg`
 
   //   const charactersByHero = <p>{characters}</p>
 
