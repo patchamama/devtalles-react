@@ -44,6 +44,8 @@ Mis notas personales del _[Curso de React: De cero a experto (Hooks y MERN)](htt
   - [Sección 14: HeroesApp - Single Page Application (SPA)](#sección-14-heroesapp---single-page-application-spa)
     - [Recursos](#recursos-11)
   - [Sección 15: Protección de rutas](#sección-15-protección-de-rutas)
+  - [Sección 16: Pruebas de nuestra aplicación de Héroes](#sección-16-pruebas-de-nuestra-aplicación-de-héroes)
+    - [Recursos](#recursos-12)
   - [VSCode plugins](#vscode-plugins)
   - [Atajos del teclado (MacOSx) con vscode](#atajos-del-teclado-macosx-con-vscode)
 
@@ -561,6 +563,34 @@ Si quieren leer más sobre los assets y cómo manejarlos en Vite: https://vitejs
 - [Rutas públicas](https://github.com/patchamama/devtalles-react/commit/d9e7793f01c631d520ce938b50e02a9e12c78934)
 - [Recordar la última página visitada](https://github.com/patchamama/devtalles-react/commit/375ea21612819754756b4a1604e0d14ad2d4add3)
 - [Código fuente GitHub - Fin sección 15](https://github.com/Klerith/react-heroes/tree/fin-seccion-15)
+
+### Sección 16: Pruebas de nuestra aplicación de Héroes
+
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+
+#### Recursos
+
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
 
 ---
 
