@@ -44,7 +44,6 @@ Mis notas personales del _[Curso de React: De cero a experto (Hooks y MERN)](htt
   - [Sección 14: HeroesApp - Single Page Application (SPA)](#sección-14-heroesapp---single-page-application-spa)
     - [Recursos](#recursos-11)
   - [Sección 15: Protección de rutas](#sección-15-protección-de-rutas)
-    - [Recursos](#recursos-12)
   - [VSCode plugins](#vscode-plugins)
   - [Atajos del teclado (MacOSx) con vscode](#atajos-del-teclado-macosx-con-vscode)
 
@@ -554,30 +553,14 @@ Si quieren leer más sobre los assets y cómo manejarlos en Vite: https://vitejs
 
 ### Sección 15: Protección de rutas
 
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-
-#### Recursos
-
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+- [Context y Reducer de mi aplicación](https://github.com/patchamama/devtalles-react/commit/76587a9ffe084c8e8f81dda4ac48c22089d0ce22)
+- [Login de un usuario](https://github.com/patchamama/devtalles-react/commit/d1ebd1b5e401648e02f69efa6630fc29e1ed3bd6)
+- [Mantener el usuario activo](https://github.com/patchamama/devtalles-react/commit/030674302f0a0f94ee41a73475caa44684c035e5)
+- [Logout del usuario](https://github.com/patchamama/devtalles-react/commit/7bd4d84b12d78477f56abb86cebbfb3cc61b20ea)
+- [Rutas privadas](https://github.com/patchamama/devtalles-react/commit/94365b42fd946365b7a64cb368ef167501957f1d)
+- [Rutas públicas](https://github.com/patchamama/devtalles-react/commit/d9e7793f01c631d520ce938b50e02a9e12c78934)
+- [Recordar la última página visitada](https://github.com/patchamama/devtalles-react/commit/375ea21612819754756b4a1604e0d14ad2d4add3)
+- [Código fuente GitHub - Fin sección 15](https://github.com/Klerith/react-heroes/tree/fin-seccion-15)
 
 ---
 
