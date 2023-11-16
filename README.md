@@ -43,6 +43,8 @@ Mis notas personales del _[Curso de React: De cero a experto (Hooks y MERN)](htt
     - [Recursos](#recursos-10)
   - [Sección 14: HeroesApp - Single Page Application (SPA)](#sección-14-heroesapp---single-page-application-spa)
     - [Recursos](#recursos-11)
+  - [Sección 15: Protección de rutas](#sección-15-protección-de-rutas)
+    - [Recursos](#recursos-12)
   - [VSCode plugins](#vscode-plugins)
   - [Atajos del teclado (MacOSx) con vscode](#atajos-del-teclado-macosx-con-vscode)
 
@@ -549,6 +551,33 @@ De esta forma ya se copian automáticamente las imágenes, y funciona nuestra ap
 Si quieren leer más sobre los assets y cómo manejarlos en Vite: https://vitejs.dev/guide/assets.html.
 
 </details>
+
+### Sección 15: Protección de rutas
+
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+
+#### Recursos
+
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
 
 ---
 

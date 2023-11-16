@@ -22,7 +22,7 @@ export const HeroPage = () => {
     <div className='row mt-5'>
       <div className='col-4'>
         <img
-          src={`../assets/heroes/${id}.jpg`}
+          src={`https://patchamama.github.io/devtalles-react/07-heroes-spa/heroes/${id}.jpg`}
           alt={hero.superhero}
           className='img-thumbnail animate__animated animate__fadeInLeft'
         />
