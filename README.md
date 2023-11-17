@@ -47,6 +47,7 @@ Mis notas personales del _[Curso de React: De cero a experto (Hooks y MERN)](htt
   - [Sección 16: Pruebas de nuestra aplicación de Héroes](#sección-16-pruebas-de-nuestra-aplicación-de-héroes)
     - [Recursos](#recursos-12)
   - [Sección 17: JournalApp - MaterialUI - Estructura y Diseño](#sección-17-journalapp---materialui---estructura-y-diseño)
+    - [Instalación de Material UI:](#instalación-de-material-ui)
     - [Recursos](#recursos-13)
   - [VSCode plugins](#vscode-plugins)
   - [Atajos del teclado (MacOSx) con vscode](#atajos-del-teclado-macosx-con-vscode)
@@ -586,7 +587,7 @@ Si quieren leer más sobre los assets y cómo manejarlos en Vite: https://vitejs
 
 ### Sección 17: JournalApp - MaterialUI - Estructura y Diseño
 
-#### Instalación de Material UI:
+#### Instalación de Material UI:
 
 ```sh
 yarn add @mui/material @emotion/react @emotion/styled
