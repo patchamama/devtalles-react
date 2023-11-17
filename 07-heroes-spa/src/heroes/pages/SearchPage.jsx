@@ -3,7 +3,7 @@ import queryString from 'query-string'
 
 import { useForm } from '../../hooks/useForm'
 import { HeroCard } from '../components'
-import { getHeroesByName } from '../helpers'
+import { getHeroByName } from '../helpers'
 
 export const SearchPage = () => {
   const navigate = useNavigate()
