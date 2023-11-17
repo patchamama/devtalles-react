@@ -586,6 +586,11 @@ Si quieren leer más sobre los assets y cómo manejarlos en Vite: https://vitejs
 
 ### Sección 17: JournalApp - MaterialUI - Estructura y Diseño
 
+```sh
+yarn add @mui/material @emotion/react @emotion/styled
+yarn add @mui/icons-material
+```
+
 - []()
 - []()
 - []()
@@ -602,7 +607,7 @@ Si quieren leer más sobre los assets y cómo manejarlos en Vite: https://vitejs
 
 #### Recursos
 
-- []()
+- [mui.com - minimizing-bundle-size](https://mui.com/material-ui/guides/minimizing-bundle-size/#development-environment)
 - []()
 - []()
 - []()
