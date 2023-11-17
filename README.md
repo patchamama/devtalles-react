@@ -557,6 +557,8 @@ Si quieren leer más sobre los assets y cómo manejarlos en Vite: https://vitejs
 
 ### Sección 15: Protección de rutas
 
+[Deploy](https://patchamama.github.io/devtalles-react/07-heroes-spa/)
+
 - [Context y Reducer de mi aplicación](https://github.com/patchamama/devtalles-react/commit/76587a9ffe084c8e8f81dda4ac48c22089d0ce22)
 - [Login de un usuario](https://github.com/patchamama/devtalles-react/commit/d1ebd1b5e401648e02f69efa6630fc29e1ed3bd6)
 - [Mantener el usuario activo](https://github.com/patchamama/devtalles-react/commit/030674302f0a0f94ee41a73475caa44684c035e5)
