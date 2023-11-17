@@ -19,7 +19,7 @@ export const HeroCard = ({
   first_appearance,
   characters,
 }) => {
-  const heroImageURL = `/heroes/${id}.jpg`
+  const heroImageURL = `./heroes/${id}.jpg`
 
   //   const charactersByHero = <p>{characters}</p>
 
