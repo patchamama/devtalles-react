@@ -632,7 +632,7 @@ yarn add axios
 
 **Thunks**: _acción que es asíncrona que dispara otra acción._
 
-**RTK Query**: _está hecho para optimizar y controlar las peticiónes http (como lo hace sqlquery, axios, fetch). Viene ya incluído en Redux Toolkit._
+**RTK Query**: _está hecho para optimizar y controlar las peticiónes http (como lo hace sqlquery, axios, fetch) pero usa caché interno que mejora mucho el rendimiento de la aplicación. Viene ya incluído en Redux Toolkit._
 
 - []()
 - []()
