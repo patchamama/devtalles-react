@@ -650,7 +650,7 @@ yarn add @reduxjs/toolkit react-redux
 
 - [https://redux-toolkit.js.org/](https://redux-toolkit.js.org/)
 - [Redux DevTools - Chrome](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
-- []()
+- [Snippet y Gists de Slice](https://gist.github.com/Klerith/060281f76f3b7f0a458e4b83b1fc0062)
 - []()
 - []()
 - []()
@@ -673,3 +673,6 @@ yarn add @reduxjs/toolkit react-redux
 - Crear un functional-component. Snippet: `rafc` _hay que tener instalado [ES7 en vscode](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)._ Sí no funciona ver [esto](https://stackoverflow.com/questions/68653611/rafce-react-js-shortcut-not-working-in-vscode)
 - Para duplicar una línea en vscode, simplemente sin seleccionar nada sobre la línea: Cmd + c, Cmd + v
 - [Snippets en vscode](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_creating-your-own-snippets). VSCode tiene algunos snippets predefinidos como "clg" o "log" para `console.log()`.
+- [Crear un snippets con vscode](https://cursos.devtalles.com/courses/take/react-cero-experto/lessons/36203689-snippet-y-gists-de-slice).
+  cmd + shift + p > configure users snippets > javascript
+  Para marcar todo el texto: cmd + option + flechas
