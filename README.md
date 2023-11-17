@@ -634,26 +634,18 @@ yarn add axios
 
 **RTK Query**: _está hecho para optimizar y controlar las peticiónes http (como lo hace sqlquery, axios, fetch) pero usa caché interno que mejora mucho el rendimiento de la aplicación. Viene ya incluído en Redux Toolkit._
 
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+- [Inicio del proyecto - Redux-Tool](https://github.com/patchamama/devtalles-react/commit/26b0fba067fe20e3cebf7b9d73b99b1510ca2501)
+- [ConfigureStore y Slices](https://github.com/patchamama/devtalles-react/commit/dc72011667821a6aafbfa2261cc59cb8cb302707)
+- [Usar valores del store y despachar acciones](https://github.com/patchamama/devtalles-react/commit/c788a0e50fc7403ac777dbd28fd57d198c617195)
+- [Tarea - decrement e incrementBy](https://github.com/patchamama/devtalles-react/commit/3f2dcc19c48c5b2dc18a2a807e548411e1618a0d)
+- [Snippet y Gists de Slice](https://github.com/patchamama/devtalles-react/commit/35eb5c5e271c2246abcadfcd45aaa8b1cfee3332)
+- [pokemonSlice](https://github.com/patchamama/devtalles-react/commit/9783e6315fce7a706500cdc6addc798174a51bb9)
+- [Thunks](https://github.com/patchamama/devtalles-react/commit/edf95c982f8d93df965a6dc47da894930348fdf3)
+- [Axios](https://github.com/patchamama/devtalles-react/commit/9e5778dda6f93f857d08d55bcb2ea57730479e00)
+- [Mostrar los pokemons paginadamente](https://github.com/patchamama/devtalles-react/commit/ba9e4efeeaa9bb0888344582fec75f3b72f430e2)
+- [RTK Query](https://github.com/patchamama/devtalles-react/commit/97a9c5d9989c27d76e9496e5600afb1750689a8e)
+- [Consumir el API mediante el custom](https://github.com/patchamama/devtalles-react/commit/303f926b06ed09da8faa20f69c85c13e26f40e6e)
+- [Obtener un Todo por ID](https://github.com/patchamama/devtalles-react/commit/0e9ab35399d3388ef01b0fb2d3d6567218a639df)
 - [Código fuente Fin sección 18 - Introducción a Redux](https://github.com/Klerith/redux-toolkit-rtk-demo)
 
 #### Recursos
@@ -661,13 +653,6 @@ yarn add axios
 - [https://redux-toolkit.js.org/](https://redux-toolkit.js.org/)
 - [Redux DevTools - Chrome](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
 - [Snippet y Gists de Slice](https://gist.github.com/Klerith/060281f76f3b7f0a458e4b83b1fc0062)
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
 
 ---
 
