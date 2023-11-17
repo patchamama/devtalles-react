@@ -618,6 +618,12 @@ yarn add @mui/icons-material
 
 ### Sección 18: Redux - ¿Qué es y conecptos? + React Redux
 
+Instalar redux toolkit y react-redux:
+
+```sh
+yarn add @reduxjs/toolkit react-redux
+```
+
 - []()
 - []()
 - []()
@@ -642,8 +648,8 @@ yarn add @mui/icons-material
 
 #### Recursos
 
-- []()
-- []()
+- [https://redux-toolkit.js.org/](https://redux-toolkit.js.org/)
+- [Redux DevTools - Chrome](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
 - []()
 - []()
 - []()
