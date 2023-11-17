@@ -586,33 +586,32 @@ Si quieren leer más sobre los assets y cómo manejarlos en Vite: https://vitejs
 
 ### Sección 17: JournalApp - MaterialUI - Estructura y Diseño
 
+#### Instalación de Material UI:
+
 ```sh
 yarn add @mui/material @emotion/react @emotion/styled
 yarn add @mui/icons-material
 ```
 
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+- [Inicio de proyecto - JournalApp](https://github.com/patchamama/devtalles-react/commit/322262f91ff10e95dd1896dd33a6035ab79b259f)
+- [Configuración de Rutas principales y secundarias](https://github.com/patchamama/devtalles-react/commit/b7ef2f8560aca617a999c6fa2e8f11bd0465b8cb)
+- [Instalación de Material UI](https://github.com/patchamama/devtalles-react/commit/dfe3be5506fce413dd6d0f564ed5f5dcae945a66)
+- [Configuración de MUI con Vite](https://github.com/patchamama/devtalles-react/commit/7b252692e4826ce178a1be4139bfb7d5482637b2)
+- [LoginPage - Diseño sin Layout](https://github.com/patchamama/devtalles-react/commit/072e9d9a1e9e5f456d7a37993ed06eb2ef6c6a09)
+- [AuthLayout](https://github.com/patchamama/devtalles-react/commit/94cf98f85e94e505cb95bcd171b914fcf52a7448)
+- [RegisterPage - Diseño](https://github.com/patchamama/devtalles-react/commit/0d0e9ff4a7ef399229da73b08840bedc2f442b7f)
+- [JournalLayout y JournalPage](https://github.com/patchamama/devtalles-react/commit/45348a196315e917497415a6c5bed08146efa2c6)
+- [NavBar](https://github.com/patchamama/devtalles-react/commit/a1a224508494fbc637258aee5f2f245a079a47d5)
+- [SideBar](https://github.com/patchamama/devtalles-react/commit/cb0c832a3549f151b1a524ff13ff74cb6041063c)
+- [NothingSelectedView - No hay nada seleccionado](https://github.com/patchamama/devtalles-react/commit/89766e7e1368055c95df1ee2c078d532c964ff89)
+- [NoteView](https://github.com/patchamama/devtalles-react/commit/febd1c92e0989ac6f20aceedb5c26aea4fb7080a)
+- [ImageList - Galería de imágenes](https://github.com/patchamama/devtalles-react/commit/1fda778c1cb72f40d720c07d6fac4de37034f5f8)
+- [Boton Flotante](https://github.com/patchamama/devtalles-react/commit/b09e1da4030f9870b62a864c625bac15f9c8d0f0)
+- [Código fuente en GitHub - Fin sección 17](https://github.com/Klerith/react-journal-material/tree/fin-seccion-17)
 
 #### Recursos
 
 - [mui.com - minimizing-bundle-size](https://mui.com/material-ui/guides/minimizing-bundle-size/#development-environment)
-- []()
-- []()
-- []()
-- []()
-- []()
 
 ---
 
