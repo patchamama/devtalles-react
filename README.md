@@ -624,6 +624,12 @@ Instalar redux toolkit y react-redux:
 yarn add @reduxjs/toolkit react-redux
 ```
 
+Instalar axios:
+
+```sh
+yarn add axios
+```
+
 **Thunks**: _acción que es asíncrona que dispara otra acción._
 
 - []()
