@@ -49,6 +49,8 @@ Mis notas personales del _[Curso de React: De cero a experto (Hooks y MERN)](htt
   - [Sección 17: JournalApp - MaterialUI - Estructura y Diseño](#sección-17-journalapp---materialui---estructura-y-diseño)
     - [Instalación de Material UI:](#instalación-de-material-ui)
     - [Recursos](#recursos-13)
+  - [Sección 18: Redux - ¿Qué es y conecptos? + React Redux](#sección-18-redux---qué-es-y-conecptos--react-redux)
+    - [Recursos](#recursos-14)
   - [VSCode plugins](#vscode-plugins)
   - [Atajos del teclado (MacOSx) con vscode](#atajos-del-teclado-macosx-con-vscode)
 
@@ -613,6 +615,43 @@ yarn add @mui/icons-material
 #### Recursos
 
 - [mui.com - minimizing-bundle-size](https://mui.com/material-ui/guides/minimizing-bundle-size/#development-environment)
+
+### Sección 18: Redux - ¿Qué es y conecptos? + React Redux
+
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+
+#### Recursos
+
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
 
 ---
 
