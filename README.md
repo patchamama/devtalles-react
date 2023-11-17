@@ -566,31 +566,19 @@ Si quieren leer más sobre los assets y cómo manejarlos en Vite: https://vitejs
 
 ### Sección 16: Pruebas de nuestra aplicación de Héroes
 
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+- [Inicio de la sección - Pruebas en HeroApp](https://github.com/patchamama/devtalles-react/commit/42b676575d53c8c41af8448b09afacb952ec5fa7)
+- [Pruebas en el authReducer](https://github.com/patchamama/devtalles-react/blob/0bfc96157c62198af00f53791571cf92d78d7c2c/07-heroes-spa/tests/auth/context/authReducer.test.js)
+- [Pruebas sobre los Types](https://github.com/patchamama/devtalles-react/blob/a5ac0371f274279fa75792dfb642eb334c89e091/07-heroes-spa/tests/auth/types/types.test.js)
+- [Pruebas en el PublicRoute](https://github.com/patchamama/devtalles-react/blob/435a396d00e301a4564a4c5d5d2ab142d847c54f/07-heroes-spa/tests/router/PublicRoute.test.jsx)
+- [Pruebas en el PrivateRoute](https://github.com/patchamama/devtalles-react/blob/2d2791996a7283768482392ab7f7ad9a84f137d2/07-heroes-spa/tests/router/PrivateRoute.test.jsx)
+- [Pruebas en el AppRouter](https://github.com/patchamama/devtalles-react/blob/5bdd264a84b9ad7a49412d551b0f57911373d0ea/07-heroes-spa/tests/router/AppRouter.test.jsx)
+- [Pruebas en el NavBar](https://github.com/patchamama/devtalles-react/blob/bec4ad34ea02d01e62f5394f5fcdc2166533751b/07-heroes-spa/tests/ui/components/Navbar.test.jsx)
+- [Pruebas en el SearchScreen](https://github.com/patchamama/devtalles-react/blob/58fb56371c40ee4fcc9003ad33c5dee9f751e454/07-heroes-spa/tests/heroes/pages/SearchPage.test.jsx)
+- [Código fuente de GitHub - Fin sección 16](https://github.com/Klerith/react-heroes/tree/fin-seccion-16)
 
 #### Recursos
 
 - [Gist - Configuración de pruebas](https://gist.github.com/Klerith/ca7e57fae3c9ab92ad08baadc6c26177)
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
 
 ---
 
