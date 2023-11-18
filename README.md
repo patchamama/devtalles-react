@@ -49,12 +49,10 @@ Mis notas personales del _[Curso de React: De cero a experto (Hooks y MERN)](htt
   - [Sección 17: JournalApp - MaterialUI - Estructura y Diseño](#sección-17-journalapp---materialui---estructura-y-diseño)
     - [Instalación de Material UI:](#instalación-de-material-ui)
     - [Recursos](#recursos-13)
-  - [Sección 18: Redux - ¿Qué es y conecptos? + React Redux](#sección-18-redux---qué-es-y-conecptos--react-redux)
+  - [Sección 18: Redux - ¿Qué es y conceptos? + React Redux](#sección-18-redux---qué-es-y-conceptos--react-redux)
     - [Recursos](#recursos-14)
   - [VSCode plugins](#vscode-plugins)
   - [Atajos del teclado (MacOSx) con vscode](#atajos-del-teclado-macosx-con-vscode)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## Secciones
 
@@ -616,7 +614,10 @@ yarn add @mui/icons-material
 
 - [mui.com - minimizing-bundle-size](https://mui.com/material-ui/guides/minimizing-bundle-size/#development-environment)
 
-### Sección 18: Redux - ¿Qué es y conecptos? + React Redux
+### Sección 18: Redux - ¿Qué es y conceptos? + React Redux
+
+- [RTK Query Deploy](https://patchamama.github.io/devtalles-react/09-toolkit-redux-RTK%20Query/)
+- [PokemonApp](https://patchamama.github.io/devtalles-react/09-toolkit-redux-pokemonApp/)
 
 Instalar redux toolkit y react-redux:
 
