@@ -2,6 +2,8 @@
 
 por *Gentleman Programming* > https://www.youtube.com/watch?v=GMnWXlJnbNo
 
+Código: https://github.com/Gentleman-Programming/React-Desde-0-a-Avanzado
+
 ### Instalar react con bun
 
 ```sh

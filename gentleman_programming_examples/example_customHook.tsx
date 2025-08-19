@@ -16,7 +16,7 @@ function App() {
   // data.name data.lastName ... 
 
   // otro ejemplo de otro tipo de dato que puede devolver
-  const { data: dataUser, error: errorUaser, loading: loadingUser } = useFetch<Data>(userUrl). //usando alias en lo devuelto
+  // const { data: dataUser, error: errorUaser, loading: loadingUser } = useFetch<Data>(userUrl). //usando alias en lo devuelto
   // dataUser?.name
 
 
