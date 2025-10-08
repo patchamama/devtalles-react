@@ -1,4 +1,4 @@
-import './style.css';
+import './style.css'
 
 // import './bases/01-const-let';
 // import './bases/02-template-string';
@@ -10,7 +10,7 @@ import './style.css';
 // import './bases/08-imp-exp';
 // import './bases/09-promises';
 // import './bases/10-fetch-api';
-import './bases/11-async-await';
+import './11-async-await'
 
 // import { getHeroesByOwner } from './bases/08-imp-exp';
 // import { Owner } from './data/heroes.data';
@@ -19,7 +19,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <h1>Hola Mundo</h1>
   </div>
-`;
+`
 
 // En el main.ts usarán la función
 // console.log(getHeroesByOwner(Owner.Marvel));
