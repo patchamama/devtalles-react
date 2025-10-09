@@ -107,7 +107,7 @@ const ironman: Person = {
 > Sí definimos una constante como `const ironman: Person = { }`, al ponernos sobre `ironman` y pulsar `Command + .`
 > nos da la opción de implementar la interface automáticamente (add missing properties).
 
-### Functiones con múltiples retornos
+### Funcciones con múltiples retornos
 
 ```ts
 const getUser = (): [number, string] => {
@@ -186,7 +186,7 @@ console.log({ rank, keyName, name })
 > [!NOTE] 
 > En la desestructuración de objetos, podemos asignar valores por defecto a las propiedades que estamos extrayendo. En el ejemplo anterior, la propiedad `rank` se asigna a `'sin rango'` si no está definida en el objeto `Hero`. También podemos renombrar las propiedades al desestructurarlas, como se muestra con `keyName` que toma el valor de `key`. Además, podemos desestructurar objetos anidados, como se hace con `user`, y luego extraer propiedades específicas de ese objeto anidado, como `name`. Esto nos permite trabajar con los datos de manera más directa y clara, evitando la necesidad de acceder a las propiedades a través del objeto original cada vez que las necesitamos, tal como `user.name`. Esto mejora la legibilidad y mantenibilidad del código, especialmente cuando trabajamos con objetos complejos o funciones que retornan múltiples valores. Es importante recordar que al desestructurar, si una propiedad no existe en el objeto original, se le asignará `undefined` a menos que se especifique un valor por defecto y además de que el orden de las propiedades no importa, ya que se identifican por su nombre (no por su posición), sí fuera un array, el orden sí importaría.
 
-### Desestructuración en arrays
+### Desestructuración en arrays
 
 ```ts
 const dbz: string[] = ['Goku', 'Vegeta', 'Trunks']
@@ -569,3 +569,242 @@ return (
 > - En el ejemplo anterior, se define un módulo CSS llamado `ItemCounter.module.css` con dos clases: `color-Blue` y `colorRed`. Estas clases se importan en el componente `ItemCounter.tsx` y se aplican a los elementos `h1` utilizando la sintaxis de objetos. La clase `color-Blue` se accede utilizando la notación de corchetes debido al guion en el nombre, mientras que `colorRed` se accede directamente como una propiedad. Esto asegura que los estilos se apliquen solo a los elementos dentro del componente ``ItemCounter` y no afecten a otros componentes o elementos en la aplicación.
 
 [Quiz de React](docs/02_quiz_react.md)
+
+## Sección 5 - Pruebas automáticas - Unit testing
+
+Existen varias librerías para hacer pruebas unitarias en React, entre las más populares están `Jest` y `React Testing Library`. `Jest` es un framework de pruebas desarrollado por Facebook que proporciona una solución completa para realizar pruebas en aplicaciones JavaScript, incluyendo React. Ofrece características como mocks, spies, y una sintaxis sencilla para escribir pruebas. `React Testing Library`, por otro lado, es una librería que se enfoca en probar los componentes de React desde la perspectiva del usuario, promoviendo buenas prácticas al interactuar con el DOM de manera similar a como lo haría un usuario real. Ambas librerías se complementan bien y son ampliamente utilizadas en la comunidad de React para asegurar la calidad y funcionalidad del código.
+
+### Tipos de pruebas
+
+- Pruebas unitarias (Unit tests): se centran en probar unidades individuales de código, como funciones o componentes, de manera aislada para asegurar que funcionan correctamente.
+- Pruebas de integración (Integration tests): se enfocan en probar cómo interactúan diferentes unidades de código entre sí, asegurando que trabajan juntas como se espera.
+- Pruebas end-to-end (E2E tests): simulan el comportamiento del usuario y prueban la aplicación completa desde el inicio hasta el final, verificando que todas las partes de la aplicación funcionen correctamente en conjunto.
+- Pruebas de regresión (Regression tests): se realizan para asegurar que los cambios recientes en el código no hayan introducido errores o roto funcionalidades existentes.
+- Pruebas de rendimiento (Performance tests): evalúan la velocidad y eficiencia de la aplicación bajo diferentes condiciones de carga y uso.
+- Pruebas de usabilidad (Usability tests): se centran en evaluar la experiencia del usuario al interactuar con la aplicación, identificando posibles problemas de diseño o navegación.
+- Pruebas de seguridad (Security tests): buscan identificar vulnerabilidades en la aplicación que podrían ser explotadas por atacantes, asegurando que los datos y funcionalidades estén protegidos adecuadamente.
+- Pruebas de aceptación (Acceptance tests): verifican que la aplicación cumple con los requisitos y expectativas del cliente o usuario final, asegurando que se entreguen las funcionalidades acordadas.
+
+Se recomienda comenzar con pruebas unitarias e integración, y luego avanzar hacia pruebas end-to-end y otras según las necesidades del proyecto.
+
+### Pruebas unitarias
+
+- Pruebas atómicas simples: se centran en probar una única función o componente de manera aislada, asegurando que su comportamiento sea correcto y predecible.
+- Se recomienda no tener dependencias de otras funciones o componentes en las pruebas unitarias, para evitar efectos secundarios y asegurar que cada prueba sea independiente.
+- Debe de ser especializada en una sola funcionalidad o comportamiento, para facilitar la identificación de errores y mejorar la mantenibilidad del código.
+
+### Pruebas de integración
+
+- Pruebas de integración: se enfocan en probar cómo interactúan múltiples funciones o componentes entre sí, verificando que trabajen juntos como se espera.
+- No deben de ser tan específicas como las pruebas unitarias, ya que su objetivo es evaluar la colaboración entre diferentes partes del sistema.
+- Se recomienda cubrir escenarios comunes y casos de uso relevantes, para asegurar que las interacciones entre componentes sean correctas y robustas.
+
+### E2E - End to End
+
+- Pruebas end-to-end (E2E): simulan el comportamiento del usuario y prueban la aplicación completa desde el inicio hasta el final, verificando que todas las partes de la aplicación funcionen correctamente en conjunto.
+- Realizan pruebas en un entorno realista, interactuando con la interfaz de usuario y validando flujos completos de trabajo con un objetivo específico y también prueban casos de uso comunes.
+- Se recomienda utilizar herramientas como Cypress o Selenium para automatizar las pruebas E2E, ya que permiten simular interacciones del usuario de manera efectiva y verificar el comportamiento de la aplicación en un entorno realista.
+
+### Características de buenas pruebas automáticas (principalmente unitarias)
+
+- Deben ser rápidas de ejecutar, para facilitar la retroalimentación continua durante el desarrollo.
+- Deben ser confiables y producir resultados consistentes, evitando falsos positivos o negativos.
+- Deben ser fáciles de entender y mantener, con nombres descriptivos y una estructura clara.
+- Deben cubrir una variedad de casos de prueba, incluyendo escenarios positivos y negativos.
+- Deben ser independientes entre sí, para evitar efectos secundarios y facilitar la identificación de errores.
+- Deben ser fáciles de escribir y de leer, para fomentar su uso y mantenimiento a largo plazo.
+- Deben de ser flexibles y adaptables a cambios en el código, para evitar que se vuelvan obsoletas rápidamente.
+
+### El triple "A" en pruebas unitarias
+
+- Arrange (Preparar): configurar el entorno de prueba, inicializar variables y preparar los datos necesarios para la prueba.
+- Act (Actuar): ejecutar la función o componente que se está probando, aplicando los datos preparados en el paso anterior.
+- Assert (Afirmar): verificar que el resultado obtenido sea el esperado, utilizando aserciones para comparar el resultado con el valor esperado.
+
+### Mitos
+
+- Las pruebas automáticas son solo para grandes proyectos: las pruebas automáticas son beneficiosas para proyectos de cualquier tamaño, ya que ayudan a asegurar la calidad del código y facilitan el mantenimiento a largo plazo.
+- Las pruebas automáticas son difíciles de escribir y mantener: con las herramientas y prácticas adecuadas, escribir y mantener pruebas automáticas puede ser sencillo y eficiente.
+- Las pruebas automáticas ralentizan el desarrollo: aunque escribir pruebas puede llevar tiempo inicialmente, a largo plazo ahorran tiempo al detectar errores temprano y facilitar la refactorización del código.
+- Las pruebas automáticas son solo para desarrolladores: las pruebas automáticas pueden ser escritas y mantenidas por cualquier miembro del equipo, incluyendo testers y diseñadores, fomentando la colaboración y la calidad del producto final.
+- Las pruebas automáticas garantizan un código sin errores: aunque las pruebas automáticas ayudan a identificar y prevenir errores, no garantizan que el código esté completamente libre de errores, por lo que es importante combinarlas con otras prácticas de calidad de software.
+- Hay que probar todo el código: no es necesario probar cada línea de código, sino enfocarse en las partes críticas y los casos de uso más relevantes para asegurar la funcionalidad y calidad del software.
+- Las pruebas automáticas son una solución mágica: las pruebas automáticas son una herramienta valiosa, pero no reemplazan la necesidad de buenas prácticas de desarrollo, revisión de código y otras técnicas de aseguramiento de la calidad.
+- Las pruebas no pueden fallar: las pruebas automáticas pueden fallar por diversas razones, incluyendo errores en el código, cambios en los requisitos o problemas en el entorno de prueba, por lo que es importante revisar y mantener las pruebas regularmente.
+- Hacen más lenta mi aplicación: las pruebas automáticas no afectan el rendimiento de la aplicación en producción, ya que se ejecutan en un entorno de desarrollo o integración continua y no forman parte del código desplegado en producción.
+
+### Cobertura de código (coverage)
+
+- La cobertura de código es una métrica que indica qué porcentaje del código fuente de una aplicación está siendo ejecutado durante las pruebas automáticas. Se utiliza para evaluar la efectividad de las pruebas y identificar áreas del código que no están siendo probadas, lo que puede ayudar a mejorar la calidad y confiabilidad del software. La cobertura de código se mide en diferentes niveles, incluyendo cobertura de líneas, ramas, funciones y declaraciones. Herramientas como Jest y Istanbul pueden generar informes de cobertura de código, proporcionando detalles sobre qué partes del código han sido cubiertas por las pruebas y cuáles no. Es importante tener en cuenta que una alta cobertura de código no garantiza la ausencia de errores, pero sí indica que una mayor parte del código ha sido verificada mediante pruebas.
+- Se recomienda apuntar a una cobertura de código del 80% o más, pero la calidad de las pruebas y la relevancia de los casos de prueba son igualmente importantes.
+
+### Instalar y configurar vitest
+
+Ver vitest (https://vitest.dev/) para pruebas unitarias en React con TypeScript.
+
+```sh
+npm install -D vitest
+```
+
+#### Agregar y configurar vitest en el package.json
+
+```json
+"scripts": {
+  ...
+  "test": "vitest",
+  "test:ui": "vitest --ui",
+  "test:watch": "vitest --watch",
+  "test:coverage": "vitest --coverage"
+}
+```
+
+Examples:
+
+```ts
+// sum.ts
+export const sum = (a: number, b: number): number => {
+  return a + b
+}
+
+// sum.test.ts
+import { describe, expect, test } from 'vitest'
+import { sum } from './sum' // importar la función a probar
+
+describe('sum function', () => {
+  test('add two positives numbers', () => {
+    expect(sum(1, 2)).toBe(3)
+  })
+  test('add two negative numbers', () => {
+    expect(sum(-1, -2)).toBe(-3)
+  })
+  test('add a positive and a negative number', () => {
+    expect(sum(1, -2)).toBe(-1)
+  })
+})
+```
+
+```sh
+npm run test
+```
+
+#### Para testear componentes de React necesitamos testing-library/react
+
+```sh
+npm install -D @testing-library/react @testing-library/jest-dom
+```
+
+```ts
+// ItemCounter.tsx
+import { useState } from 'react'
+interface Props {
+  name: string
+} // definir las propiedades que recibirá el componente
+const ItemCounter = ({ name }: Props) => {
+  const [counter, setCounter] = useState(0) // useState devuelve unicidad y el valor inicial
+  const handleAdd = () => setCounter(counter + 1)
+  const handleRemove = () => setCounter(counter - 1)
+  return (
+    <>
+      <h1>
+        Item: {name} - Cantidad: {counter}
+      </h1>
+      <button onClick={handleAdd}>+1</button>
+      <button onClick={handleRemove} disabled={counter <= 0}>
+        -1
+      </button>
+    </>
+  )
+}
+export default ItemCounter
+```
+
+```ts
+// ItemCounter.test.tsx
+import { describe, expect, test } from 'vitest'
+import { render, screen, fireEvent } from '@testing-library/react'
+import ItemCounter from './ItemCounter' // importar el componente a probar
+describe('ItemCounter component', () => {
+  test('should render the component with initial state', () => {
+    render(<ItemCounter name='Test Item' />) // renderizar el componente
+    expect(
+      screen.getByText('Item: Test Item - Cantidad: 0')
+    ).toBeInTheDocument() // verificar que el texto inicial se muestra correctamente
+  })
+  test('should increment the counter when +1 button is clicked', () => {
+    render(<ItemCounter name='Test Item' />)
+    const addButton = screen.getByText('+1') // obtener el botón +1
+    fireEvent.click(addButton) // simular un clic en el botón
+    expect(
+      screen.getByText('Item: Test Item - Cantidad: 1')
+    ).toBeInTheDocument() // verificar que el contador se incrementó
+  })
+  test('should decrement the counter when -1 button is clicked', () => {
+    render(<ItemCounter name='Test Item' />)
+    const addButton = screen.getByText('+1')
+    const removeButton = screen.getByText('-1')
+    fireEvent.click(addButton) // incrementar el contador a 1
+    fireEvent.click(removeButton) // decrementar el contador a 0
+    expect(
+      screen.getByText('Item: Test Item - Cantidad: 0')
+    ).toBeInTheDocument() // verificar que el contador se decrementó
+  })
+  test('should disable the -1 button when counter is 0', () => {
+    render(<ItemCounter name='Test Item' />)
+    const removeButton = screen.getByText('-1')
+    expect(removeButton).toBeDisabled() // verificar que el botón -1 está deshabilitado cuando el contador es 0
+  })
+})
+```
+
+```sh
+npm run test
+```
+
+### Testear componentes con useState y useEffect
+
+```sh
+npm install -D jsdom @testing-library/jest-dom @testing-library/react
+```
+
+Para poder hacer test en componentes que usan `useState` o `useEffect`, es necesario agregar la configuración de `jsdom` en el archivo `vitest.config.ts` y usar la librería `@testing-library/jest-dom` para tener matchers adicionales como `toBeInTheDocument()`:
+
+```ts
+/// <reference types="vitest" />
+import { defineConfig } from 'vitest/config'
+import react from '@vitejs/plugin-react-swc'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  test: {
+    globals: true,
+    environment: 'jsdom',
+  },
+})
+import '@testing-library/jest-dom' // para usar matchers como toBeInTheDocument()
+```
+
+Una vez configurado, se pueden ejecutar las pruebas con el comando (sí se estaban haciendo pruebas mejor abortarlas y volver a ejecutar `npm run test` para que tome la nueva configuración e instale las dependencias necesarias como `jsdom`):
+
+```sh
+npm run test
+```
+
+Ahora podemos usar en los test un dom virtual (por ejemplo `console.log(document.body.innerHTML)` para ver el html generado en el test) y podemos hacer uso de funciones interesantes como `screen.debug()` para ver el html generado en ese momento.
+
+En las pruebas se puede usar con container `render` y luego usar o por separado `screen` para buscar elementos en el DOM renderizado, sí no se cambia el dom, se puede usar directamente `render` y luego `screen` pero sí se cambia el dom y hay eventos como `fireEvent` o `userEvent`, es mejor usar screen para buscar los elementos en el DOM actualizado.
+
+### Evaluar snapshots
+
+```ts
+test('should match snapshot', () => {
+  const { container } = render(<ItemCounter name='Test Item' />)
+  expect(container).toMatchSnapshot() // crear y evaluar el snapshot
+})
+```
+
+> [!NOTE]
+>
+> - Los snapshots en pruebas automáticas son una técnica utilizada para capturar y almacenar el estado visual o estructural de un componente o una parte de la interfaz de usuario en un momento específico. Durante la ejecución de las pruebas, se genera un archivo de snapshot que contiene una representación serializada del componente, incluyendo su estructura HTML, propiedades y estilos. En futuras ejecuciones de las pruebas, el snapshot se compara con el estado actual del componente para detectar cambios inesperados. Si el componente ha cambiado y el snapshot ya no coincide, la prueba fallará, indicando que se ha producido una modificación en la interfaz. Los snapshots son útiles para detectar cambios visuales no intencionados y asegurar que la apariencia de los componentes se mantenga consistente a lo largo del tiempo. Sin embargo, es importante revisar y actualizar los snapshots de manera consciente, ya que cambios legítimos en el diseño o la funcionalidad también pueden causar fallos en las pruebas.
+> - En el ejemplo anterior, se utiliza la función `toMatchSnapshot()` para crear y evaluar un snapshot del componente `ItemCounter`. La primera vez que se ejecuta la prueba, se genera un archivo de snapshot que captura el estado inicial del componente. En ejecuciones posteriores, el snapshot se compara con el estado actual del componente para detectar cualquier cambio. Si el componente ha cambiado y el snapshot ya no coincide, la prueba fallará, indicando que se ha producido una modificación en la interfaz. Esto ayuda a asegurar que la apariencia y estructura del componente se mantengan consistentes a lo largo del tiempo.
+> - Los cambios se guardan en la carpeta `__snapshots__` que se crea automáticamente al ejecutar las pruebas por primera vez y esta se comparte con git para que otros desarrolladores puedan revisar los cambios en los snapshots.
