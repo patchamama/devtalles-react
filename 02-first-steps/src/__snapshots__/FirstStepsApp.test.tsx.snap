@@ -1,0 +1,18 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FirstStepsApp > should match snapshot 1`] = `
+<div>
+  <h1>
+    Carrito de compras
+  </h1>
+  <div
+    data-testid="ItemCounter"
+  />
+  <div
+    data-testid="ItemCounter"
+  />
+  <div
+    data-testid="ItemCounter"
+  />
+</div>
+`;

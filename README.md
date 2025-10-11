@@ -646,7 +646,7 @@ Ver vitest (https://vitest.dev/) para pruebas unitarias en React con TypeScript.
 npm install -D vitest
 ```
 
-#### Agregar y configurar vitest en el package.json
+#### Agregar y configurar vitest en el package.json
 
 ```json
 "scripts": {
@@ -687,7 +687,7 @@ describe('sum function', () => {
 npm run test
 ```
 
-#### Para testear componentes de React necesitamos testing-library/react
+#### Para testear componentes de React necesitamos testing-library/react
 
 ```sh
 npm install -D @testing-library/react @testing-library/jest-dom
@@ -760,6 +760,11 @@ describe('ItemCounter component', () => {
 npm run test
 ```
 
+### Diferencia entre "Testing Library" y "vitest":
+
+- Testing Library es una colección de utilidades para probar componentes de interfaz de usuario en diferentes frameworks, incluyendo React, Vue y Angular. Se enfoca en probar la aplicación desde la perspectiva del usuario, promoviendo buenas prácticas al interactuar con el DOM de manera similar a como lo haría un usuario real. Proporciona funciones para renderizar componentes, buscar elementos en el DOM y simular eventos de usuario. Brinda funcionalidades como `render`, `screen`, `fireEvent` y `userEvent` para facilitar la escritura de pruebas que sean fáciles de entender y mantener.
+- Vitest, por otro lado, es un framework de pruebas unitarias para JavaScript y TypeScript, similar a Jest. Proporciona un entorno de ejecución para las pruebas, manejo de mocks, spies y una sintaxis sencilla para escribir pruebas. Vitest es rápido y ligero, y está diseñado para integrarse bien con herramientas modernas de desarrollo como Vite. Vitest se encarga de ejecutar las pruebas, mientras que Testing Library se enfoca en proporcionar utilidades para interactuar con los componentes y el DOM durante las pruebas. Brinda funcionalidades como `describe`, `test`, `expect` y `vi` para estructurar y ejecutar las pruebas.
+
 ### Testear componentes con useState y useEffect
 
 ```sh
@@ -792,7 +797,7 @@ npm run test
 
 Ahora podemos usar en los test un dom virtual (por ejemplo `console.log(document.body.innerHTML)` para ver el html generado en el test) y podemos hacer uso de funciones interesantes como `screen.debug()` para ver el html generado en ese momento.
 
-En las pruebas se puede usar con container `render` y luego usar o por separado `screen` para buscar elementos en el DOM renderizado, sí no se cambia el dom, se puede usar directamente `render` y luego `screen` pero sí se cambia el dom y hay eventos como `fireEvent` o `userEvent`, es mejor usar screen para buscar los elementos en el DOM actualizado.
+En las pruebas se puede usar con container `render` y luego usar o por separado `screen` para buscar elementos en el DOM renderizado, sí no se cambia el dom, se puede usar directamente `render` y luego `screen` pero sí se cambia el dom y hay eventos como `fireEvent` o `userEvent`, es mejor usar screen para buscar los elementos en el DOM actualizado. Por lo que `container` es un elemento HTML estático del renderizado inicial, mientras que `screen` siempre apunta al estado actual del DOM y se actualiza después de los eventos.
 
 ### Evaluar snapshots
 
@@ -808,3 +813,114 @@ test('should match snapshot', () => {
 > - Los snapshots en pruebas automáticas son una técnica utilizada para capturar y almacenar el estado visual o estructural de un componente o una parte de la interfaz de usuario en un momento específico. Durante la ejecución de las pruebas, se genera un archivo de snapshot que contiene una representación serializada del componente, incluyendo su estructura HTML, propiedades y estilos. En futuras ejecuciones de las pruebas, el snapshot se compara con el estado actual del componente para detectar cambios inesperados. Si el componente ha cambiado y el snapshot ya no coincide, la prueba fallará, indicando que se ha producido una modificación en la interfaz. Los snapshots son útiles para detectar cambios visuales no intencionados y asegurar que la apariencia de los componentes se mantenga consistente a lo largo del tiempo. Sin embargo, es importante revisar y actualizar los snapshots de manera consciente, ya que cambios legítimos en el diseño o la funcionalidad también pueden causar fallos en las pruebas.
 > - En el ejemplo anterior, se utiliza la función `toMatchSnapshot()` para crear y evaluar un snapshot del componente `ItemCounter`. La primera vez que se ejecuta la prueba, se genera un archivo de snapshot que captura el estado inicial del componente. En ejecuciones posteriores, el snapshot se compara con el estado actual del componente para detectar cualquier cambio. Si el componente ha cambiado y el snapshot ya no coincide, la prueba fallará, indicando que se ha producido una modificación en la interfaz. Esto ayuda a asegurar que la apariencia y estructura del componente se mantengan consistentes a lo largo del tiempo.
 > - Los cambios se guardan en la carpeta `__snapshots__` que se crea automáticamente al ejecutar las pruebas por primera vez y esta se comparte con git para que otros desarrolladores puedan revisar los cambios en los snapshots.
+
+### Crear un componente ficticio para pruebas usando vi.mock()
+
+```ts
+// ItemCounter.tsx
+import { useState } from 'react'
+interface Props {
+  name: string
+}
+} // definir las propiedades que recibirá el componentes
+
+export const ItemCounter = ({ name }: Props) => {
+  const [counter, setCounter] = useState(0) // useState devuelve unicidad y el valor inicial
+  const handleAdd = () => setCounter(counter + 1)
+  const handleRemove = () => setCounter(counter - 1)
+
+  return (
+    <>
+      <h1 data-testid="item-name">
+        Item: {name} - Cantidad: {counter}
+      </h1>
+      <button onClick={handleAdd}>+1</button>
+      <button onClick={handleRemove} disabled={counter <= 0}>
+        -1
+      </button>
+    </>
+  )
+}
+```
+
+```ts
+// ItemCounter.test.tsx
+import { describe, expect, test, vi } from 'vitest'
+import { render, screen, fireEvent } from '@testing-library/react'
+import { ItemCounter } from './ItemCounter' // importar el componente a probar
+
+vi.mock('./ItemCounter', () => ({
+  ItemCounter: () => <div data-testid='item-counter'>Mocked ItemCounter</div>,
+}))
+describe('ItemCounter component', () => {
+  test('should render the mocked component', () => {
+    render(<ItemCounter name='Test Item' />) // renderizar el componente
+    expect(screen.getByTestId('item-counter')).toBeInTheDocument() // verificar que el componente mockeado se muestra correctamente
+    expect(screen.getByTestId('item-counter').textContent).toBe(
+      'Mocked ItemCounter'
+    ) // verificar el contenido del componente mockeado
+  })
+})
+```
+
+> [!NOTE]
+>
+> - En este caso, se utiliza `vi.mock()` para crear un componente ficticio (mock) de `ItemCounter`. El mock reemplaza la implementación real del componente con una versión simplificada que solo renderiza un `div` con un `data-testid` específico. Esto permite probar otros componentes o funciones que dependen de `ItemCounter` sin ejecutar su lógica interna, facilitando pruebas más rápidas y aisladas. En la prueba, se verifica que el componente mockeado se renderiza correctamente y que su contenido es el esperado.
+
+### Crear una función fictica para pruebas usando vi.fn()
+
+```ts
+// FirstStepsApp.tsx
+import { ItemCounter } from './ItemCounter' // importar el componente a probar
+export const FirstStepsApp = () => {
+  return <ItemCounter name='Test Item' />
+}
+```
+
+```ts
+// ItemCounter.test.tsx
+import { describe, expect, test, vi } from 'vitest'
+import { render, screen, fireEvent } from '@testing-library/react'
+// import { ItemCounter } from './ItemCounter' // importar el componente a probar
+import { FirstStepsApp } from './FirstStepsApp' // importar el componente padre que usa ItemCounter
+
+
+const mockItemCounter = vi.fn((_props: { name: string }) => (
+  <div data-testid="item-counter">Mocked ItemCounter</div>
+))
+vi.mock('./ItemCounter', () => ({
+  ItemCounter: (props: unknown) => mockItemCounter(props),
+}))
+
+// vi.mock('./ItemCounter', () => ({
+//   ItemCounter: () => <div data-testid="item-counter">Mocked ItemCounter</div>,
+// }))
+describe('ItemCounter component', () => {
+   afterEach(() => { // limpiar los mocks después de cada prueba
+    vi.clearAllMocks();
+  });
+  test('should match snapshot', () => {
+    const { container } = render(<ItemCounter name='Test Item' />)
+    expect(container).toMatchSnapshot() // crear y evaluar el snapshot
+  })
+  test('should render the mocked component', () => {
+    // render(<ItemCounter name='Test Item' />) // renderizar el componente
+    render(<FirstStepsApp />) // renderizar el componente padre que usa ItemCounter
+    expect(screen.getByTestId('item-counter')).toBeInTheDocument() // verificar que el componente mockeado se muestra correctamente
+    expect(screen.getByTestId('item-counter').textContent).toBe('Mocked ItemCounter') // verificar el contenido del componente mockeado
+  })
+  test('should render ItemCounter with correct props', () => {
+    // render(<ItemCounter name='Test Item' />)
+    render(<FirstStepsApp />) // renderizar el componente padre que usa ItemCounter
+    expect(mockItemCounter).toHaveBeenCalledWith({ name: 'Test Item' }) // verificar que el mock fue llamado con las props correctas
+    expect(mockItemCounter).toHaveBeenCalledTimes(1) // verificar que el mock fue llamado una vez
+})
+```
+
+> [!NOTE]
+>
+> - En este caso, se utiliza `vi.mock()` para crear un componente ficticio (mock) de `ItemCounter`. El mock reemplaza la implementación real del componente con una versión simplificada que solo renderiza un `div` con un `data-testid` específico. Esto permite probar otros componentes o funciones que dependen de `ItemCounter` sin ejecutar su lógica interna, facilitando pruebas más rápidas y aisladas. En la prueba, se verifica que el componente mockeado se renderiza correctamente y que su contenido es el esperado. También se utiliza `vi.fn()` para crear una función mock que permite rastrear cómo se llama el componente mockeado, incluyendo las props con las que se invoca y la cantidad de veces que se llama. Esto es útil para asegurarse de que el componente se utiliza correctamente en diferentes escenarios de prueba.
+> - Se utiliza `afterEach` para limpiar los mocks después de cada prueba, asegurando que no haya interferencias entre pruebas y que cada prueba comience con un estado limpio.
+> - Usar `data-testid` en los elementos HTML para facilitar la selección de elementos en las pruebas, especialmente cuando los elementos no tienen texto visible o clases únicas. Esto ayuda a hacer las pruebas más robustas y menos propensas a fallos debido a cambios en el contenido o la estructura del DOM. La jerarquía de consultas recomendada por `React Testing Library` prioriza métodos que se asemejan a cómo un usuario encontraría los elementos (por rol, por texto, por label), dejando getByTestId que localiza a `data-testid` en el DOM como una opción de escape para cuando otras consultas no son prácticas.
+
+[Quiz de Unit testing](docs/05_pruebas_automáticas-Unit_testing.md)

@@ -2,6 +2,45 @@
 
 exports[`MyAwesomeApp > should match snapshot 1`] = `
 <div>
+  <div
+    data-testid="div-app"
+  >
+    <h1
+      data-testid="first-name-title"
+    >
+       
+      Fernando
+       
+    </h1>
+    <h3>
+       
+      Herrera
+       
+    </h3>
+    <p
+      class="mi-clase-favorita"
+    >
+      Elden Ring, Smash, Metal Gear
+    </p>
+    <p>
+      4
+    </p>
+    <h1>
+      No activo
+    </h1>
+    <p
+      style="background-color: rgb(250, 250, 250); border-radius: 20px; padding: 10px; margin-top: 30px;"
+    >
+      {"zipCode":"ABC-123","country":"Canadá"}
+    </p>
+  </div>
+</div>
+`;
+
+exports[`MyAwesomeApp > should match snapshot 2`] = `
+<div
+  data-testid="div-app"
+>
   <h1
     data-testid="first-name-title"
   >
@@ -14,7 +53,9 @@ exports[`MyAwesomeApp > should match snapshot 1`] = `
     Herrera
      
   </h3>
-  <p>
+  <p
+    class="mi-clase-favorita"
+  >
     Elden Ring, Smash, Metal Gear
   </p>
   <p>
