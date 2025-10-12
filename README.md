@@ -924,3 +924,160 @@ describe('ItemCounter component', () => {
 > - Usar `data-testid` en los elementos HTML para facilitar la selección de elementos en las pruebas, especialmente cuando los elementos no tienen texto visible o clases únicas. Esto ayuda a hacer las pruebas más robustas y menos propensas a fallos debido a cambios en el contenido o la estructura del DOM. La jerarquía de consultas recomendada por `React Testing Library` prioriza métodos que se asemejan a cómo un usuario encontraría los elementos (por rol, por texto, por label), dejando getByTestId que localiza a `data-testid` en el DOM como una opción de escape para cuando otras consultas no son prácticas.
 
 [Quiz de Unit testing](docs/05_pruebas_automáticas-Unit_testing.md)
+
+## Definición de Props usando functional components y TypeScript (FC)
+
+```tsx
+import React, { FC } from 'react'
+interface Props {
+  name: string
+  quantity?: number
+  quantity2: number | undefined // undefined es un tipo válido
+} // definir las propiedades que recibirá el componente
+
+const ItemCounter: FC<Props> = ({ name, quantity, quantity2 }) => {
+  return (
+    <h1>
+      Item: {name} - Cantidad: {quantity} - Cantidad 2: {quantity2}
+    </h1>
+  )
+}
+
+// Forma alternativa sin usar FC (Functional Component)
+export const ItemCounter2 = ({ name, quantity, quantity2 }: Props) => {
+  return (
+    <h1>
+      Item: {name} - Cantidad: {quantity} - Cantidad 2: {quantity2}
+    </h1>
+  )
+}
+
+export default ItemCounter
+// Usar el componente en main.tsx
+<ItemCounter name='Nintendo Switch 2' quantity={10} quantity2={undefined} />
+<ItemCounter name='PlayStation 5' quantity={5} quantity2={0} />
+<ItemCounter2 name='Xbox Series X' quantity2={15} />
+```
+
+Como resumen:
+
+`export const ItemCounter2 = ({ name, quantity, quantity2 }: Props) => {`
+
+es equivalente a:
+
+`const ItemCounter: FC<Props> = ({ name, quantity, quantity2 }) => {`
+
+**Debounce en React con TypeScript** es una técnica utilizada para limitar la frecuencia con la que se ejecuta una función en respuesta a eventos rápidos o repetitivos, como la escritura en un campo de búsqueda o el redimensionamiento de una ventana. Al implementar `debounce`, se establece un período de espera (delay) durante el cual la función no se ejecutará, y solo se llamará una vez que haya pasado ese tiempo sin que se haya activado el evento nuevamente. Esto ayuda a mejorar el rendimiento de la aplicación al reducir la cantidad de veces que se ejecuta la función, evitando llamadas innecesarias y mejorando la experiencia del usuario. En React con TypeScript, se puede implementar debounce utilizando hooks personalizados o librerías externas como Lodash, asegurando que el código sea seguro y fácil de mantener gracias a la verificación de tipos proporcionada por TypeScript.
+
+### Hook useEffect con debounce
+
+```tsx
+useEffect(() => {
+  funtionToCall() // Lógica a ejecutar después del delay
+  return () => {
+    console.log('funcción de limpieza') // Limpiar recursos o cancelar operaciones pendientes
+  }
+}, [values]) // Dependencia en values
+```
+
+> [!NOTE]
+> El useEffect() se dispara una vez que el componente se ha renderizado (que se monte) y cada vez que alguna de sus dependencias cambia. En este caso, la dependencia es `value`, por lo que el efecto se ejecutará cada vez que `value` cambie. La función de limpieza (cleanup function) dentro del return se ejecuta cada vez que se ejecute el efecto (la función callback) y antes de que el efecto se vaya a desmontar, permitiendo limpiar cualquier recurso o cancelar operaciones pendientes.
+> El efecto debe de hacer solo una tarea específica y no múltiples tareas, para evitar efectos secundarios no deseados y mantener el código limpio y fácil de entender.
+
+En el caso de debounce, se puede usar useEffect para ejecutar una función después de un período de tiempo (delay) desde la última vez que se actualizó el valor (value). Si el valor cambia antes de que el delay termine, se limpia el timeout anterior y se establece uno nuevo, asegurando que la función solo se ejecute una vez que el usuario haya dejado de interactuar durante el período de espera.
+
+```tsx
+useEffect(() => {
+  const timeoutId = setTimeout(() => {
+    funtionToCall() // Lógica a ejecutar después del delay
+  }, 700) // Delay de 700ms
+  return () => {
+    clearTimeout(timeoutId) // Limpiar el timeout si value cambia antes del delay
+  }
+}, [values]) // Dependencia en values
+```
+
+> [!TIP]
+> Con la ayuda de este plugin con vscode: https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype se puede generar interfaces de TypeScript a partir de JSON, JSON Schema, TypeScript, JavaScript, y otros formatos. Esto es especialmente útil para definir tipos de datos complejos y asegurar la consistencia en el uso de datos en una aplicación TypeScript. Conclusión, se copia al clipboard el JSON y en vscode se ejecuta el comando "Quicktype: Paste JSON as Code", después se solicita el nombre de la interface y después automáticamente se genera y se pega en el archivo TypeScript.
+
+### Uso de axios
+
+```sh
+npm install axios
+```
+
+```ts
+import axios from 'axios'
+
+interface ApiResponse {
+  data: any // Definir la estructura de la respuesta según la API
+  ...
+}
+
+const fetchData = async (query: string) => {
+  try {
+    // const response = await axios.get(`https://api.example.com/data?query=${query}`) // Llamada simple sin parámetros adicionales
+
+    // Llamada con parámetros adicionales y encabezados personalizados
+    const response = await axios.get<ApiResponse>(
+      `https://api.example.com/data?query=${query}`,
+      {
+        params: {
+          limit: 10,
+          offset: 0,
+          apiKey: process.env.API_KEY, // Agregar parámetros adicionales a la URL
+        },
+        // headers: {
+        //   'Content-Type': 'application/json',
+        //   Authorization: `Bearer ${process.env.API_TOKEN}`,
+        // }, // Agregar encabezados personalizados, como la autorización
+      }
+    )
+    console.log('Data fetched:', response.data)
+  } catch (error) {
+    console.error('Error fetching data:', error)
+  }
+}
+```
+
+### Usando axios.create para crear una instancia personalizada de axios
+
+```ts
+// get-data-by-query.actions.ts
+import axios from 'axios'
+
+export const apiClient = axios.create({
+  baseURL: 'https://api.example.com',
+  headers: {
+    'Content-Type': 'application/json',
+    Authorization: `Bearer ${process.env.API_TOKEN}`,
+  },
+})
+
+// Luego usar apiClient en lugar de axios directamente
+import { apiClient } from './get-data-by-query.actions'
+
+export const fetchData = async (query: string) => {
+  try {
+    const response = await apiClient.get('/data', {
+      params: {
+        query,
+        limit: 10,
+        offset: 0,
+        apiKey: process.env.API_KEY,
+      },
+    })
+    console.log('Data fetched:', response.data)
+  } catch (error) {
+    console.error('Error fetching data:', error)
+  }
+}
+```
+
+> [!NOTE]
+>
+> - El `patrón canónico` en react, a menudo llamado "levantar el estado" (lifting state up). El padre mantiene el control de la lógica y le da al hijo la "capacidad" de activarla a través de la función pasada por props. De esta forma, el componente padre pasa una función (callback) al hijo a través de las props. El hijo ejecuta esa función cuando ocurre un evento, pasándole los datos necesarios como argumentos, de esta forma el componente padre puede manejar la lógica y actualizar su estado en función de los datos recibidos del hijo y a su vez, el hijo puede comunicar información o eventos a su componente padre (por ejemplo, notificar que se hizo un clic en un término de búsqueda).
+>
+> - El `patrón mapper` se refiere a la práctica de mapear o transformar datos de una estructura a otra, generalmente para adaptarlos a las necesidades de la aplicación o para simplificar su uso. En React, esto a menudo implica tomar datos crudos (por ejemplo, de una API) y transformarlos en un formato más adecuado para su uso en componentes, como convertir objetos complejos en arrays de elementos renderizables. El patrón mapper ayuda a mantener el código limpio y organizado, separando la lógica de transformación de datos de la lógica de presentación y facilitando la reutilización y el mantenimiento del código. De esta forma, sí se tiene una lista de objetos con muchas propiedades, pero solo se necesitan algunas de ellas para renderizar una lista en la interfaz de usuario, se puede usar el patrón mapper para crear un nuevo array con solo las propiedades necesarias o de otra forma, sí se modificara en algún momento la estructura de los datos, solo se tendría que actualizar el mapper y no toda la lógica de renderizado (Desacopla la aplicación de la estructura de la API. Si la API cambia su formato de respuesta en el futuro, solo se necesita actualizar el "mapeo" en un lugar, en lugar de modificar todos los componentes que la consumen).
+
+[Quiz](docs/06_GifExpertApp_useState_useEffect.md)
