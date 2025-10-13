@@ -969,7 +969,7 @@ es equivalente a:
 
 **Debounce en React con TypeScript** es una técnica utilizada para limitar la frecuencia con la que se ejecuta una función en respuesta a eventos rápidos o repetitivos, como la escritura en un campo de búsqueda o el redimensionamiento de una ventana. Al implementar `debounce`, se establece un período de espera (delay) durante el cual la función no se ejecutará, y solo se llamará una vez que haya pasado ese tiempo sin que se haya activado el evento nuevamente. Esto ayuda a mejorar el rendimiento de la aplicación al reducir la cantidad de veces que se ejecuta la función, evitando llamadas innecesarias y mejorando la experiencia del usuario. En React con TypeScript, se puede implementar debounce utilizando hooks personalizados o librerías externas como Lodash, asegurando que el código sea seguro y fácil de mantener gracias a la verificación de tipos proporcionada por TypeScript.
 
-### Hook useEffect con debounce
+### Hook useEffect con debounce
 
 ```tsx
 useEffect(() => {
@@ -1099,6 +1099,60 @@ Los custom hooks en React son funciones reutilizables que encapsulan lógica de 
 > Es útil tener instalado React Developer Tools en el navegador para inspeccionar el estado y las props de los componentes React, así como para depurar problemas relacionados con el renderizado y la actualización del estado. Esta herramienta proporciona una interfaz visual que facilita la comprensión de la estructura de la aplicación y el flujo de datos entre componentes, lo que es especialmente valioso al trabajar con hooks y custom hooks en React. URL: https://react.dev/learn/react-developer-tools
 
 `useRef` es un hook en React que permite crear una referencia mutable que persiste durante todo el ciclo de vida del componente. A diferencia de `useState`, que provoca una re-renderización del componente cuando su valor cambia, `useRef` no causa re-renderizados, lo que lo hace ideal para almacenar valores que no afectan la representación visual del componente. `useRef` se utiliza comúnmente para acceder a elementos del DOM directamente, almacenar valores previos o mantener cualquier valor mutable que necesite persistir entre renderizados sin desencadenar una actualización de la interfaz de usuario. La referencia creada por `useRef` tiene una propiedad `.current` que puede ser leída y modificada según sea necesario.
+
+Ejemplo de custom Hoook con useCounter y useRef:
+
+```tsx
+import { useState, useRef } from 'react'
+export const useCounter = (initialValue: number = 0) => {
+  const [counter, setCounter] = useState<number>(initialValue)
+  const counterRef = useRef<number>(counter) // Crear una referencia mutable para el contador
+
+  const increment = () => {
+    setCounter((prev) => {
+      const newValue = prev + 1
+      counterRef.current = newValue // Actualizar la referencia con el nuevo valor
+      return newValue
+    })
+  }
+
+  const decrement = () => {
+    setCounter((prev) => {
+      const newValue = prev - 1
+      counterRef.current = newValue // Actualizar la referencia con el nuevo valor
+      return newValue
+    })
+  }
+
+  const reset = () => {
+    setCounter(initialValue)
+    counterRef.current = initialValue // Reiniciar la referencia al valor inicial
+  }
+
+  return { counter, increment, decrement, reset, counterRef } // Devolver la referencia junto con el estado y las funciones
+}
+
+// Uso del custom hook en un componente
+import { useCounter } from './useCounter'
+export const CounterComponent = () => {
+  const { counter, increment, decrement, reset, counterRef } =
+    useCounter<number>(10)
+
+  return (
+    <div>
+      <h1>Counter: {counter}</h1>
+      <h2>Counter Ref: {counterRef.current}</h2> {/* Mostrar el valor actual de la referencia */}
+      <button onClick={increment}>+1</button>
+      <button onClick={decrement}>-1</button>
+      <button onClick={reset}>Reset</button>
+    </div>
+  )
+}
+```
+
+> [!NOTE]
+> Los custom hooks son funciones que pueden utilizar otros hooks de React. Esto permite encapsular lógica reutilizable y compartirla entre componentes de manera más sencilla.
+> En este ejemplo, el custom hook `useCounter` utiliza `useState` para manejar el estado del contador y `useRef` para crear una referencia mutable que persiste entre renderizados. La referencia `counterRef` se actualiza cada vez que el contador cambia, permitiendo acceder al valor actual del contador sin causar re-renderizados adicionales.
 
 ## Deployment de aplicaciones React con Vite en producción
 
