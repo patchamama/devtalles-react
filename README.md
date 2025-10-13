@@ -1081,3 +1081,42 @@ export const fetchData = async (query: string) => {
 > - El `patrón mapper` se refiere a la práctica de mapear o transformar datos de una estructura a otra, generalmente para adaptarlos a las necesidades de la aplicación o para simplificar su uso. En React, esto a menudo implica tomar datos crudos (por ejemplo, de una API) y transformarlos en un formato más adecuado para su uso en componentes, como convertir objetos complejos en arrays de elementos renderizables. El patrón mapper ayuda a mantener el código limpio y organizado, separando la lógica de transformación de datos de la lógica de presentación y facilitando la reutilización y el mantenimiento del código. De esta forma, sí se tiene una lista de objetos con muchas propiedades, pero solo se necesitan algunas de ellas para renderizar una lista en la interfaz de usuario, se puede usar el patrón mapper para crear un nuevo array con solo las propiedades necesarias o de otra forma, sí se modificara en algún momento la estructura de los datos, solo se tendría que actualizar el mapper y no toda la lógica de renderizado (Desacopla la aplicación de la estructura de la API. Si la API cambia su formato de respuesta en el futuro, solo se necesita actualizar el "mapeo" en un lugar, en lugar de modificar todos los componentes que la consumen).
 
 [Quiz](docs/06_GifExpertApp_useState_useEffect.md)
+
+### Custom hooks en React
+
+Los custom hooks en React son funciones reutilizables que encapsulan lógica de estado y efectos secundarios, permitiendo compartir esta lógica entre diferentes componentes de manera sencilla y eficiente. Al utilizar TypeScript, los custom hooks pueden beneficiarse de la verificación de tipos, lo que ayuda a prevenir errores y mejorar la mantenibilidad del código. Los custom hooks siguen la convención de nomenclatura que comienza con "use" (por ejemplo, `useFetch`, `useForm`, `useDebounce`), lo que indica que son hooks personalizados. Estos hooks pueden utilizar otros hooks de React, como `useState`, `useEffect`, `useContext`, entre otros, para gestionar el estado y los efectos secundarios dentro del hook. Al definir los tipos de las entradas y salidas del custom hook, se asegura una integración fluida con los componentes que lo utilizan, proporcionando una experiencia de desarrollo más segura y eficiente.
+
+> [!TIP]
+>
+> - Un custom hook debe de hacer solo una tarea específica y no múltiples tareas, para evitar efectos secundarios no deseados y mantener el código limpio y fácil de entender.
+> - Un custom hook debe de ser reutilizable y no depender de un componente específico, para poder ser utilizado en diferentes partes de la aplicación.
+> - Un custom hook debe de ser fácil de usar y entender, con una interfaz clara y concisa.
+> - Un custom hook debe de manejar correctamente los efectos secundarios y la limpieza de recursos, para evitar fugas de memoria y otros problemas.
+> - Un custom hook debe de ser probado adecuadamente, para asegurar su correcto funcionamiento y detectar posibles errores.
+
+> [!TIP]
+>
+> Es útil tener instalado React Developer Tools en el navegador para inspeccionar el estado y las props de los componentes React, así como para depurar problemas relacionados con el renderizado y la actualización del estado. Esta herramienta proporciona una interfaz visual que facilita la comprensión de la estructura de la aplicación y el flujo de datos entre componentes, lo que es especialmente valioso al trabajar con hooks y custom hooks en React. URL: https://react.dev/learn/react-developer-tools
+
+`useRef` es un hook en React que permite crear una referencia mutable que persiste durante todo el ciclo de vida del componente. A diferencia de `useState`, que provoca una re-renderización del componente cuando su valor cambia, `useRef` no causa re-renderizados, lo que lo hace ideal para almacenar valores que no afectan la representación visual del componente. `useRef` se utiliza comúnmente para acceder a elementos del DOM directamente, almacenar valores previos o mantener cualquier valor mutable que necesite persistir entre renderizados sin desencadenar una actualización de la interfaz de usuario. La referencia creada por `useRef` tiene una propiedad `.current` que puede ser leída y modificada según sea necesario.
+
+## Deployment de aplicaciones React con Vite en producción
+
+### Build de producción
+
+```sh
+npm run build
+```
+
+Esto genera una carpeta `dist` con los archivos optimizados para producción.
+
+> [!NOTE]
+> Sí ejecutamos el archivo `index.html` directamente en el navegador (file://), es probable que no funcione correctamente debido a restricciones de seguridad del navegador que impiden la carga de recursos locales. Para probar la aplicación de producción localmente, es recomendable usar un servidor web local como `serve` o `http-server`, que simulan un entorno de servidor y permiten cargar los archivos correctamente.
+> Para usar http-server primero instalarlo de forma global como superusuario o administrador:
+> `sudo npm install --global http-server`
+> Nos ubicamos en la carpeta `dist` y ejecutamos `http-server -o`
+
+> [!NOTE]
+> Los hooks en los componentes de react son posicionales, porque React no los identifica por su nombre internamente, sino por el orden en que se ejecutan, por ello nunca deben de llamarse dentro de condicionales. Por eso en las devtools de React, los hooks se muestran en el orden en que fueron llamados en el componente y con el mismo nombre cada variable (se muestran con el mismo nombre que normalmente se usan en el código fuente, pero internamente React los identifica por su posición en la lista de hooks del componente).
+
+[Quiz](docs/07_optimización_y_despliegue.md)

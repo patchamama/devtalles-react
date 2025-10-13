@@ -22,8 +22,9 @@ export const SearchBar = ({ placeHolder = 'Buscar', onQuery }: Props) => {
 
   const handleKeyDown = (event: KeyboardEvent<HTMLInputElement>) => {
     if (event.key === 'Enter') {
+      alert(import.meta.env.VITE_GIPHY_API_KEY)
       handleSearch()
-      onQuery(query)
+      // onQuery(query)
     }
   }
 
