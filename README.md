@@ -648,6 +648,8 @@ npm install -D vitest
 
 #### Agregar y configurar vitest en el package.json
 
+[Más detalles aquí](https://gist.github.com/Klerith/3a3d8df27c19755c829ee5c0cef55a55)
+
 ```json
 "scripts": {
   ...
@@ -712,7 +714,9 @@ const ItemCounter = ({ name }: Props) => {
       <button onClick={handleRemove} disabled={counter <= 0}>
         -1
       </button>
-    </>
+      <p>
+        Cantidad total: {counter}
+      </p>
   )
 }
 export default ItemCounter
@@ -726,17 +730,16 @@ import ItemCounter from './ItemCounter' // importar el componente a probar
 describe('ItemCounter component', () => {
   test('should render the component with initial state', () => {
     render(<ItemCounter name='Test Item' />) // renderizar el componente
-    expect(
-      screen.getByText('Item: Test Item - Cantidad: 0')
-    ).toBeInTheDocument() // verificar que el texto inicial se muestra correctamente
+    screen.debug() // ver el html generado en ese momento para depurar y tener una idea de lo que se está renderizando
+    expect(screen.getByText('Item: Test Item - Cantidad: 0')).toBeDefined() // verificar que el texto inicial se muestra correctamente
+    expect(screen.getByRole('paragraph')).toBeDefined() // verificar que el párrafo se muestra correctamente
+    expect(screen.getByRole('paragraph').innerHTML).toBe('Cantidad total: 0') // verificar que el contenido del párrafo es correcto
   })
   test('should increment the counter when +1 button is clicked', () => {
     render(<ItemCounter name='Test Item' />)
     const addButton = screen.getByText('+1') // obtener el botón +1
     fireEvent.click(addButton) // simular un clic en el botón
-    expect(
-      screen.getByText('Item: Test Item - Cantidad: 1')
-    ).toBeInTheDocument() // verificar que el contador se incrementó
+    expect(screen.getByText('Item: Test Item - Cantidad: 1')).toBeDefined() // verificar que el contador se incrementó
   })
   test('should decrement the counter when -1 button is clicked', () => {
     render(<ItemCounter name='Test Item' />)
@@ -744,9 +747,7 @@ describe('ItemCounter component', () => {
     const removeButton = screen.getByText('-1')
     fireEvent.click(addButton) // incrementar el contador a 1
     fireEvent.click(removeButton) // decrementar el contador a 0
-    expect(
-      screen.getByText('Item: Test Item - Cantidad: 0')
-    ).toBeInTheDocument() // verificar que el contador se decrementó
+    expect(screen.getByText('Item: Test Item - Cantidad: 0')).toBeDefined() // verificar que el contador se decrementó
   })
   test('should disable the -1 button when counter is 0', () => {
     render(<ItemCounter name='Test Item' />)
@@ -759,6 +760,25 @@ describe('ItemCounter component', () => {
 ```sh
 npm run test
 ```
+
+> [!NOTE]
+>
+> - `render`: es una función proporcionada por Testing Library que se utiliza para renderizar un componente de React en un entorno de prueba. Esta función crea un contenedor virtual en el que se monta el componente, permitiendo interactuar con él y realizar aserciones sobre su estado y comportamiento. Al usar `render`, se puede acceder al DOM generado por el componente y utilizar otras utilidades de Testing Library para buscar elementos, simular eventos y verificar resultados.
+> - `screen`: es un objeto proporcionado por Testing Library que representa el DOM renderizado en el entorno de prueba. Proporciona métodos para buscar y seleccionar elementos en el DOM, como `getByText`, `getByRole`, `queryByTestId`, entre otros. `screen` facilita la interacción con el DOM y la realización de aserciones sobre los elementos renderizados, permitiendo escribir pruebas más legibles y mantenibles.
+> - `fireEvent`: es una utilidad proporcionada por Testing Library que permite simular eventos del usuario en los elementos del DOM durante las pruebas. Con `fireEvent`, se pueden disparar eventos como clics, cambios de valor, envíos de formularios, entre otros, para probar cómo los componentes reaccionan a las interacciones del usuario. Esto es útil para verificar el comportamiento dinámico de los componentes y asegurarse de que respondan correctamente a las acciones del usuario.
+
+> [!WARNING]
+>
+> - Al buscarse un elemento con screen, por ejemplo `screen.getByRole('paragraph')`, sí el elemento no existe, se lanzará una excepción y la prueba fallará. Por lo tanto, es importante asegurarse de que el elemento que se está buscando realmente exista en el DOM renderizado antes de realizar aserciones sobre él. En el ejemplo anterior, se verifica que el párrafo se muestra correctamente utilizando `expect(screen.getByRole('paragraph')).toBeDefined()`, lo que asegura que el elemento existe antes de continuar con la prueba, por lo que algo como `expect(screen.getByRole('paragraph').innerHTML).not.toBe('Cantidad total: 0')` lanzará una excepción y la prueba fallará sí el párrafo no existe, así que nunca se debe de usar el _not_ con un screen.getBy... porque sí no existe el elemento, la prueba fallará antes de llegar a la aserción.
+> - En el caso de screen sí se hace un cambio en el DOM, como un evento de clic que actualiza el estado del componente, es recomendable usar `screen` para buscar los elementos en el DOM actualizado después del evento. Esto se debe a que `screen` siempre apunta al estado actual del DOM y refleja cualquier cambio que haya ocurrido. Por otro lado, `container` es un elemento HTML estático que representa el contenedor inicial donde se renderizó el componente, y no se actualiza automáticamente después de los eventos. Por lo tanto, para asegurarse de que las pruebas reflejen el estado más reciente del DOM, es mejor utilizar `screen` después de realizar acciones que modifiquen el contenido.
+> - Muy muy importante el uso de la función `querySelector` en las pruebas unitarias, ya que es la forma más sencilla de buscar elementos en el DOM renderizado. Por ejemplo, `screen.querySelector('button')` devuelve el primer botón encontrado en el DOM, o `screen.querySelectorAll('button')` devuelve una lista de todos los botones encontrados. Esto es útil para verificar la presencia de elementos específicos y realizar aserciones sobre ellos, como comprobar si un botón está habilitado o deshabilitado, o si contiene el texto esperado. Usar `querySelector` facilita la interacción con el DOM y mejora la legibilidad de las pruebas. Un ejemplo frecuente de uso de querySelector es sin screen usando el render() que devuelve un container, por ejemplo:
+>
+> ```ts
+> const { container } = render(<ItemCounter name='Test Item' />)
+> const divElement = container.querySelector('div') // buscar el primer div en el contenedor renderizado
+> expect(divElement?.querySelector('p')).not.toBeDefined() // verificar que el párrafo no existe
+> expect(divElement?.querySelector('p')).toBeNull() // lo mismo que lo anterior
+> ```
 
 ### Diferencia entre "Testing Library" y "vitest":
 
@@ -855,7 +875,7 @@ vi.mock('./ItemCounter', () => ({
 describe('ItemCounter component', () => {
   test('should render the mocked component', () => {
     render(<ItemCounter name='Test Item' />) // renderizar el componente
-    expect(screen.getByTestId('item-counter')).toBeInTheDocument() // verificar que el componente mockeado se muestra correctamente
+    expect(screen.getByTestId('item-counter')).toBeDefined() // verificar que el componente mockeado se muestra correctamente
     expect(screen.getByTestId('item-counter').textContent).toBe(
       'Mocked ItemCounter'
     ) // verificar el contenido del componente mockeado
@@ -866,6 +886,46 @@ describe('ItemCounter component', () => {
 > [!NOTE]
 >
 > - En este caso, se utiliza `vi.mock()` para crear un componente ficticio (mock) de `ItemCounter`. El mock reemplaza la implementación real del componente con una versión simplificada que solo renderiza un `div` con un `data-testid` específico. Esto permite probar otros componentes o funciones que dependen de `ItemCounter` sin ejecutar su lógica interna, facilitando pruebas más rápidas y aisladas. En la prueba, se verifica que el componente mockeado se renderiza correctamente y que su contenido es el esperado.
+
+### Testing de hooks
+
+`testing-library/react-hooks` (https://react-hooks-testing-library.com/) es una librería que facilita la prueba de hooks personalizados en React. Proporciona utilidades para renderizar hooks en un entorno de prueba, permitiendo interactuar con ellos y verificar su comportamiento. Con esta librería, se pueden escribir pruebas unitarias para hooks, asegurando que funcionen correctamente y manejen el estado y los efectos secundarios de manera adecuada. Ofrece funciones como `renderHook` para montar el hook y `act` para simular cambios en el estado o props, facilitando la escritura de pruebas claras y mantenibles. `renderHook` se brinda ya que `useState` y `useEffect` solo pueden ser usados dentro de componentes funcionales o custom hooks, por lo que no se pueden testear directamente en pruebas unitarias sin un entorno adecuado.
+De existir efectos secundarios en el hook, es recomendable usar `act` para envolver las actualizaciones de estado y asegurar que las pruebas reflejen correctamente los cambios. Ver ejemplos a continuación.
+
+```sh
+npm install -D @testing-library/react-hooks
+```
+
+```ts
+// ItemCounter.test.tsx
+import { describe, expect, test, vi } from 'vitest'
+import { render, screen, fireEvent } from '@testing-library/react'
+import { renderHook } from '@testing-library/react-hooks' // importar renderHook para testear hooks
+import { ItemCounter } from './ItemCounter' // importar el componente a probar
+
+describe('ItemCounter component', () => {
+  test('should initialize with default values 0', () => {
+    // const { result } = <ItemCounter({ name: 'Test Item' }) /> // esto no funciona porque useState y useEffect solo pueden ser usados dentro de componentes funcionales o custom hooks y por eso no se pueden testear directamente en pruebas unitarias sin un entorno adecuado y debe de testearse usando renderHook
+    const { result } = renderHook(() => ItemCounter({ name: 'Test Item' })) // renderHook devuelve el resultado del hook en result.current
+    expect(result.current.counter).toBe(0) // verificar que el contador se inicializa en 0
+  })
+  test('should increment counter', () => {
+    const { result } = renderHook(() => ItemCounter({ name: 'Test Item' })) // renderHook devuelve el resultado del hook en result.current
+    act(() => {
+      // usar act para envolver las actualizaciones de estado para que funcionen correctamente en las pruebas
+      result.current.handleAdd()
+      // result.current.handleAdd() // !!! llamar a la función increment para simular el incremento del contador no funcionaría aquí sí se llama dos veces porque el estado no se actualiza inmediatamente, por lo que el segundo llamado usaría el estado inicial y no el actualizado, por lo que de desear hacer dos veces, habría que tener dos llamadas separadas a act() `act(() => { result.current.handleAdd() })` para que el estado se actualice correctamente entre llamadas.
+    })
+    expect(result.current.counter).toBe(1) // verificar que el contador se incrementa en 1
+  })
+})
+```
+
+[Ver otros ejemplos de testing de hooks aquí](./03-figs-app_section_8/src/counter/hooks/useCounter.test.ts)
+
+En el caso de testear componentes con "custom hooks", ya usaríamos `render` de testing-library/react y no `renderHook` de testing-library/react-hooks, ya que el custom hook se usaría dentro del componente a testear y se necesitaría lograr efectos con `fireEvent` o `userEvent` para simular interacciones del usuario que disparen cambios en el estado manejado por el custom hook. [Ver ejemplos aquí](./03-figs-app_section_8/src/counter/components/MyCounterApp.test.tsx)
+
+En el caso de testear que los efectos customHooks funcionan bien, podría usarse un mock para simular el comportamiento del custom hook y verificar que el componente reacciona correctamente a los cambios en el estado o las props proporcionadas por el hook. [Ver ejemplos aquí](./03-figs-app_section_8/src/counter/components/MyCounterApp2.test.tsx)
 
 ### Crear una función fictica para pruebas usando vi.fn()
 
@@ -906,7 +966,7 @@ describe('ItemCounter component', () => {
   test('should render the mocked component', () => {
     // render(<ItemCounter name='Test Item' />) // renderizar el componente
     render(<FirstStepsApp />) // renderizar el componente padre que usa ItemCounter
-    expect(screen.getByTestId('item-counter')).toBeInTheDocument() // verificar que el componente mockeado se muestra correctamente
+    expect(screen.getByTestId('item-counter')).toBeDefined(); // verificar que el componente mockeado se muestra correctamente
     expect(screen.getByTestId('item-counter').textContent).toBe('Mocked ItemCounter') // verificar el contenido del componente mockeado
   })
   test('should render ItemCounter with correct props', () => {
@@ -1174,3 +1234,7 @@ Esto genera una carpeta `dist` con los archivos optimizados para producción.
 > Los hooks en los componentes de react son posicionales, porque React no los identifica por su nombre internamente, sino por el orden en que se ejecutan, por ello nunca deben de llamarse dentro de condicionales. Por eso en las devtools de React, los hooks se muestran en el orden en que fueron llamados en el componente y con el mismo nombre cada variable (se muestran con el mismo nombre que normalmente se usan en el código fuente, pero internamente React los identifica por su posición en la lista de hooks del componente).
 
 [Quiz](docs/07_optimización_y_despliegue.md)
+
+### Configuración de pruebas de Vitest
+
+https://gist.github.com/Klerith/3a3d8df27c19755c829ee5c0cef55a55
